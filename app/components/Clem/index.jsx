@@ -1,28 +1,36 @@
-'use client'
+"use client";
 import {
   Animator,
-  Fade,
-  MoveOut,
   ScrollContainer,
   ScrollPage,
-  Sticky,
   batch,
+  Fade,
+  FadeIn,
+  FadeOut,
+  Move,
+  MoveIn,
+  MoveOut,
+  Sticky,
+  StickyIn,
+  StickyOut,
+  Zoom,
+  ZoomIn,
+  ZoomOut,
 } from "react-scroll-motion";
 import Gallery from "../Gallery";
 
-
-
 const Clem = () => {
+
   return (
     <div>
       <ScrollContainer>
         <ScrollPage>
-          <Animator animation={batch(Sticky(), Fade(), MoveOut(0, -200))}>
+          <Animator animation={batch(Fade(), Move(), Sticky())}>
             <Gallery />
           </Animator>
         </ScrollPage>
         <ScrollPage>
-          <Animator animation={batch(Sticky(), Fade(), MoveOut(0, -200))}>
+          {/* <Animator animation={batch(Sticky(), Fade(), MoveOut(0, -200))}>
             <div>
               <p>coucou</p>
             </div>
@@ -40,7 +48,7 @@ const Clem = () => {
             <div>
               <p>coucou</p>
             </div>
-          </Animator>
+          </Animator> */}
         </ScrollPage>
       </ScrollContainer>
     </div>

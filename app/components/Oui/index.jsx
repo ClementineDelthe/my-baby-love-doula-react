@@ -101,17 +101,17 @@ const Soins = () => {
         {iconContent.map((icon, index) => (
           <div
             key={index}
-            className={`w-96 min-h-80 text-center bg-[#f3e9e7] rounded p-6 hover:scale-105 mb-3 ${
+            className={`w-96 min-h-80 text-center rounded p-6 hover:scale-105 mb-3 ${
               iconStates[index].isFlipped
-                ? "transform rotate-y-180 transition-transform duration-2500"
-                : "transform rotate-y-180 transition-transform duration-2500"
+                ? "bg-[#F2F3F5] border-[#f3e9e7] border-4 transform rotate-y-180 transition-transform duration-2500"
+                : "bg-[#f3e9e7] transform rotate-y-180 transition-transform duration-2500"
             }`}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={() => handleMouseLeave(index)}
           >
             {iconStates[index].isFlipped ? (
-              <div className="">
-                <h2>{icon.title1}</h2>
+              <div className="flex flex-col items-center justify-center h-full">
+                <h2 className="pb-10 text-2xl">{icon.title1}</h2>
                 <p>{icon.text2}</p>
               </div>
             ) : (

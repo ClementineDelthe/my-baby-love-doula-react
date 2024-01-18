@@ -41,8 +41,8 @@ const Gallery = () => {
               alt=""
             /> */}
               <Image
-                src={MassageBebe2}
-                alt="Lolita Garnier"
+                src={Massage1}
+                alt="Soin"
                 width={700}
                 height={600}
                 className="h-auto max-w-full rounded-lg"
@@ -55,10 +55,10 @@ const Gallery = () => {
               alt=""
             /> */}
               <Image
-                src={IconFemme3}
-                alt="Icone Femme"
-                width={500}
-                height={400}
+                src={Soin1}
+                alt="Soin"
+                width={700}
+                height={600}
                 className="h-auto max-w-full rounded-lg"
               />
             </div>
@@ -100,8 +100,8 @@ const Gallery = () => {
               alt=""
             /> */}
               <Image
-                src={Massage1}
-                alt="Soin"
+                src={Bain2}
+                alt="Bain Sensoriel"
                 width={700}
                 height={600}
                 className="h-auto max-w-full rounded-lg"
@@ -116,10 +116,10 @@ const Gallery = () => {
               alt=""
             /> */}
               <Image
-                src={Soin1}
-                alt="Soin"
-                width={700}
-                height={600}
+                src={IconFemme3}
+                alt="Icone Femme"
+                width={500}
+                height={400}
                 className="h-auto max-w-full rounded-lg"
               />
             </div>
@@ -143,9 +143,11 @@ const Gallery = () => {
               src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
               alt=""
             /> */}
+
+
               <Image
-                src={Bain2}
-                alt="Bain Sensoriel"
+                src={MassageBebe2}
+                alt="Lolita Garnier"
                 width={700}
                 height={600}
                 className="h-auto max-w-full rounded-lg"

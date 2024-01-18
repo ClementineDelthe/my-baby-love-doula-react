@@ -1,18 +1,39 @@
+"use client";
 
 const Tarifs = () => {
-  return (
-      <div id="tarifs" className="p-8 mx-auto my-5 max-w-7xl bg-light-pink-bg border border-gray-200 rounded-lg shadow">
-        <h2 className="text-2xl mb-2 font-semibold text-red-p">Les tarifs</h2>
-        <ul>
-          <li>Massage Prénatal <span className="text-gray-500">XX€</span></li>
-          <li>Massage Post natam <span className="text-gray-500">XX€</span></li>
-          <li>Massage bébé <span className="text-gray-500">XX€</span></li>
-          <li>Massage Rébozo <span className="text-gray-500">XX€</span></li>
-          <li>Bain Sensoriel <span className="text-gray-500">XX€</span></li>
-        </ul>
-        <p className="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse saepe quis quia ea obcaecati repellat tempora magnam sapiente sed corrupti sint velit, sit non nulla, beatae porro optio, voluptas iure!</p>
-      </div>
-  )
-}
+  const tarifs = [
+    { nom: "Massage prénatal", prix: "160" },
+    { nom: "Massage post natal", prix: "150" },
+    { nom: "Massage bébé", prix: "125" },
+    { nom: "Massage Rebozo", prix: "375" },
+    { nom: "Bain Sensoriel", prix: "145" },
+  ];
 
-export default Tarifs
+  return (
+    <div className="bg-[#f3e9e7] py-6">
+      <div id="tarifs" className="p-8 mx-auto my-5 max-w-7xl ">
+        <h2 className="text-2xl mb-2 font-semibold text-[#3f3a36] mb-10">
+          Les tarifs
+        </h2>
+        <ul className="">
+          {tarifs.map((tarif, index) => (
+          <li key={index} className="mb-10">
+            <div className="flex justify-between">
+              <p>{tarif.nom}</p>
+              <p className="text-slate-300 opacity-55 text-end">{tarif.prix}€</p>
+            </div>
+            <hr className="rounded-lg shadow" />
+          </li>
+          ))}
+        </ul>
+        <p className="mt-10 italic">
+          * Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse saepe
+          quis quia ea obcaecati repellat tempora magnam sapiente sed corrupti
+          sint velit, sit non nulla, beatae porro optio, voluptas iure!
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default Tarifs;

@@ -47,7 +47,7 @@ const Infos = () => {
                     Lolita Garnier - Doula
                   </h2>
                   <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                    L'accompagnement dont vous avez besoin, maman, bébé et
+                    L&apos;accompagnement dont vous avez besoin, maman, bébé et
                     esprit.
                   </p>
                 </div>

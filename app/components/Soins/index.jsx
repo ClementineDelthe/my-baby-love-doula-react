@@ -117,12 +117,12 @@ const Soins = () => {
                   Le rituel du bain sensoriel
                 </h3>
                 <p className="mb-3 font-normal text-gray-700">
-                  ❤️ Bébé bénéficira d'un emmaillotage, d'un bain enveloppé,
-                  d'une initiation au massage et à la réflexologie émotionnelle
+                  ❤️ Bébé bénéficira d&apos;un emmaillotage, d&apos;un bain enveloppé,
+                  d&apos;une initiation au massage et à la réflexologie émotionnelle
                 </p>
                 <p className="mb-3 font-normal text-gray-700">
                   ❤️ Bébé pourra libèrer les tensions cumulé lors de la
-                  grossesse et de l'accouchement
+                  grossesse et de l&apos;accouchement
                 </p>
                 <p className="mb-3 font-normal text-gray-700">
                   ❤️ Instants chargés en émotions, et en douceurs qui
@@ -239,7 +239,7 @@ const Soins = () => {
                 </p>
                 <p className="mb-3 font-normal text-gray-700">
                   ❤️ Souligne la transition, accompagne le renouveau dans la vie
-                  d'une femme
+                  d&apos;une femme
                 </p>
               </div>
             </div>
@@ -272,7 +272,7 @@ const Soins = () => {
                   être moins stressé
                 </p>
                 <p className="mb-3 font-normal text-gray-700">
-                  ❤️ Vous permettra d'approfondir vos liens et la connexion avec
+                  ❤️ Vous permettra d&apos;approfondir vos liens et la connexion avec
                   bébé
                 </p>
                 <p className="mb-3 font-normal text-gray-700">

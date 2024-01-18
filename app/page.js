@@ -16,11 +16,11 @@ import Marques from "./components/Marques";
 export default function Home() {
   return (
     <div>
-      {/* <Slider />
-      <Clem /> */}
+      {/* <Slider /> */}
       <NavBar />
       <Description />
       <Infos />
+      {/* <Clem /> */}
       <Oui />
       {/* <Soins /> */}
       <Gallery />

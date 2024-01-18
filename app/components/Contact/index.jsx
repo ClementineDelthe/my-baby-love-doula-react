@@ -90,7 +90,7 @@ const Contact = () => {
                 </h2>
                 <ul class="text-gray-500 dark:text-gray-400 font-medium">
                   <li class="mb-4">
-                    <Link href="https://www.google.com/maps/place/Bordeaux/@44.8638098,-0.6684127,12z/data=!4m6!3m5!1s0xd5527e8f751ca81:0x796386037b397a89!8m2!3d44.837789!4d-0.57918!16zL20vMDFiODU?entry=ttu">
+                    <Link href="https://www.google.com/maps/place/My+baby+love+-+Doula/@44.7782579,-0.5424504,17z/data=!3m1!4b1!4m6!3m5!1s0xd5527e745720d09:0x2be563342a7d92c3!8m2!3d44.7782541!4d-0.5398755!16s%2Fg%2F11vj05ws4m?entry=ttu">
                       <p>Déplacement à domicile Bordeaux CUB / Arès</p>
                     </Link>
                   </li>
