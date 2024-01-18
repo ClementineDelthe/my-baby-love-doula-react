@@ -1,18 +1,29 @@
 // import { logo } from "../../assets/a_propos"
 
 import Image from "next/image";
+import LogoLolita from "../../assets/Lolita_Doula.png";
 
 const NavBar = () => {
   return (
     <div>
-      <nav class="bg-white border-gray-200 dark:bg-gray-900 ">
+      <nav class="bg-light-pink-bg text-[#3f3a36] border-b-2 border-[#fff]">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a
-            class="flex items-center space-x-3 rtl:space-x-reverse"
-          >
-            <Image src="/app/assets/a_propos.png" alt="logo" width={32} height={32}></Image>
+          <a class="flex items-center space-x-3 rtl:space-x-reverse">
+            {/* <Image src="/app/assets/a_propos.png" alt="logo" width={32} height={32}></Image> */}
+            {/* <img
+            src="https://fastly.picsum.photos/id/418/200/300.jpg?grayscale&hmac=4Lv8_g9BNlzzf2__BNoN3mhG3r3ixlutTdoOnVrFUbs"
+            className="w-6"
+            alt="logo"
+          /> */}
+            <Image
+              src={LogoLolita}
+              alt="Logo"
+              width={32}
+              height={32}
+              className="rounded"
+            />
 
-            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap ">
               My Baby Love Doula
             </span>
           </a>
@@ -44,7 +55,7 @@ const NavBar = () => {
             <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
                 <a
-                  href="#"
+                  href="#apropos"
                   class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
                   aria-current="page"
                 >
@@ -53,7 +64,7 @@ const NavBar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#soins"
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Les soins
@@ -61,7 +72,15 @@ const NavBar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#gallery"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >
+                  Galerie
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#tarifs"
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Tarifs
@@ -69,7 +88,7 @@ const NavBar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#marques"
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Les marques partenaires
@@ -77,7 +96,7 @@ const NavBar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#contact"
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Contact

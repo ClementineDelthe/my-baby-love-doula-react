@@ -1,13 +1,14 @@
 import React from "react";
 
+
 const Footer = () => {
   return (
-    <div>
-      <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+    <div className="bg-[#f3e9e7] py-1">
+      <footer class="bg-white rounded-lg shadow m-4 bg-light-pink-bg">
         <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
           <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © {" "}
-            <a href="https://flowbite.com/" class="hover:underline">
+            <a href="" class="hover:underline">
               My Baby Love Doula
             </a>
             . Tous droits réservés.

@@ -1,14 +1,14 @@
 import { Wrapper, Status } from "@googlemaps/react-wrapper";
 import Image from "next/image";
 import Link from "next/link";
-// import Logo from "../../assets/a_propos.png"
+import LogoLolita from "../../assets/Lolita_Doula.png"
 
 // const aProposImage = require('../../assets/a_propos.png');
 
 const Contact = () => {
   return (
-    <div>
-      <div>
+    <div id="contact" className="bg-[#f3e9e7]">
+      {/* <div>
         <h2>Me contacter</h2>
         <div>
           <p>
@@ -27,23 +27,23 @@ const Contact = () => {
         <p>
           <a href="">Mentions Legales</a>
         </p>
-      </div>
+      </div> */}
 
       <footer class="bg-white dark:bg-gray-900">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
               <a href="https://flowbite.com/" class="flex items-center">
-                <img
+                {/* <img
                   src="https://picsum.photos/id/237/200/300"
                   class="h-8 me-3"
                   alt="FlowBite Logo"
-                />
-
-                <Image src="" alt="logo" width={32} height={32}></Image>
+                /> */}
+                <Image src={LogoLolita} alt="Logo" width={32} height={32} className="rounded"/>
+                {/* <Image src="" alt="logo" width={32} height={32}></Image>
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                  Flowbite
-                </span>
+                  MBLD
+                </span> */}
               </a>
             </div>
             <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">

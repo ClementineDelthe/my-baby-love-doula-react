@@ -1,17 +1,50 @@
-import { Animator, MoveIn, MoveOut } from 'react-scroll-motion';
+'use client'
+import {
+  Animator,
+  Fade,
+  MoveOut,
+  ScrollContainer,
+  ScrollPage,
+  Sticky,
+  batch,
+} from "react-scroll-motion";
+import Gallery from "../Gallery";
+
+
 
 const Clem = () => {
   return (
-    <div className="section-3 text-center text-xl">
-      <h2>
-        <Animator animation={MoveIn(-1000, 0)}>Adrénaline et Liberté ✅</Animator>
-        <Animator animation={MoveIn(1000, 0)}>Des paysages à couper le souffle ✅</Animator>
-        <Animator animation={MoveIn(-1000, 0)}>⚠️ Permis bateau obligatoire ⚠️</Animator>
-        <Animator animation={MoveIn(1000, 0)}>Une aventure en famille ou entre amis ✅</Animator>
-        <Animator animation={MoveIn(-1000, 0)}>Un service client dévoué ✅</Animator>
-      </h2>
+    <div>
+      <ScrollContainer>
+        <ScrollPage>
+          <Animator animation={batch(Sticky(), Fade(), MoveOut(0, -200))}>
+            <Gallery />
+          </Animator>
+        </ScrollPage>
+        <ScrollPage>
+          <Animator animation={batch(Sticky(), Fade(), MoveOut(0, -200))}>
+            <div>
+              <p>coucou</p>
+            </div>
+          </Animator>
+        </ScrollPage>
+        <ScrollPage>
+          <Animator animation={batch(Sticky(), Fade(), MoveOut(0, -200))}>
+            <div>
+              <p>coucou</p>
+            </div>
+          </Animator>
+        </ScrollPage>
+        <ScrollPage>
+          <Animator animation={batch(Sticky(), Fade(), MoveOut(0, -200))}>
+            <div>
+              <p>coucou</p>
+            </div>
+          </Animator>
+        </ScrollPage>
+      </ScrollContainer>
     </div>
-  )
-}
+  );
+};
 
-export default Clem
+export default Clem;
