@@ -10,6 +10,7 @@ import Gallery from "./components/Gallery";
 import Description from "./components/Description";
 import Oui from "./components/Oui";
 import Marques from "./components/Marques";
+import Overlap from "./components/Overlap";
 
 
 
@@ -17,10 +18,11 @@ export default function Home() {
   return (
     <div>
       {/* <Slider /> */}
+      <Overlap />
       <NavBar />
       <Description />
       <Infos />
-      {/* <Clem /> */}
+      <Clem />
       <Oui />
       {/* <Soins /> */}
       <Gallery />

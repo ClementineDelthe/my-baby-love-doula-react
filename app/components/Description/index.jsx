@@ -6,21 +6,21 @@ import Link from "next/link";
 
 const Description = () => {
   return (
-    <div className="items-center static justify-center min-h-screen bg-[#f3e9e7]">
-      <div className="flex p-2">
-        <div className="absolute z-10 bottom-30 right-40 mr-1 self-center w-2/4 justify-between p-10 bg-light-pink-bg rounded-bl-lg rounded-tr-lg">
+    <div className="flex items-center justify-center min-h-screen bg-[#f3e9e7]">
+      <div className="relative">
+        <div className="absolute md:top-52 sm:top-14 right-20 mr-1 self-center w-2/4 justify-between p-10 bg-light-pink-bg rounded-bl-lg rounded-tr-lg z-10">
           <div>
-            <h1 className="text-5xl font-bold text-[#3f3a36] mb-6">
+            <h1 className="text-3xl md:text-5xl font-bold text-[#3f3a36] mb-6">
               LOLITA GARNIER - DOULA
             </h1>
-            <p className="text-xl text-[#3f3a36] mb-4">
+            <p className="text-lg md:text-xl text-[#3f3a36] mb-4">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
               iusto quo, a corporis blanditiis magnam consequuntur at accusamus
               aliquid vel nulla maxime iure repudiandae vero, aut obcaecati,
               modi consectetur. Eius.
             </p>
           </div>
-          <Link href="" className="w-full border border-pink-bg shadow shadow-pink-p p-1 rounded bg-pink-bg hover:bg-pink-p">
+          <Link href="" className="w-full border border-pink-bg shadow shadow-pink-p p-1 rounded bg-pink-bg hover:bg-pink-p animate-pulse ">
             DECOUVRIR
           </Link>
         </div>
@@ -30,7 +30,7 @@ const Description = () => {
             alt="Exemple"
             width={800}
             height={1500}
-            className="  object-cover sm:w-full lg:aspect-square"
+            className="object-cover sm:w-full lg:aspect-square"
           />
           {/* <img
             alt="Les Jolis Mantras cards"

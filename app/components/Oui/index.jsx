@@ -49,59 +49,59 @@ const Soins = () => {
   const iconContent = [
     {
       image: IconSoin1,
-      title1: "Les soins féminins",
+      title1: "Soin femme enceinte",
       text2: "Massage du corps, relaxation, soin ayurvediques",
     },
     {
       image: IconSoin2,
-      title1: "Les soins avec bébé",
+      title1: "Soin post partum",
       text2: "Le rituel du bain sensoriel & le massage bébé",
     },
     {
       image: IconSoin3,
-      title1: "Le Rebozo",
+      title1: "MAssage relaxant",
       text2:
         "Soin autour du Rebozo, de serrage, de reflexion accompagnée par deux femmes, un massage a quatre mains, une période de sudation et un intention spécifique",
     },
     {
       image: IconSoin4,
-      title1: "Les soins femme enceinte",
+      title1: "Soin Rebozo",
       text2:
         "Massage pré et post natal pour accompagner ou cloturer une grossesse",
     },
     {
       image: IconSoin1,
-      title1: "Les soins féminins",
+      title1: "Massage bébé",
       text2: "Massage du corps, relaxation, soin ayurvediques",
     },
     {
       image: IconSoin2,
-      title1: "Les soins avec bébé",
+      title1: "Bain Sensoriel",
       text2: "Le rituel du bain sensoriel & le massage bébé",
     },
-    {
-      image: IconSoin3,
-      title1: "Le Rebozo",
-      text2:
-        "Soin autour du Rebozo, de serrage, de reflexion accompagnée par deux femmes, un massage a quatre mains, une période de sudation et un intention spécifique",
-    },
-    {
-      image: IconSoin4,
-      title1: "Les soins femme enceinte",
-      text2:
-        "Massage pré et post natal pour accompagner ou cloturer une grossesse",
-    },
+    // {
+    //   image: IconSoin3,
+    //   title1: "Le Rebozo",
+    //   text2:
+    //     "Soin autour du Rebozo, de serrage, de reflexion accompagnée par deux femmes, un massage a quatre mains, une période de sudation et un intention spécifique",
+    // },
+    // {
+    //   image: IconSoin4,
+    //   title1: "Les soins femme enceinte",
+    //   text2:
+    //     "Massage pré et post natal pour accompagner ou cloturer une grossesse",
+    // },
   ];
 
   const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
 
   return (
-    <div id="soins" className="bg-[#F2F3F5]">
-      <div className="flex flex-wrap justify-around p-2 min-h-screen">
+    <div id="soins" className="bg-[#F2F3F5] contain">
+      <div className="flex flex-wrap justify-around columns-3	p-2 min-h-screen">
         {iconContent.map((icon, index) => (
           <div
             key={index}
-            className={`w-96 min-h-80 text-center rounded p-6 hover:scale-105 mb-3 ${
+            className={`min-h-80 text-center w-1/3 rounded p-6 hover:scale-105 mb-3 ${
               iconStates[index].isFlipped
                 ? "bg-[#F2F3F5] border-[#f3e9e7] border-4 transform rotate-y-180 transition-transform duration-2500"
                 : "bg-[#f3e9e7] transform rotate-y-180 transition-transform duration-2500"

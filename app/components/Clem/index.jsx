@@ -1,22 +1,29 @@
 "use client";
-import {
-  Animator,
-  ScrollContainer,
-  ScrollPage,
-  batch,
-  Fade,
-  FadeIn,
-  FadeOut,
-  Move,
-  MoveIn,
-  MoveOut,
-  Sticky,
-  StickyIn,
-  StickyOut,
-  Zoom,
-  ZoomIn,
-  ZoomOut,
-} from "react-scroll-motion";
+// import dynamic from "next/dynamic";
+// const Animator = dynamic(
+//   import("react-scroll-motion").then((it) => it.Animator),
+//   { ssr: false }
+// );
+
+import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
+// import {
+//   Animator,
+//   ScrollContainer,
+//   ScrollPage,
+//   batch,
+//   Fade,
+//   FadeIn,
+//   FadeOut,
+//   Move,
+//   MoveIn,
+//   MoveOut,
+//   Sticky,
+//   StickyIn,
+//   StickyOut,
+//   Zoom,
+//   ZoomIn,
+//   ZoomOut,
+// } from "react-scroll-motion";
 import Gallery from "../Gallery";
 
 const Clem = () => {
@@ -26,10 +33,11 @@ const Clem = () => {
       <ScrollContainer>
         <ScrollPage>
           <Animator animation={batch(Fade(), Move(), Sticky())}>
-            <Gallery />
+            {/* <Gallery /> */}
+            <p>CLEM CLEM CLEM </p>
           </Animator>
         </ScrollPage>
-        <ScrollPage>
+        {/* <ScrollPage> */}
           {/* <Animator animation={batch(Sticky(), Fade(), MoveOut(0, -200))}>
             <div>
               <p>coucou</p>
@@ -49,7 +57,7 @@ const Clem = () => {
               <p>coucou</p>
             </div>
           </Animator> */}
-        </ScrollPage>
+        {/* </ScrollPage> */}
       </ScrollContainer>
     </div>
   );
