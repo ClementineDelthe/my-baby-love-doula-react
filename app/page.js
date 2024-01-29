@@ -2,13 +2,12 @@ import Clem from "./components/Clem";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
-import Soins from "./components/Soins";
 import Tarifs from "./components/Tarifs";
-import Slider from "./components/Marques";
+// import Slider from "./components/Marques";
 import Infos from "./components/Infos";
 import Gallery from "./components/Gallery";
 import Description from "./components/Description";
-import Oui from "./components/Oui";
+import Soins from "./components/Soins";
 import Marques from "./components/Marques";
 
 
@@ -21,7 +20,7 @@ export default function Home() {
       <Description />
       <Infos />
       {/* <Clem /> */}
-      <Oui />
+      <Soins />
       {/* <Soins /> */}
       <Gallery />
       <Tarifs />
