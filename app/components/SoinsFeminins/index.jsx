@@ -48,10 +48,10 @@ const SoinsFeminins = () => {
               Soins Féminins
             </h2>
             <p>
-              Inspiré de l'ayurvédique, je propose des massages du corps complet
-              à l'huile chaude, mêlant bercement, serrage, massage enveloppant.
+              Inspiré de l&apos;ayurvédique, je propose des massages du corps complet
+              à l&apos;huile chaude, mêlant bercement, serrage, massage enveloppant.
               Véritable rituel, je prends le temps de vous écouter dans un cadre
-              bienveillant autour d'une tisane et d'un bain de pieds aux
+              bienveillant autour d&apos;une tisane et d&apos;un bain de pieds aux
               plantes.
             </p>
             <p>

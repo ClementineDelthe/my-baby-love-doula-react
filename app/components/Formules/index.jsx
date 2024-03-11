@@ -113,7 +113,7 @@ const Formules = () => {
             </div>
           ))}
         </div>
-        <p><i>*Une majoration peut s'exercer en fonction du lieu d'habitation et du jour du RDV</i></p>
+        <p><i>*Une majoration peut s&apos;exercer en fonction du lieu d&apos;habitation et du jour du RDV</i></p>
       </div>
     </div>
   );
