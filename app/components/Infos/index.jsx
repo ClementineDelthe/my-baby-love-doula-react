@@ -11,6 +11,7 @@ const Infos = () => {
     { isFlipped: false },
     { isFlipped: false },
     { isFlipped: false },
+    { isFlipped: false },
   ]);
 
   const handleMouseEnter = (index) => {
@@ -30,13 +31,37 @@ const Infos = () => {
   };
 
   const iconContent = [
-    { image: IconRebozo, text: "Rituel du Rebozo" },
-    { image: IconPregnant, text: "Soin Femme Enceinte" },
-    { image: IconBaby, text: "Soins bébé" },
+    {
+      image: IconRebozo,
+      title: "Parenthèse enchantée",
+      text: "Massage femme enceinte ET Douceur du rebozo",
+      prix: "160€",
+    },
+    {
+      image: IconPregnant,
+      title: "Amour pour toujours",
+      text: "Un soin féminin au choix ET Un rituel du bain sensoriel®",
+      pri: "210€",
+    },
+    {
+      image: IconBaby,
+      title: "Tendre découverte",
+      text: "4 séances massage bébé : Apprentissage massage du corps complet de votre bébé + soulager les maux de bébé",
+      prix: "150€",
+    },
+    {
+      image: IconRebozo,
+      title: "Instant infini",
+      text: "Rituel du bain sensoriel® photographié. Avec Amélie, Mayä Photographie.",
+      prix: "240€",
+    },
   ];
 
   return (
-    <div id="apropos" className="flex flex-col min-h-[93vh] bg-[#F2F3F5] text-gray-800">
+    <div
+      id="apropos"
+      className="flex flex-col min-h-[93vh] bg-[#F2F3F5] text-gray-800"
+    >
       <div className="mx-auto my-auto">
         <main className="flex-1">
           <section className="w-full py-12 md:py-24 lg:py-32">
@@ -44,28 +69,24 @@ const Infos = () => {
               <div className="space-y-4 md:space-y-6">
                 <div className="space-y-3">
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                    Lolita Garnier - Doula
+                    Les Formules
                   </h2>
                   <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                    L&apos;accompagnement dont vous avez besoin, maman, bébé et
-                    esprit.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   </p>
                 </div>
                 <div className="flex justify-center space-x-4 lg:justify-start">
-                  <Link
+                  {/* <Link
                     className="inline-flex h-9 items-center justify-center rounded-md bg-light-pink-bg px-4 py-2 text-sm font-medium transition-colors hover:bg-pink-bg hover:text-gray-900 focus:bg-[#FBB6CE] focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50"
                     href="#soins"
                   >
                     Découvrir
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
               <div className="divide-y divide-pink-bg rounded-lg border border-pink-bg">
-                <Link
-                className=""
-                href="#gallery"
-                >
-                  <div className="grid w-full grid-cols-3 items-stretch justify-center divide-x divide-pink-bg md:grid-cols-3">
+                <Link className="" href="#gallery">
+                  <div className="grid w-full grid-cols-4 items-stretch justify-center divide-x divide-pink-bg md:grid-cols-4">
                     {iconContent.map((icon, index) => (
                       <div
                         key={index}
@@ -78,17 +99,25 @@ const Infos = () => {
                         onMouseLeave={() => handleMouseLeave(index)}
                       >
                         {iconStates[index].isFlipped ? (
-                          <p className="text-center text-red-p text-lg font-bold p-4">
-                            {icon.text}
-                          </p>
+                          <div>
+                            <p className="text-center text-lg pb-2">
+                              {icon.title}
+                            </p>
+                            <p className="text-center">{icon.text}</p>
+                          </div>
                         ) : (
-                          <Image
-                            src={icon.image}
-                            alt={icon.text}
-                            width={400}
-                            height={600}
-                            className="aspect-[1/1] overflow-hidden rounded-lg object-contain object-center"
-                          />
+                          <div>
+                            <Image
+                              src={icon.image}
+                              alt={icon.text}
+                              width={400}
+                              height={600}
+                              className="aspect-[1/1] overflow-hidden rounded-lg object-contain object-center"
+                            />
+                            {/* <p className="text-center text-red-p text-lg font-bold p-4">
+                            {icon.text}
+                          </p> */}
+                          </div>
                         )}
                       </div>
                     ))}

@@ -1,20 +1,13 @@
 // import { logo } from "../../assets/a_propos"
-
 import Image from "next/image";
 import LogoLolita from "../../assets/Lolita_Doula.png";
 
 const NavBar = () => {
   return (
-    <div>
+    <div id="navbar">
       <nav class="bg-light-pink-bg text-[#3f3a36] border-b-2 border-[#fff]">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a class="flex items-center space-x-3 rtl:space-x-reverse">
-            {/* <Image src="/app/assets/a_propos.png" alt="logo" width={32} height={32}></Image> */}
-            {/* <img
-            src="https://fastly.picsum.photos/id/418/200/300.jpg?grayscale&hmac=4Lv8_g9BNlzzf2__BNoN3mhG3r3ixlutTdoOnVrFUbs"
-            className="w-6"
-            alt="logo"
-          /> */}
+          <div class="flex items-center space-x-3 rtl:space-x-reverse">
             <Image
               src={LogoLolita}
               alt="Logo"
@@ -22,11 +15,10 @@ const NavBar = () => {
               height={32}
               className="rounded"
             />
-
             <span class="self-center text-2xl font-semibold whitespace-nowrap ">
               My Baby Love Doula
             </span>
-          </a>
+          </div>
           <button
             data-collapse-toggle="navbar-default"
             type="button"

@@ -9,7 +9,7 @@ import Marque3 from "../../assets/marque3.jpg";
 
 const Marques = () => {
   return (
-    <div id="marques" className="contain h-[40vh] bg-[#F2F3F5]">
+    <div id="marques" className="contain h-[45vh] bg-[#F2F3F5]">
       <Carousel
         autoPlay
         interval={6000}

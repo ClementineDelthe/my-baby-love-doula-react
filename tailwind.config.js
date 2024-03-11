@@ -4,6 +4,7 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./node_modules/flowbite-react/lib/**/*.js",
   ],
   theme: {
     colors: {
@@ -29,6 +30,9 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
+    plugins: [
+      require('flowbite/plugin')
+    ]
   },
   plugins: [],
 }

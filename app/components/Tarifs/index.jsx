@@ -27,9 +27,7 @@ const Tarifs = () => {
           ))}
         </ul>
         <p className="mt-10 italic">
-          * Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse saepe
-          quis quia ea obcaecati repellat tempora magnam sapiente sed corrupti
-          sint velit, sit non nulla, beatae porro optio, voluptas iure!
+          * Les prix indiqués sont les prix appliqués à chaque prestation, pour un devis personnalisé merci de me contacter directement.
         </p>
       </div>
     </div>
