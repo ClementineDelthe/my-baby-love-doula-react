@@ -5,7 +5,7 @@ import LogoLolita from "../../assets/Lolita_Doula.png";
 const NavBar = () => {
   return (
     <div id="navbar">
-      <nav class="bg-light-pink-bg text-[#3f3a36] border-b-2 border-[#fff]">
+      <nav class=" text-[#3f3a36] border-b-2 border-[#fff]">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <div class="flex items-center space-x-3 rtl:space-x-reverse">
             <Image
@@ -83,7 +83,7 @@ const NavBar = () => {
                   href="#marques"
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
-                  Les marques partenaires
+                  Partenaires
                 </a>
               </li>
               <li>
@@ -97,6 +97,7 @@ const NavBar = () => {
             </ul>
           </div>
         </div>
+        {/* <span>Lolita Garnier Doula - Bordeaux CUB & Bassin</span> */}
       </nav>
     </div>
   );

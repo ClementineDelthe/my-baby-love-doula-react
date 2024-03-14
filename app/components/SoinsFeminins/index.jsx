@@ -1,6 +1,10 @@
 "use client";
 import Image from "next/image";
-import Bain1 from "../../assets/massage-bebe3.jpg";
+import MassageFemmeEnceinte from "../../assets/massage-ventre.jpg";
+import MassagePostNatal from "../../assets/massage-dos6.jpg";
+import MassageDeesse from "../../assets/massage-deesse.jpg";
+
+
 import { useState } from "react";
 
 const SoinsFeminins = () => {
@@ -18,21 +22,21 @@ const SoinsFeminins = () => {
   const soinsfeminins = [
     {
       // image: `${baseSrc}massage-bebe3.jpg`,
-      image: Bain1,
+      image: MassageFemmeEnceinte,
       title: "Massage femme enceinte ",
       sentence: "première phrase",
       description:
         "Massage enveloppant redessinant le contour du corps qui évolue. Je m'adapte à votre état et physionomie pour vous procurer détente et connexion avec votre corps et votre bébé.",
     },
     {
-      image: Bain1,
+      image: MassagePostNatal,
       title: "Massage postnatal",
       sentence: "première phrase",
       description:
         "Massage ressourçant, permet de prendre un temps pour soi, de se réapproprier son corps, réinvestir le vécu de la grossesse et de l'accouchement. Se clôture par un resserrage du bassin.",
     },
     {
-      image: Bain1,
+      image: MassageDeesse,
       title: "Massage déesse",
       sentence: "première phrase",
       description:

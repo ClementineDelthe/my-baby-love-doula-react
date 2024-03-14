@@ -1,7 +1,13 @@
 "use client";
 import Image from "next/image";
-import Bain1 from "../../assets/massage-bebe3.jpg";
+import BainSensoriel from "../../assets/bain-sensoriel2.jpg";
+import MassageBebe from "../../assets/massage-bebe11.jpg";
+import SoulagerMaux from "../../assets/massage-bebe7.jpg";
+import MassageYogaBambin from "../../assets/massage-bebe4.jpg";
+
+
 import { useState } from "react";
+import Link from "next/link";
 
 const SoinsBebe = () => {
   const baseSrc = "/img/";
@@ -18,7 +24,7 @@ const SoinsBebe = () => {
   const soinsbebe = [
     {
       // image: `${baseSrc}massage-bebe3.jpg`,
-      image: Bain1,
+      image: BainSensoriel,
       title: "Rituel du bain sensoriel",
       prix: "2h 120€",
       sentence: "première phrase",
@@ -26,7 +32,7 @@ const SoinsBebe = () => {
         "Instants de détente absolue et d'émotions pour votre bébé et vous. Vous permet de créer du lien et de prendre confiance dans votre rôle. Le bain enveloppé est réalisé ensemble afin que vous puissiez vous l'approprier et le reproduire. Plusieurs outils vous seront présentés pour vous accompagner dans votre parentalité.",
     },
     {
-      image: Bain1,
+      image: MassageBebe,
       title: "Massage bébé",
       prix: "1h 55€",
       sentence: "première phrase",
@@ -34,7 +40,7 @@ const SoinsBebe = () => {
         "Découvrir son bébé autrement. Moment de découverte et de douceur familiale. Vous apprendrez les gestes pour apaiser bébé et embellirez votre connexion par le toucher.",
     },
     {
-      image: Bain1,
+      image: SoulagerMaux,
       title: "Soulager les maux de bébé",
       prix: "1h 55€",
       sentence: "première phrase",
@@ -42,7 +48,7 @@ const SoinsBebe = () => {
         "Permet de libérer votre tout petit de certains maux. Votre enfant est imprégné de tensions liées à son développement. Vous serez en mesure de reproduire les gestes pour le soulager. ",
     },
     {
-      image: Bain1,
+      image: MassageYogaBambin,
       title: "Massage/Yoga bambin ",
       prix: "1h 60€",
       sentence: "première phrase",
@@ -97,6 +103,7 @@ const SoinsBebe = () => {
               </div>
             </div>
           ))}
+          <Link href="#formules">Voir les formules</Link>
         </div>
       </div>
     </div>

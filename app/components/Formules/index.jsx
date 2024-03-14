@@ -78,7 +78,7 @@ const Formules = () => {
   const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
 
   return (
-    <div id="soins" className="bg-[#F2F3F5] contain">
+    <div id="formules" className="bg-[#F2F3F5] contain">
       {/* <div className="flex flex-wrap justify-around columns-3	p-2 min-h-screen"> */}
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-4	p-2 min-h-screen place-items-center">

@@ -2,8 +2,10 @@ import { Wrapper, Status } from "@googlemaps/react-wrapper";
 import Image from "next/image";
 import Link from "next/link";
 import LogoLolita from "../../assets/Lolita_Doula.png";
+import PresentationRounded from "../../assets/presentation-contact.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
@@ -40,11 +42,11 @@ const Contact = () => {
               <a href="#navbar" class="flex items-center">
 
                 <Image
-                  src={LogoLolita}
+                  src={PresentationRounded}
                   alt="Logo"
                   width={32}
                   height={32}
-                  className="rounded"
+                  className="rounded-full"
                 />
                 {/* <Image src="" alt="logo" width={32} height={32}></Image>
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
@@ -55,7 +57,7 @@ const Contact = () => {
             <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
                 <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                  Contactez moi
+                  Contacte moi
                 </h2>
                 <ul class="text-gray-500 dark:text-gray-400 font-medium">
                   <li class="mb-4">
@@ -67,7 +69,7 @@ const Contact = () => {
                         icon={faEnvelope}
                         style={{ color: "#00000f" }}
                       />
-                      &nbsp;mybabylovedoula@gmail.com
+                      &nbsp;mybabylove.doula@gmail.com
                     </a>
                   </li>
                   <li class="mb-4">
@@ -79,7 +81,7 @@ const Contact = () => {
                       &nbsp;07 82 38 40 03
                     </a>
                   </li>
-                  <li>
+                  <li className="mb-4">
                     <a
                       href="https://www.instagram.com/mybabylove_doula/"
                       class="hover:underline "
@@ -89,6 +91,18 @@ const Contact = () => {
                         style={{ color: "#00000f" }}
                       />
                       &nbsp;mybabylove_doula
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/mybabylove_doula/"
+                      class="hover:underline "
+                    >
+                      <FontAwesomeIcon
+                        icon={faFacebook}
+                        style={{ color: "#00000f" }}
+                      />
+                      &nbsp;My Baby Love Doula
                     </a>
                   </li>
                 </ul>
@@ -115,7 +129,7 @@ const Contact = () => {
               </div>
               <div>
                 <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                  Retrouvez moi
+                  Retrouve moi
                 </h2>
                 <ul class="text-gray-500 dark:text-gray-400 font-medium">
                   <li class="mb-4">

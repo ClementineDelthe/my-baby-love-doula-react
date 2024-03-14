@@ -2,11 +2,15 @@
 
 const Tarifs = () => {
   const tarifs = [
-    { nom: "Massage prénatal", prix: "160" },
-    { nom: "Massage post natal", prix: "150" },
-    { nom: "Massage bébé", prix: "125" },
-    { nom: "Massage Rebozo", prix: "375" },
-    { nom: "Bain Sensoriel", prix: "145" },
+    { nom: "Massage Femme Enceinte", prix: "120" },
+    { nom: "Massage Postnatal", prix: "120" },
+    { nom: "Massage Déesse", prix: "120" },
+    { nom: "Douceur du Rebozo", prix: "60" },
+    { nom: "Rituel autour du Rebozo", prix: "250" },
+    { nom: "Rituel du Bain Sensoriel®️", prix: "120" },
+    { nom: "Massage bébé", prix: "55" },
+    { nom: "Soulager les maux de bébé", prix: "55" },
+    { nom: "Massage/Yoga bambin", prix: "60" },
   ];
 
   return (

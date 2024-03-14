@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
-import Bain1 from "../../assets/massage-bebe3.jpg";
+import RituelRebozo from "../../assets/rebozo-serrage3.jpg";
+import DouceurRebozo from "../../assets/douceur-rebozo.jpg";
+
 import { useState } from "react";
 
 const SoinsRebozo = () => {
@@ -18,7 +20,7 @@ const SoinsRebozo = () => {
   const soinsrebozo = [
     {
       // image: `${baseSrc}massage-bebe3.jpg`,
-      image: Bain1,
+      image: DouceurRebozo,
       title: "Douceur du rébozo",
       prix: "1h 60€",
       sentence: "première phrase",
@@ -26,7 +28,7 @@ const SoinsRebozo = () => {
         "En postpartum immédiat, avec votre bébé, je vous fais un massage des jambes, ainsi qu'un bain de pieds. Je réalise un serrage du bassin. Un bercement sera proposé pour clôturer le soin. À votre écoute, je vous laisse déposer votre histoire et vous apporte toute ma douceur et empathie.",
     },
     {
-      image: Bain1,
+      image: RituelRebozo,
       title: "Rituel autour du rebozo ",
       prix: "3h 250€",
       sentence: "première phrase",

@@ -1,13 +1,13 @@
 "use client";
 import Image from "next/image";
-import Bain1 from "../../assets/massage1.jpg";
+import SoinBebe from "../../assets/massage-bebe12.jpg";
 import BainSensoriel1 from "../../assets/bain-sensoriel-lolita.jpg";
-import BainSensoriel2 from "../../assets/bain-sensoriel1.jpg";
-import MassageBebe4 from "../../assets/massage-bebe4.jpg";
-import BebeZoom from "../../assets/bebe-zoom.jpg";
-import Massage2 from "../../assets/massage2.jpg";
-import Massage3 from "../../assets/massage3.jpg";
-import MassageBebe1 from "../../assets/massage_bebe1.jpg";
+import Massage4Mains from "../../assets/massage-4mains.jpg";
+import MassageNuque from "../../assets/massage-nuque.jpg";
+import MassageBebe from "../../assets/massage-bebe3.jpg";
+import Massage2 from "../../assets/bebe-zoom.jpg";
+import RituelRebozo from "../../assets/rebozo-serrage.jpg";
+import MassageVentre from "../../assets/massage-ventre-zoom.jpg";
 
 const Gallery = () => {
   return (
@@ -17,8 +17,8 @@ const Gallery = () => {
           <div className="grid gap-4">
             <div className="">
               <Image
-                src={Bain1}
-                alt="bain sensoriel"
+                src={MassageBebe}
+                alt="Soin"
                 width={700}
                 height={600}
                 className="h-auto max-w-full rounded-lg"
@@ -26,8 +26,8 @@ const Gallery = () => {
             </div>
             <div className="">
               <Image
-                src={BebeZoom}
-                alt="Soin"
+                src={SoinBebe}
+                alt="bain sensoriel"
                 width={700}
                 height={600}
                 className="h-auto max-w-full rounded-lg"
@@ -46,7 +46,7 @@ const Gallery = () => {
           <div className="grid gap-4">
             <div className="">
               <Image
-                src={Massage3}
+                src={RituelRebozo}
                 alt="Icone Femme"
                 width={700}
                 height={600}
@@ -75,7 +75,7 @@ const Gallery = () => {
           <div className="grid gap-4">
             <div className="">
               <Image
-                src={BainSensoriel2}
+                src={Massage4Mains}
                 alt="Icone Femme"
                 width={500}
                 height={400}
@@ -104,7 +104,7 @@ const Gallery = () => {
           <div className="grid gap-4">
             <div className="">
               <Image
-                src={MassageBebe1}
+                src={MassageVentre}
                 alt="Bain Sensoriel"
                 width={700}
                 height={600}
@@ -113,7 +113,7 @@ const Gallery = () => {
             </div>
             <div className="">
               <Image
-                src={MassageBebe4}
+                src={MassageNuque}
                 alt="Icone Femme"
                 width={700}
                 height={600}
