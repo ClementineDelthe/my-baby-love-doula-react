@@ -16,6 +16,7 @@ import SoinsFeminins from "./components/SoinsFeminins";
 import SoinsRebozo from "./components/SoinsRebozo";
 import SoinsBebe from "./components/SoinsBebe";
 import Formules from "./components/Formules";
+import Wave from "./components/Wave";
 config.autoAddCss = false;
 
 
@@ -27,16 +28,17 @@ export default function Home() {
       <BackToTopButton />
       <NavBar />
       <Description />
-      <Infos />
+      {/* <Infos /> */}
       {/* <Clem /> */}
       <SoinsFeminins />
+      <Wave />
       <SoinsRebozo />
       <SoinsBebe />
       <Formules />
       {/* <Soins /> */}
       <Gallery />
       <Tarifs />
-      <Marques />
+      {/* <Marques /> */}
       <Contact />
       <Footer />
 

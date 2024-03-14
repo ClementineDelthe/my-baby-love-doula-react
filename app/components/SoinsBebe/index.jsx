@@ -5,7 +5,6 @@ import MassageBebe from "../../assets/massage-bebe11.jpg";
 import SoulagerMaux from "../../assets/massage-bebe7.jpg";
 import MassageYogaBambin from "../../assets/massage-bebe4.jpg";
 
-
 import { useState } from "react";
 import Link from "next/link";
 
@@ -57,52 +56,58 @@ const SoinsBebe = () => {
     },
   ];
   return (
-    <div className="bg-[#f3e9e7]">
-      <div className="w-full max-w-4xl mx-auto px-4">
+    <div className="bg-[#f3e9e7] min-h-[1050px]">
+      <div className="max-w-6xl mx-auto px-4">
         <div className="space-y-2 py-6">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tight">Soins Bébé</h2>
+            <h2 className="text-3xl font-bold tracking-tight pb-2">
+              Soins Bébé
+            </h2>
           </div>
-          {soinsbebe.map((soin, index) => (
-            <div
-              key={index}
-              className="flex border border-[#fff] rounded-lg p-6 mb-2 bg-[#F2F3F5]"
-            >
-              <div>
-                <Image
-                  src={soin.image}
-                  alt={soin.title}
-                  width={100}
-                  height={100}
-                  className="rounded"
-                />
-              </div>
-              <div className="p-4 text-right w-full">
-                <h3 className="pb-2">{soin.title}</h3>
-                {showDescription[index] ? (
-                  <div>
-                    <p className="pb-2">{soin.description}</p>
-                    <button
-                      onClick={() => toggleDescription(index)}
-                      className="rounded-lg border py-1 px-2"
-                    >
-                      Voir moins
-                    </button>
+          <div className="w-fit mx-auto flex flex-wrap justify-center gap-y-20 gap-x-14 mt-10 mb-5">
+            {soinsbebe.map((soin, index) => (
+              <div
+                key={index}
+                className="border border-[#fff] rounded-lg p-6 mb-2 bg-[#F2F3F5] w-80 relative flex-shrink-0"
+              >
+                <div className="p-4 flex flex-col  justify-between items-center text-center">
+                  <div className="w-36 h-56">
+                    <Image
+                      src={soin.image}
+                      alt={soin.title}
+                      width={100}
+                      height={100}
+                      className="object-cover w-full h-full rounded-full shadow-2xl shadow-black"
+                    />
                   </div>
-                ) : (
-                  <div>
-                    <p className="pb-2">{soin.sentence}</p>
-                    <button
-                      onClick={() => toggleDescription(index)}
-                      className="rounded-lg border py-1 px-2"
-                    >
-                      Voir plus
-                    </button>
+                  <div className="py-2 ">
+                    <h3 className="pb-2 font-bold">{soin.title}</h3>
+                    {showDescription[index] ? (
+                      <div>
+                        <p className="pb-2">{soin.description}</p>
+                        <button
+                          onClick={() => toggleDescription(index)}
+                          className="text-sm rounded-full py-2 px-3 absolute bottom-1 right-1 border border-[#fff] bg-[#f3e8e6] hover:bg-transparent"
+                        >
+                          -
+                        </button>
+                      </div>
+                    ) : (
+                      <div>
+                        <p className="pb-2">{soin.sentence}</p>
+                        <button
+                          onClick={() => toggleDescription(index)}
+                          className="text-sm rounded-full py-2 px-3 absolute bottom-1 right-1 border border-[#fff] bg-[#f3e8e6] hover:bg-transparent"
+                        >
+                          +
+                        </button>
+                      </div>
+                    )}
                   </div>
-                )}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
           <Link href="#formules">Voir les formules</Link>
         </div>
       </div>
