@@ -56,7 +56,7 @@ const NavBar = () => {
               </li>
               <li>
                 <a
-                  href="#soins"
+                  href="#soins-feminins"
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Les soins
@@ -78,14 +78,14 @@ const NavBar = () => {
                   Tarifs
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="#marques"
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Partenaires
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
                   href="#contact"

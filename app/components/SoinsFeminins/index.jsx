@@ -44,7 +44,7 @@ const SoinsFeminins = () => {
     },
   ];
   return (
-    <div className="bg-[#f3e9e7] min-h-[700px]">
+    <div id="soins-feminins" className="bg-[#f3e9e7] min-h-[700px]">
       <div className="max-w-6xl mx-auto px-4">
         <div className="space-y-2 py-6">
           <div className="space-y-2">

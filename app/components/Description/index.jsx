@@ -8,7 +8,7 @@ import ImagePresentationBW from "../../assets/portrait-bw.jpg"
 
 const Description = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-[#f3e9e7] border-b border-[#F2F3F5]">
+    <div id="apropos" className="flex items-center justify-center min-h-screen bg-[#f3e9e7] border-b border-[#F2F3F5]">
       <div className="relative">
         <div className="absolute md:top-20 sm:top-14 right-10 mr-1 self-center md:w-2/4 justify-between p-10 bg-light-pink-bg rounded-bl-lg rounded-tr-lg z-10">
           <div>
