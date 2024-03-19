@@ -31,7 +31,7 @@ export default function Home() {
       {/* <Infos /> */}
       {/* <Clem /> */}
       <SoinsFeminins />
-      <Wave />
+      {/* <Wave /> */}
       <SoinsRebozo />
       <SoinsBebe />
       <Formules />

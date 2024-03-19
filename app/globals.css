@@ -25,3 +25,13 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+
+@layer components {
+  .button {
+    @apply px-4 py-2 bg-[#f3e8e6] border border-[#fff] rounded-full cursor-pointer hover:shadow-lg active:scale-95 active:bg-[#F2F3F5] transition transform duration-100 ease-out
+  }
+
+  .button-white {
+    @apply px-4 py-2 bg-[#F2F3F5] border border-[#fff] rounded-full cursor-pointer hover:shadow-lg hover:scale-105 active:scale-95 active:bg-[#f3e8e6] transition transform duration-100 ease-out
+  }
+}

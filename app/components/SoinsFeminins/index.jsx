@@ -5,6 +5,7 @@ import MassagePostNatal from "../../assets/massage-dos6.jpg";
 import MassageDeesse from "../../assets/massage-deesse.jpg";
 
 import { useState } from "react";
+import Link from "next/link";
 
 const SoinsFeminins = () => {
   const baseSrc = "/img/";
@@ -22,7 +23,7 @@ const SoinsFeminins = () => {
     {
       // image: `${baseSrc}massage-bebe3.jpg`,
       image: MassageFemmeEnceinte,
-      title: "Massage femme enceinte ",
+      title: "Massage femme enceinte",
       sentence: "Massage enveloppant redessinant le contour du corps qui évolue.",
       description:
         "Massage enveloppant redessinant le contour du corps qui évolue. Je m'adapte à votre état et physionomie pour vous procurer détente et connexion avec votre corps et votre bébé.",
@@ -65,7 +66,8 @@ const SoinsFeminins = () => {
             {soinsfeminins.map((soin, index) => (
               <div
                 key={index}
-                className="border border-[#fff] rounded-lg p-6 mb-2 bg-[#F2F3F5] w-80 relative flex-shrink-0"
+                className={`border border-[#fff] rounded-lg p-6 mb-2 bg-[#F2F3F5] w-80 relative flex-shrink-0 ${showDescription[index] ? '' : 'max-h-[450px]' }`}
+                style={{ transform: showDescription[index] ? 'scale(1.05)' : 'scale(1)' }}
               >
                 <div className="p-4 flex flex-col  justify-between items-center text-center">
                   <div className="w-36 h-56">
@@ -82,6 +84,7 @@ const SoinsFeminins = () => {
                     {showDescription[index] ? (
                       <div>
                         <p className="pb-2">{soin.description}</p>
+                        <span className="font-light text-xs">{soin.prix}</span>
                         <button
                           onClick={() => toggleDescription(index)}
                           className="text-sm rounded-full py-2 px-3 absolute bottom-1 right-1 border border-[#fff] bg-[#f3e8e6] hover:bg-transparent"
@@ -105,6 +108,8 @@ const SoinsFeminins = () => {
               </div>
             ))}
           </div>
+          <br></br>
+          <Link href="#formules" className="button">Voir les formules</Link>
         </div>
       </div>
     </div>
