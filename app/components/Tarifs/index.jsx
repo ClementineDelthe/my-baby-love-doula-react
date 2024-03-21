@@ -52,7 +52,7 @@ const Tarifs = () => {
               <div
                 key={index}
                 className={`bg-[#F2F3F5] rounded-full cursor-pointer ${
-                  selectedCategory === index ? "z-50" : ""
+                  selectedCategory === index ? "z-40" : ""
                 }`}
                 onClick={() => selectCategory(index)}
               >
