@@ -19,6 +19,7 @@ import Formules from "./components/Formules";
 import Wave from "./components/Wave";
 import NavBar2 from "./components/NavBAr2";
 import NavClem from "./components/NavClem";
+import Formules2 from "./components/Formules2";
 config.autoAddCss = false;
 
 
@@ -39,6 +40,7 @@ export default function Home() {
       <SoinsRebozo />
       <SoinsBebe />
       <Formules />
+      {/* <Formules2 /> */}
       {/* <Soins /> */}
       <Gallery />
       <Tarifs />

@@ -11,7 +11,7 @@ import MassageVentre from "../../assets/massage-ventre-zoom.jpg";
 
 const Gallery = () => {
   return (
-    <div id="gallery" className="bg-[#F2F3F5] py-4">
+    <div id="gallery" className="bg-[#F2F3F5] py-12">
       <div className="contain max-w-7xl mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="grid gap-4">

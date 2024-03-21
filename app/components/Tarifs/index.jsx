@@ -11,9 +11,9 @@ import { useState } from "react";
 
 const Tarifs = () => {
   const categories = [
-    { nom: "Soins Féminins", img: SoinFeminin },
-    { nom: "Soins et Rebozo", img: SoinRebozo },
-    { nom: "Soins bébé", img: SoinBebe },
+    { nom: "Féminin", img: SoinFeminin },
+    { nom: "Rebozo", img: SoinRebozo },
+    { nom: "Bébé", img: SoinBebe },
   ];
   const tarifsFeminins = [
     { nom: "Massage Femme Enceinte", prix: "120" },
@@ -65,7 +65,7 @@ const Tarifs = () => {
 
                   "
                 />
-                <h3 className="text-center">{cat.nom}</h3>
+                <h3 className="text-center text-sm md:text-base">{cat.nom}</h3>
               </div>
             ))}
           </div>
