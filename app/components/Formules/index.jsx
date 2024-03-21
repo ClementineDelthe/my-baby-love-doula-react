@@ -24,8 +24,11 @@ const Formules = () => {
     },
   ];
   return (
-    <div className="bg-[#F2F3F5] min-h-96 flex items-center">
+    <div id="formules" className="bg-[#F2F3F5] min-h-[550px] flex items-center">
       <div className="max-w-7xl mx-auto">
+      <h2 className="text-3xl font-bold tracking-tight pt-10">
+          Formules
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-1 my-12 text-[#3f3a36]">
           {formules.map((formule, index) => (
             <div key={index} className="max-w-80 bg-[#f3e9e7] p-2 rounded-lg">
