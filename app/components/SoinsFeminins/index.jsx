@@ -58,7 +58,7 @@ const SoinsFeminins = () => {
               dans un cadre bienveillant autour d&apos;une tisane et d&apos;un
               bain de pieds aux plantes.
             </p>
-            <p className="font-bold pb-4">
+            <p className="text-sm pb-4">
               Rituel de 2H-2H30 dont 1H30 de massage - 120€*
             </p>
           </div>
@@ -69,7 +69,7 @@ const SoinsFeminins = () => {
                 className={`border border-[#fff] rounded-lg p-6 mb-2 bg-[#F2F3F5] w-80 relative flex-shrink-0 ${showDescription[index] ? '' : 'max-h-[450px]' }`}
                 style={{ transform: showDescription[index] ? 'scale(1.05)' : 'scale(1)' }}
               >
-                <div className="p-4 flex flex-col  justify-between items-center text-center">
+                <div className="p-2 flex flex-col  justify-between items-center text-center">
                   <div className="w-36 h-56">
                     <Image
                       src={soin.image}

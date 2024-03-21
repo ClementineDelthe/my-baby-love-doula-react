@@ -4,7 +4,9 @@ import LogoLolita from "../../assets/Lolita_Doula.png";
 
 const NavBar = () => {
   return (
-    <div id="navbar">
+    <div
+    // id="navbar"
+    >
       <nav class=" text-[#3f3a36] border-b-2 border-[#fff]">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <div class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -15,7 +17,7 @@ const NavBar = () => {
               height={32}
               className="rounded"
             />
-            <span class="self-center text-2xl font-semibold whitespace-nowrap ">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap">
               My Baby Love Doula
             </span>
           </div>

@@ -56,7 +56,7 @@ const SoinsBebe = () => {
     },
   ];
   return (
-    <div className="bg-[#f3e9e7] min-h-[1050px]">
+    <div id="soins-bebe" className="bg-[#f3e9e7] min-h-[1050px]">
       <div className="max-w-6xl mx-auto px-4">
         <div className="space-y-2 py-6">
           <div className="space-y-2">

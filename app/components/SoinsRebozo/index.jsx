@@ -76,7 +76,7 @@ const SoinsRebozo = () => {
     },
   ];
   return (
-    <div className="bg-[#F2F3F5] min-h-[600px]">
+    <div id="soins-rebozo" className="bg-[#F2F3F5] min-h-[600px]">
       <div className="max-w-6xl mx-auto px-4">
         <div className="space-y-2 py-6">
           <div className="space-y-2">
@@ -92,7 +92,7 @@ const SoinsRebozo = () => {
                 className={`border border-[#fff] rounded-lg p-6 mb-2 bg-[#f3e8e6] w-80 relative ${expandedCard === index ? '' : 'max-h-[450px]'}`}
                 style={{ transform: expandedCard === index ? 'scale(1.05)' : 'scale(1)' }}
               >
-                <div className="p-4 flex flex-col  justify-between items-center text-center">
+                <div className="p-2 flex flex-col flex-grow justify-between items-center text-center">
                   <div className="w-36 h-56">
                     <Image
                       src={soin.image}

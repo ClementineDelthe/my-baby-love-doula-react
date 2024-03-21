@@ -17,6 +17,8 @@ import SoinsRebozo from "./components/SoinsRebozo";
 import SoinsBebe from "./components/SoinsBebe";
 import Formules from "./components/Formules";
 import Wave from "./components/Wave";
+import NavBar2 from "./components/NavBAr2";
+import NavClem from "./components/NavClem";
 config.autoAddCss = false;
 
 
@@ -26,7 +28,9 @@ export default function Home() {
   return (
     <div>
       <BackToTopButton />
-      <NavBar />
+      {/* <NavBar /> */}
+      {/* <NavBar2 /> */}
+      <NavClem />
       <Description />
       {/* <Infos /> */}
       {/* <Clem /> */}

@@ -16,6 +16,8 @@ import IconSoin2 from "../../assets/icon_soin2.png";
 import IconSoin3 from "../../assets/icon_soin3.png";
 import IconSoin4 from "../../assets/icon_soin4.png";
 import Image from "next/image";
+import { StarIcon } from "@heroicons/react/24/solid";
+
 
 const Formules = () => {
   const [iconStates, setIconStates] = useState([
@@ -80,7 +82,10 @@ const Formules = () => {
   return (
     <div id="formules" className="bg-[#F2F3F5] contain">
       {/* <div className="flex flex-wrap justify-around columns-3	p-2 min-h-screen"> */}
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-3xl font-bold tracking-tight pt-10">
+          Formules
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-4	p-2 min-h-screen place-items-center">
           {iconContent.map((icon, index) => (
             <div

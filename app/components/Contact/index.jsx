@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import LogoLolita from "../../assets/Lolita_Doula.png";
 import PresentationRounded from "../../assets/presentation-contact.jpg";
+import Portrait from "../../assets/portrait-zoomout.jpg";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
@@ -42,11 +44,11 @@ const Contact = () => {
               <a href="#navbar" class="flex items-center">
 
                 <Image
-                  src={PresentationRounded}
+                  src={Portrait}
                   alt="Logo"
-                  width={32}
-                  height={32}
-                  className="rounded-full"
+                  width={130}
+                  height={300}
+                  className="rounded-lg"
                 />
                 {/* <Image src="" alt="logo" width={32} height={32}></Image>
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
