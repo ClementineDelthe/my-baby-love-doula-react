@@ -113,7 +113,7 @@ const NavClem = () => {
             </div>
           </div>
         </div>
-        <p className="hidden md:block lg:block text-sm px-4 mx-auto lg:max-w-7xl md:px-8 py-0">
+        <p className="hidden md:block lg:block text-sm pb-4 mx-auto lg:max-w-7xl md:px-8">
           Lolita Garnier Doula - Practicienne en Soins Féminité & Soins Bébé -
           Bordeaux & Lège Cap Ferret
         </p>
