@@ -1,10 +1,24 @@
 import Image from "next/image";
-import Portrait from "../../assets/portrait.jpg";
+// import Portrait from "../../assets/portrait.jpg";
+import { Send_Flowers } from "next/font/google";
+import { Alice } from "next/font/google";
+import Portrait from "../../assets/portrait-zoomout.jpg";
+
+
+
+const sendFlowers = Send_Flowers({
+  subsets: ['latin'],
+  weight: ['400'],
+});
+const alice = Alice({
+  subsets: ['latin'],
+  weight: ['400'],
+});
 
 const Apropos = () => {
   return (
     <div id="apropos">
-      <main class="relative min-h-screen bg-light-pink-bg py-14">
+      <main class="relative min-h-screen bg-[#FFE8D6] py-14">
         <section class="md:flex items-center justify-center relative z-10 min-h-screen">
           <article>
             <div class="relative">
@@ -15,13 +29,12 @@ const Apropos = () => {
                 height={600}
                 className="h-auto max-w-full rounded-lg"
               />
-              <div class="md:rounded-l-[30px] md:rounded-t-[30px] bg-[#f3e9e7] md:absolute -bottom-16 -right-48 md:w-[19rem] px-8 py-6 md:h-[550px] shadow text-[#3f3a36]">
+              <div class="md:rounded-l-[30px] md:rounded-t-[30px] bg-[#FCD5CE] md:absolute -bottom-16 -right-48 md:w-[19rem] px-8 py-6 md:h-[550px] shadow text-[#3f3a36]">
                 {/* <span class="inline-block text-sm text-gray-500">
                   13. Oct, 2019
                 </span> */}
-                <h2 class="text-2xl font-bold leading-tight mt-1.5 mb-2.5">
-                  {/* USPI/Tenet <br /> Surgery Center */}
-                  LOLITA GARNIER
+                <h2 class={`${sendFlowers.className} text-2xl font-bold leading-tight mt-1.5 mb-2.5`}>
+                  Lolita Garnier
                 </h2>
                 {/* <a
                   href="#"
@@ -29,7 +42,7 @@ const Apropos = () => {
                 >
                   new article
                 </a> */}
-                <p class="text-gray-800 text-sm my-7 leading-relaxed">
+                <p class="text-gray-800 text-sm mt-7 mb-4 leading-relaxed">
                   Passionnée par le soin et prendre soin, j&apos;ai été infirmière en
                   chirurgie cancérologique pendant 7 ans. Maman de deux enfants,
                   j&apos;ai compris la nécessité et le besoin d&apos;apporter plus de
@@ -42,15 +55,15 @@ const Apropos = () => {
                 </p>
                 <a
                   href="#soins-feminins"
-                  class="flex justify-end items-center uppercase text-blue-800 font-semibold text-sm hover:underline"
+                  class={`${alice.className} flex justify-end items-center uppercase font-semibold text-sm hover:underline`}
                 >
-                  <span class="mr-4 block w-10 h-0.5 bg-blue-800"></span>Découvrir
+                  Découvrir
                 </a>
               </div>
             </div>
           </article>
         </section>
-        <div class="bg-[#F2F3F5] absolute bottom-0 w-full h-[30vh] rounded-tr-[17rem]"></div>
+        <div class="bg-[#FCD5CE] absolute bottom-0 w-full h-[30vh] rounded-tr-[17rem]"></div>
       </main>
     </div>
   );

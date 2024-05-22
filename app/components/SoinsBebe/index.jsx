@@ -7,7 +7,18 @@ import MassageYogaBambin from "../../assets/massage-bebe4.jpg";
 
 import { useState } from "react";
 import Link from "next/link";
+import { Send_Flowers } from "next/font/google";
+import { Alice } from "next/font/google";
 
+
+const sendFlowers = Send_Flowers({
+  subsets: ['latin'],
+  weight: ['400'],
+});
+const alice = Alice({
+  subsets: ['latin'],
+  weight: ['400'],
+});
 const SoinsBebe = () => {
   const baseSrc = "/img/";
 
@@ -56,11 +67,11 @@ const SoinsBebe = () => {
     },
   ];
   return (
-    <div id="soins-bebe" className="bg-[#f3e9e7] min-h-[1050px]">
-      <div className="max-w-6xl mx-auto px-4">
+    <div id="soins-bebe" className="bg-[#FFE8D6] min-h-[1050px]">
+      <div className="px-4">
         <div className="space-y-2 py-6">
-          <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tight pb-2">
+          <div className="max-w-6xl mx-auto space-y-2">
+            <h2 className={`${sendFlowers.className} text-3xl font-bold tracking-tight pb-2 text-[#DD2D4A]`}>
               Soins Bébé
             </h2>
           </div>
@@ -68,38 +79,38 @@ const SoinsBebe = () => {
             {soinsbebe.map((soin, index) => (
               <div
                 key={index}
-                className={`border border-[#fff] rounded-lg p-6 mb-2 bg-[#F2F3F5] w-80 relative flex-shrink-0 ${showDescription[index] ? '' : 'max-h-[450px]' }`}
+                className={`border border-[#fff] rounded-lg p-6 mb-2 bg-[#FCD5CE] w-96 relative flex-shrink-0 ${showDescription[index] ? '' : 'max-h-[450px]' }`}
                 style={{ transform: showDescription[index] ? 'scale(1.05)' : 'scale(1)' }}
               >
-                <div className="p-4 flex flex-col  justify-between items-center text-center">
+                <div className="py-4 flex flex-col justify-between items-center text-center">
                   <div className="w-36 h-56">
                     <Image
                       src={soin.image}
                       alt={soin.title}
                       width={100}
                       height={100}
-                      className="object-cover w-full h-full rounded-full shadow-2xl shadow-black"
+                      className="object-cover w-full h-full shadow-2xl shadow-black"
                     />
                   </div>
                   <div className="py-2 ">
-                    <h3 className="pb-2 font-bold">{soin.title}</h3>
+                    <h3 className={`${sendFlowers.className} pb-2 font-bold text-[#DD2D4A]`}>{soin.title}</h3>
                     {showDescription[index] ? (
                       <div>
                         <p className="pb-2">{soin.description}</p>
-                        <span className="font-light text-xs">{soin.prix}</span>
+                        <span className={`${alice.className} font-light text-xs`}>{soin.prix}</span>
                         <button
                           onClick={() => toggleDescription(index)}
-                          className="text-sm rounded-full py-2 px-3 absolute bottom-1 right-1 border border-[#fff] bg-[#f3e8e6] hover:bg-transparent"
+                          className="text-sm rounded-full py-2 px-3 absolute bottom-1 right-1 border border-[#fff] bg-[#FFE8D6] hover:bg-transparent"
                         >
                           -
                         </button>
                       </div>
                     ) : (
                       <div>
-                        <p className="pb-2">{soin.sentence}</p>
+                        {/* <p className="pb-2">{soin.sentence}</p> */}
                         <button
                           onClick={() => toggleDescription(index)}
-                          className="text-sm rounded-full py-2 px-3 absolute bottom-1 right-1 border border-[#fff] bg-[#f3e8e6] hover:bg-transparent"
+                          className="text-sm rounded-full py-2 px-3 absolute bottom-1 right-1 border border-[#fff] bg-[#FFE8D6] hover:bg-transparent"
                         >
                           +
                         </button>
@@ -110,9 +121,12 @@ const SoinsBebe = () => {
               </div>
             ))}
           </div>
-          <p className="italic text-sm">*Une majoration peut s&apos;exercer en fonction du lieu d&apos;habitation et du jour du RDV</p>
-          <br></br>
-          <Link href="#formules" className="button-white">Voir les formules</Link>
+          <div className="max-w-6xl mx-auto">
+            <p className={`${alice.className} italic text-sm`}>*Une majoration peut s&apos;exercer en fonction du lieu d&apos;habitation et du jour du RDV</p>
+            <br></br>
+            <Link href="#formules" className={`${alice.className} button bg-[#FFE8D6]`}>Voir les formules</Link>
+
+          </div>
         </div>
       </div>
     </div>

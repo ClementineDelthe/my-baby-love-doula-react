@@ -4,6 +4,17 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import LogoLolita from "../../assets/Lolita_Doula.png";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { Send_Flowers } from "next/font/google";
+import { Alice } from "next/font/google";
+
+const sendFlowers = Send_Flowers({
+  subsets: ['latin'],
+  weight: ['400'],
+});
+const alice = Alice({
+  subsets: ['latin'],
+  weight: ['400'],
+});
 
 const NavClem = () => {
   const [navbar, setNavbar] = useState(false);
@@ -11,7 +22,7 @@ const NavClem = () => {
 
   return (
     <div>
-      <nav className="w-full bg-[#FFF] fixed top-0 left-0 right-0 z-50 text-[#3f3a36]">
+      <nav className="w-full bg-[#FCD5CE] fixed top-0 left-0 right-0 z-50 text-[#3f3a36]">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8 py-0">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -27,7 +38,7 @@ const NavClem = () => {
                   />
                 </Link>
                 {/* <h2 className="text-2xl text-cyan-600 font-bold ">LOGO</h2> */}
-                <h2 className="self-center text-2xl font-semibold whitespace-nowrap">
+                <h2 className={` ${sendFlowers.className} self-center text-2xl font-semibold whitespace-nowrap`}>
                   My Baby Love Doula
                 </h2>
               </div>
@@ -60,7 +71,7 @@ const NavClem = () => {
                 navbar ? "p-12 md:p-0 block" : "hidden"
               }`}
             >
-              <ul className="h-screen md:h-auto items-center justify-center md:flex  ">
+              <ul className={`${sendFlowers.className} h-screen md:h-auto items-center justify-center md:flex  `}>
                 <li className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0 md:hover:bg-transparent">
                   <Link
                     href="#apropos"
@@ -113,9 +124,9 @@ const NavClem = () => {
             </div>
           </div>
         </div>
-        <p className="hidden md:block lg:block text-sm pb-4 mx-auto lg:max-w-7xl md:px-8">
-          Lolita Garnier Doula - Practicienne en Soins Féminité & Soins Bébé -
-          Bordeaux & Lège Cap Ferret
+        <p className={`${alice.className} hidden md:block lg:block text-sm pb-4 mx-auto lg:max-w-7xl md:px-8`}>
+          Lolita,<br />
+          Doula et praticienne en soins féminins et bébé
         </p>
 
       </nav>

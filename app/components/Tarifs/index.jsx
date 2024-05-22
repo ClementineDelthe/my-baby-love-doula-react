@@ -41,8 +41,8 @@ const Tarifs = () => {
   };
 
   return (
-    <div className="bg-[#f3e9e7] py-6 border-b border-[#F2F3F5]">
-      <div id="tarifs" className="p-8 mx-auto my-5 max-w-7xl ">
+    <div id="tarifs" className="bg-[#FFE8D6] py-6 border-b border-[#F2F3F5]">
+      <div className="p-8 mx-auto my-5 max-w-7xl ">
         <h2 className="text-2xl font-semibold text-[#3f3a36] mb-10">
           Les tarifs
         </h2>

@@ -20,13 +20,28 @@ import NavClem from "./components/NavClem";
 import Formules from "./components/Formules";
 import Apropos from "./components/Apropos";
 config.autoAddCss = false;
+import { Comfortaa } from "next/font/google";
+import { Send_Flowers } from "next/font/google";
+import { Alice } from "next/font/google";
 
+const comfortaa = Comfortaa({
+  subsets: ['latin'],
+});
+
+const sendFlowers = Send_Flowers({
+  subsets: ['latin'],
+  weight: ['400'],
+});
+const alice = Alice({
+  subsets: ['latin'],
+  weight: ['400'],
+});
 
 
 
 export default function Home() {
   return (
-    <div>
+    <div id="total" className={comfortaa.className}>
       <BackToTopButton />
       {/* <NavBar /> */}
       <NavClem />
@@ -34,11 +49,13 @@ export default function Home() {
       <Apropos />
       {/* <Infos /> */}
       {/* <Clem /> */}
-      <SoinsFeminins />
-      {/* <Wave /> */}
-      <SoinsRebozo />
-      <SoinsBebe />
-      <Formules />
+      <div id="soins-all">
+        <SoinsFeminins />
+        {/* <Wave /> */}
+        <SoinsRebozo />
+        <SoinsBebe />
+        <Formules />
+      </div>
       {/* <Soins /> */}
       <Gallery />
       <Tarifs />

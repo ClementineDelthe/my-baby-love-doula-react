@@ -8,10 +8,11 @@ import MassageBebe from "../../assets/massage-bebe3.jpg";
 import Massage2 from "../../assets/bebe-zoom.jpg";
 import RituelRebozo from "../../assets/rebozo-serrage.jpg";
 import MassageVentre from "../../assets/massage-ventre-zoom.jpg";
+import Oracle from "../../assets/soin-oracle2.jpg"
 
 const Gallery = () => {
   return (
-    <div id="gallery" className="bg-[#F2F3F5] py-12">
+    <div id="gallery" className="bg-[#FCD5CE] py-12">
       <div className="contain max-w-7xl mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="grid gap-4">
@@ -26,8 +27,8 @@ const Gallery = () => {
             </div>
             <div className="">
               <Image
-                src={SoinBebe}
-                alt="bain sensoriel"
+                src={Oracle}
+                alt="Soin et Oracle"
                 width={700}
                 height={600}
                 className="h-auto max-w-full rounded-lg"

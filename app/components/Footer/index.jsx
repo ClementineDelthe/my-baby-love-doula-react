@@ -3,8 +3,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-[#f3e9e7] py-1">
-      <footer class="bg-white rounded-lg shadow m-4 bg-light-pink-bg">
+    <div className="bg-[#FFE8D6] py-1">
+      <footer class="bg-white rounded-lg shadow m-4 bg-[#FCD5CE]">
         <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
           <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             ©

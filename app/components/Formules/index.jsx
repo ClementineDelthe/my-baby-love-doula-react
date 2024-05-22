@@ -24,19 +24,17 @@ const Formules = () => {
     },
   ];
   return (
-    <div id="formules" className="bg-[#F2F3F5] min-h-[550px] flex items-center">
+    <div id="formules" className="bg-[#FCD5CE] min-h-[550px] flex items-center">
       <div className="max-w-7xl mx-auto">
       <h2 className="text-3xl font-bold tracking-tight pt-10">
           Formules
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-1 my-12 text-[#3f3a36]">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-1 my-12 text-[#3f3a36] align-middle">
           {formules.map((formule, index) => (
-            <div key={index} className="max-w-80 bg-[#f3e9e7] p-2 rounded-lg">
-              <h3 className="text-bold text-center py-4">{formule.title}</h3>
-              <div className="flex items-center justify-center min-h-32">
-                <p className="text-sm pr-1">{formule.prix}</p>
-                <p className="text-base border-l pl-2">{formule.description}</p>
-              </div>
+            <div key={index} className="max-w-80 bg-[#FFE8D6] py-9 px-3 rounded-lg flex flex-col justify-between items-center text-center min-h-[250px]">
+                <h3 className="text-bold text-center pb-2">{formule.title}</h3>
+                <p className="text-base">{formule.description}</p>
+                <p className="text-sm p-2">{formule.prix}</p>
             </div>
           ))}
         </div>

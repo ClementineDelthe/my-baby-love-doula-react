@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import LogoLolita from "../../assets/Lolita_Doula.png";
 import PresentationRounded from "../../assets/presentation-contact.jpg";
-import Portrait from "../../assets/portrait-zoomout.jpg";
+// import Portrait from "../../assets/portrait-zoomout.jpg";
+import Portrait from "../../assets/portrait.jpg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
@@ -15,7 +16,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   return (
-    <div id="contact" className="bg-[#f3e9e7]">
+    <div id="contact" className="bg-[#FFE8D6]">
       {/* <div>
         <h2>Me contacter</h2>
         <div>
@@ -41,8 +42,7 @@ const Contact = () => {
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
-              <a href="#navbar" class="flex items-center">
-
+              {/* <a href="#navbar" class="flex items-center"> */}
                 <Image
                   src={Portrait}
                   alt="Logo"
@@ -54,9 +54,9 @@ const Contact = () => {
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                   MBLD
                 </span> */}
-              </a>
+              {/* </a> */}
             </div>
-            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 ml-2">
               <div>
                 <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                   Contacte moi
@@ -97,7 +97,7 @@ const Contact = () => {
                   </li>
                   <li>
                     <a
-                      href="https://www.instagram.com/mybabylove_doula/"
+                      href="https://www.facebook.com/people/My-baby-love-doula/61551775324005/"
                       class="hover:underline "
                     >
                       <FontAwesomeIcon
@@ -140,6 +140,20 @@ const Contact = () => {
                     </Link>
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.124952567947!2d-0.5424504237519604!3d44.7782578789438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527e745720d09%3A0x2be563342a7d92c3!2sMy%20baby%20love%20-%20Doula!5e0!3m2!1sfr!2sfr!4v1707322023998!5m2!1sfr!2sfr"
+                      width="300"
+                      height="100"
+                      className="rounded-xl"
+                      allowFullScreen=""
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </li>
+                  <li class="mb-4">
+                    <Link href="https://www.google.com/maps/place/53+Av.+du+Truc+Vert,+33950+L%C3%A8ge-Cap-Ferret/@44.7259654,-1.2196288,17z/data=!3m1!4b1!4m5!3m4!1s0xd535f843c1d4777:0x4308683d18c0fe5!8m2!3d44.7259616!4d-1.2170539?entry=ttu">
+                      <p>Yellow Temple</p>
+                    </Link>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2834.6886557192593!2d-1.219628823754468!3d44.725965382391124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd535f843c1d4777%3A0x4308683d18c0fe5!2s53%20Av.%20du%20Truc%20Vert%2C%2033950%20L%C3%A8ge-Cap-Ferret!5e0!3m2!1sfr!2sfr!4v1713367133474!5m2!1sfr!2sfr"
                       width="300"
                       height="100"
                       className="rounded-xl"

@@ -16,6 +16,7 @@
   }
 }
 
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -24,6 +25,21 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+#soins-feminins {
+  background-image: url(../app/assets/bg1.png);
+  /* background-image: url(../app/assets/bg-vertical-2.png); */
+
+}
+/*  #gallery, #formules, */
+#soins-rebozo, #tarifs, #soins-bebe {
+  background-image: url(../app/assets/bg1-rotate.png);
+  /* background-image: url(../app/assets/bg-vertical-1.png); */
+
+}
+/* #soins-all {
+  background-image: url(../app/assets/bg1.png);
 } */
 
 @layer components {
