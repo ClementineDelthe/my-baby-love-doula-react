@@ -22,7 +22,7 @@ const NavClem = () => {
 
   return (
     <div>
-      <nav className="w-full bg-[#FCD5CE] fixed top-0 left-0 right-0 z-50 text-[#3f3a36]">
+      <nav className="w-full bg-rose-poudre fixed top-0 left-0 right-0 z-50 text-[#3f3a36]">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8 py-0">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -74,7 +74,7 @@ const NavClem = () => {
               <ul className={`${sendFlowers.className} h-screen md:h-auto items-center justify-center md:flex  `}>
                 <li className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0 md:hover:bg-transparent">
                   <Link
-                    href="#apropos"
+                    href="/"
                     onClick={() => [
                       setNavbar(!navbar),
                       setShowSoins(!showSoins),
@@ -85,40 +85,51 @@ const NavClem = () => {
                 </li>
                 <li className="group pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0 md:hover:bg-transparent">
                   <Link
-                    href="#soins-feminins"
+                    href=""
                     // onClick={() => setNavbar(!navbar)}
-                    onClick={() => {
-                      setNavbar(!navbar);
-                      setShowSoins(!showSoins);
-                    }}
+                    // onClick={() => {
+                    //   setNavbar(!navbar);
+                    //   setShowSoins(!showSoins);
+                    // }}
                   >
                     Les Soins
                   </Link>
                   {/* <div className="hidden group-hover:block absolute text-left text-base border border-[#FFF] shadow bg-light-pink-bg p-2 rounded-lg"> */}
                   <div className={`hidden group-hover:block absolute text-left text-base border border-[#FFF] shadow bg-light-pink-bg p-2 rounded-lg ${showSoins ? 'block' : 'hidden'}`}>
-                    <Link href="#soins-feminins" className="cursor-pointer">Féminins<br></br></Link>
-                    <Link href="#soins-rebozo" className="cursor-pointer">Rebozo<br></br></Link>
-                    <Link href="#soins-bebe" className="cursor-pointer">Bébé<br></br></Link>
+                    <Link href="feminin" className="cursor-pointer">Féminins<br></br></Link>
+                    <Link href="/rebozo" className="cursor-pointer">Rebozo<br></br></Link>
+                    <Link href="/bebe" className="cursor-pointer">Bébé<br></br></Link>
                   </div>
                 </li>
                 <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0 md:hover:bg-transparent">
-                  <Link href="#gallery" onClick={() => setNavbar(!navbar)}>
-                    Gallerie
+                  <Link href="/galerie" onClick={() => setNavbar(!navbar)}>
+                    Galerie
                   </Link>
                 </li>
                 <li className="group pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0 md:hover:bg-transparent">
-                  <Link href="#tarifs" onClick={() => setNavbar(!navbar)}>
+                  <Link href=""
+                    // onClick={() => setNavbar(!navbar)}
+                  >
                     Tarifs
                   </Link>
+
                   <div className="hidden group-hover:block dropdown-menu absolute text-left text-base border border-[#FFF] shadow bg-[#f3e9e7] p-2 rounded-lg">
-                    <Link href="#tarifs" className="cursor-pointer">Prestations<br></br></Link>
-                    <Link href="#formules" className="cursor-pointer">Formules<br></br></Link>
+                    <Link href="/tarif" className="cursor-pointer">Prestations<br></br></Link>
+                    <Link href="/formule" className="cursor-pointer">Formules<br></br></Link>
+                    {/* <Link href="/cadeaux" className="cursor-pointer">Cartes Cadeau<br></br></Link> */}
                   </div>
                 </li>
-                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0 md:hover:bg-transparent">
-                  <Link href="#contact" onClick={() => setNavbar(!navbar)}>
+                <li className="group pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0 md:hover:bg-transparent">
+                  <Link href=""
+                    // onClick={() => setNavbar(!navbar)}
+                  >
                     Contact
                   </Link>
+
+                  <div className="hidden group-hover:block dropdown-menu absolute text-left text-base border border-[#FFF] shadow bg-[#f3e9e7] p-2 rounded-lg">
+                    <Link href="/coordonnees" className="cursor-pointer">Contacte moi<br></br></Link>
+                    <Link href="/retrouvemoi" className="cursor-pointer">Retrouve moi<br></br></Link>
+                  </div>
                 </li>
               </ul>
             </div>

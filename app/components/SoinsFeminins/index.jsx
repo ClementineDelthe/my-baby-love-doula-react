@@ -48,6 +48,7 @@ const SoinsFeminins = () => {
         Les contre-indications sont : pathologie cardiaque et anomalie de tension ou de fréquence cardiaque, malaise, problème connu... diabète, contractions, grossesse à risque élevé, toutes contre-indication mentionnées par le corps médical.
         Si vous avez un doute, n'hésitez pas à demander l'aval de votre sage-femme ou gynécologue.
         Nous pouvons échanger pour plus de précisions également.`,
+        photo: "bg-massage-femme-enceinte",
     },
     {
       image: MassagePostNatal,
@@ -59,6 +60,7 @@ const SoinsFeminins = () => {
         Le massage ayurvédique rééquilibrera vos énergies, apaisera votre corps qui a tant donné et procurera une parenthèse bienvenue à votre esprit. Il se clôture par un resserrage du bassin, permet d'apaiser les tensions du bassin. Symboliquement et physiquement, cela ferme ce dernier, honore la fin de votre grossesse et célèbre votre nouvelle vie de maman.
         Le massage postpartum est réalisé dès que vous le souhaitez et jusqu'à ce que vous en fassiez la demande même plusieurs années après.
         En cas de césarienne, il est recommandé d'attendre la cicatrisation ou de demander l'avis de votre sage-femme ou gynécologue.`,
+        photo: "bg-massage-postnatal",
     },
     {
       image: MassageDeesse,
@@ -69,21 +71,19 @@ const SoinsFeminins = () => {
         Mêlant le massage ayurvédique, des bercements, des pressions, des mouvements doux et appuyés, vous trouverez réconfort et sérénité.
         Je prends le temps d'accompagner les zones sensibles de votre corps et m'adapte à vos maux féminins pour les soulager.
         Ce massage est réalisable pendant les règles pour justement apaiser les zones de tension comme le dos, les cuisses, le ventre.
-        Si vous avez ou avez eu un cancer, ce soin est pour vous également. Cette période nécessite tout l'amour et l'attention que vous pourrez lui procurer. Par mon expérience d'infirmière en cancérologie, je m'appliquerai à lui insuffler toute la douceur et la délicatesse que nécessite votre être dans ce moment.`,
+        Si vous avez ou avez eu un cancer, ce soin est pour vous également. Cette période nécessite tout l'amour et l'attention que vous pourrez lui procurer. Par mon expérience d'infirmière en cancérologie, je m'appliquerai à lui insuffler toute la douceur et la délicatesse que nécessite votre être dans ce moment.`,
+        photo: "bg-massage-deesse",
     },
   ];
   return (
-    <div id="soins-feminins" className="bg-[#FFE8D6] min-h-[700px]">
-
-      <div className="px-4">
-        <div className="space-y-2 py-6">
-          <div className="max-w-6xl mx-auto space-y-2">
-            {/* <h2  className="text-3xl font-bold tracking-tight pb-2 text-[#DD2D4A]"> */}
-            <h2  className={`${sendFlowers.className} text-3xl font-bold tracking-tight pb-2 text-[#DD2D4A]`}>
-
-              Soins Féminins
-            </h2>
-            <p className="pb-2">
+    <div id="soins-feminins" className="min-h-screen">
+    <div className="max-w-6xl mx-auto px-4 pt-10 md:pt-36">
+      <div className="space-y-2 py-6">
+        <div className="space-y-2">
+          <h2 className={`${sendFlowers.className} text-3xl font-bold tracking-tight pb-2 text-[#DD2D4A]`}>
+            Soins Feminins
+          </h2>
+          <p className="pb-2 ">
               Inspiré de l&apos;ayurvédique, je propose des massages du corps
               complet à l&apos;huile chaude, mêlant bercement, serrage, massage
               enveloppant. Véritable rituel, je prends le temps de vous écouter
@@ -93,58 +93,36 @@ const SoinsFeminins = () => {
             <p className={`${alice.className} text-sm pb-4 font-semibold`}>
               Rituel de 2H-2H30 dont 1H30 de massage - 120€*
             </p>
-          </div>
-          <div className="w-fit mx-auto flex flex-wrap justify-center gap-y-20 gap-x-14 mt-10 mb-5">
-            {soinsfeminins.map((soin, index) => (
-              <div
-                key={index}
-                className={`border border-[#fff] rounded-lg p-6 mb-2 bg-[#F5CAC3] w-[550px] relative flex-shrink-0 ${showDescription[index] ? '' : 'max-h-[450px]' }`}
-                style={{ transform: showDescription[index] ? 'scale(1.05)' : 'scale(1)' }}
-              >
-                <div className="p-2 flex flex-col  justify-between items-center text-center">
-                  <div className="w-36 h-56">
-                    <Image
-                      src={soin.image}
-                      alt={soin.title}
-                      width={100}
-                      height={100}
-                      className="object-cover w-full h-full rounded-full shadow-2xl shadow-black"
-                    />
-                  </div>
-                  <div className="py-2 ">
-                    <h3 className={`${sendFlowers.className} pb-2 font-bold text-[#DD2D4A]`}>{soin.title}</h3>
-                    {showDescription[index] ? (
-                      <div>
-                        <p className="pb-2">{soin.description}</p>
-                        <span className="font-light text-xs">{soin.prix}</span>
-                        <button
-                          onClick={() => toggleDescription(index)}
-                          className="text-sm rounded-full py-2 px-3 absolute bottom-1 right-1 border border-[#fff] bg-[#FFE8D6] hover:bg-transparent"
-                        >
-                          -
-                        </button>
-                      </div>
-                    ) : (
-                      <div>
-                        {/* <p className="pb-2">{soin.sentence}</p> */}
-                        <button
-                          onClick={() => toggleDescription(index)}
-                          className="text-sm rounded-full py-2 px-3 absolute bottom-1 right-1 border border-[#fff] bg-[#FFE8D6] hover:bg-transparent"
-                        >
-                          +
-                        </button>
-                      </div>
-                    )}
-                  </div>
+        </div>
+        <div className="mx-auto justify-items-center justify-center mt-10 mb-5">
+          {soinsfeminins.map((soin, index) => (
+            <div
+              key={index}
+              className="p-6 mb-2 w-full"
+            >
+              <div className="p-2 flex flex-col flex-grow justify-between items-center text-center w-full">
+                <div className={`w-full ${soin.photo} bg-cover bg-center flex items-center justify-center text-[#DD2D4A] pt-40 opacity-85 cursor-pointer rounded-lg`}
+                onClick={() => toggleDescription(index)}
+                >
+                  <h3 className={`${sendFlowers.className} pb-2 font-extrabold text-lg`}>{soin.title}</h3>
+                </div>
+                <div className="py-2 w-full">
+                  {showDescription[index] &&
+                    <div>
+                      <p className="py-4 text-justify">{soin.description}</p>
+                    </div>
+                  }
                 </div>
               </div>
-            ))}
-          </div>
-          <br></br>
-          <Link href="#formules" className={`${alice.className} button bg-[#FFE8D6]`}>Voir les formules</Link>
+            </div>
+          ))}
         </div>
+        <p className={`${alice.className} italic text-sm`}>*Une majoration peut s&apos;exercer en fonction du lieu d&apos;habitation et du jour du RDV</p>
+        <br />
+        <Link href="/formule" className={`${alice.className} button bg-rose-poudre`}>Voir les formules</Link>
       </div>
     </div>
+  </div>
   );
 };
 

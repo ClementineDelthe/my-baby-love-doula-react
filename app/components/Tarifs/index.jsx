@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import IconSoin1 from "../../assets/icon_soin1.png";
+// import IconSoin1 from "../../assets/icon_soin1.png";
 // import SoinBebe from "../../assets/bain-sensoriel2.jpg";
 import SoinBebe from "../../assets/bebe-zoom-main-cube.jpg";
 import SoinFeminin from "../../assets/massage-dos5-cube.jpg";
@@ -25,7 +25,7 @@ const Tarifs = () => {
     { nom: "Rituel autour du Rebozo*", prix: "250" },
   ];
   const tarifsBebe = [
-    { nom: "Rituel du Bain Sensoriel®️*", prix: "120" },
+    // { nom: "Rituel du Bain Sensoriel®️*", prix: "120" },
     { nom: "Massage bébé*", prix: "55" },
     { nom: "Soulager les maux de bébé*", prix: "55" },
     { nom: "Massage/Yoga bambin*", prix: "60" },
@@ -41,13 +41,13 @@ const Tarifs = () => {
   };
 
   return (
-    <div id="tarifs" className="bg-[#FFE8D6] py-6 border-b border-[#F2F3F5]">
+    <div id="tarifs" className="py-6 min-h-[90vh] pt-">
       <div className="p-8 mx-auto my-5 max-w-7xl ">
         <h2 className="text-2xl font-semibold text-[#3f3a36] mb-10">
           Les tarifs
         </h2>
         <div className="flex justify-center items-center">
-          <div class="flex -space-x-16">
+          <div className="flex -space-x-16">
             {categories.map((cat, index) => (
               <div
                 key={index}

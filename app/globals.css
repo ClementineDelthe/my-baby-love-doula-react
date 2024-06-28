@@ -27,20 +27,54 @@ body {
     rgb(var(--background-start-rgb));
 } */
 
-#soins-feminins {
+/* #soins-feminins {
   background-image: url(../app/assets/bg1.png);
-  /* background-image: url(../app/assets/bg-vertical-2.png); */
 
-}
+} */
 /*  #gallery, #formules, */
-#soins-rebozo, #tarifs, #soins-bebe {
+/* #soins-rebozo, #tarifs, #soins-bebe {
   background-image: url(../app/assets/bg1-rotate.png);
-  /* background-image: url(../app/assets/bg-vertical-1.png); */
 
-}
+} */
 /* #soins-all {
   background-image: url(../app/assets/bg1.png);
 } */
+ .apropos-mobile {
+  background-image: url(../app/assets/bebe-charlotte.jpg);
+ }
+ .apropos-desktop {
+  background-image: url(../app/assets/bebe-charlotte-desktop.jpg);
+ }
+
+ .bg-douceur-rebozo {
+  background-image: url(../app/assets/douceur-rebozo-long.jpg);
+ }
+ .bg-rituel-rebozo {
+  background-image: url(../app/assets/rebozo-serrage3-long.jpg);
+ }
+
+ .bg-massage-femme-enceinte {
+  background-image: url(../app/assets/massage-ventre-long.jpg);
+ }
+ .bg-massage-postnatal {
+  background-image: url(../app/assets/massage-dos6-long.jpg);
+ }
+ .bg-massage-deesse {
+  background-image: url(../app/assets/massage-deesse-long.jpg);
+ }
+
+ .bg-bain-sensoriel {
+  background-image: url(../app/assets/bain-sensoriel2-long.jpg);
+ }
+ .bg-massage-bebe {
+  background-image: url(../app/assets/massage-bebe1-long.jpg);
+ }
+ .bg-soulager-maux {
+  background-image: url(../app/assets/massage-bebe7-long.jpg);
+ }
+ .bg-massage-yoga-bambin {
+  background-image: url(../app/assets/massage-bebe4-long.jpg);
+ }
 
 @layer components {
   .button {

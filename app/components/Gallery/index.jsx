@@ -12,8 +12,8 @@ import Oracle from "../../assets/soin-oracle2.jpg"
 
 const Gallery = () => {
   return (
-    <div id="gallery" className="bg-[#FCD5CE] py-12">
-      <div className="contain max-w-7xl mx-auto">
+    <div id="gallery" className=" py-12">
+      <div className="contain max-w-7xl mx-auto pt-32">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="grid gap-4">
             <div className="">

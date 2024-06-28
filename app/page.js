@@ -4,10 +4,8 @@ import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import Tarifs from "./components/Tarifs";
 // import Slider from "./components/Marques";
-import Infos from "./components/Infos";
 import Gallery from "./components/Gallery";
 import Description from "./components/Description";
-import Soins from "./components/FormulesOld";
 import Marques from "./components/Marques";
 import BackToTopButton from "./components/BackToTopButton";
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -23,6 +21,7 @@ config.autoAddCss = false;
 import { Comfortaa } from "next/font/google";
 import { Send_Flowers } from "next/font/google";
 import { Alice } from "next/font/google";
+import Link from "next/link";
 
 const comfortaa = Comfortaa({
   subsets: ['latin'],
@@ -43,27 +42,9 @@ export default function Home() {
   return (
     <div id="total" className={comfortaa.className}>
       <BackToTopButton />
-      {/* <NavBar /> */}
       <NavClem />
-      {/* <Description /> */}
       <Apropos />
-      {/* <Infos /> */}
-      {/* <Clem /> */}
-      <div id="soins-all">
-        <SoinsFeminins />
-        {/* <Wave /> */}
-        <SoinsRebozo />
-        <SoinsBebe />
-        <Formules />
-      </div>
-      {/* <Soins /> */}
-      <Gallery />
-      <Tarifs />
-      {/* <Marques /> */}
-      <Contact />
       <Footer />
-
-
     </div>
   );
 }

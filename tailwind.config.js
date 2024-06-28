@@ -22,6 +22,8 @@ module.exports = {
       'red-p': '#D52D5C',
       'dark-green-p': '#629277',
       'yellow-icon': '#FADF5B',
+      'rose-poudre': '#FCD5CE',
+      'beige': '#FFE8D6',
     },
     extend: {
       backgroundImage: {
