@@ -30,7 +30,6 @@ export default function Galerie() {
   return (
     <div id="total" className={comfortaa.className}>
       <BackToTopButton />
-      {/* <NavBar /> */}
       <NavClem />
       <Gallery />
       <Footer />

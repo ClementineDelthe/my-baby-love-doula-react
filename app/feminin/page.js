@@ -33,7 +33,6 @@ export default function FemininSoins() {
   return (
     <div id="total" className={comfortaa.className}>
       <BackToTopButton />
-      {/* <NavBar /> */}
       <NavClem />
       <SoinsFeminins />
       <Footer />

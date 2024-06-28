@@ -32,7 +32,6 @@ export default function RebozoSoins() {
   return (
     <div id="total" className={comfortaa.className}>
       <BackToTopButton />
-      {/* <NavBar /> */}
       <NavClem />
       <SoinsRebozo />
       <Footer />

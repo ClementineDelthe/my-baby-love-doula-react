@@ -31,7 +31,6 @@ export default function Formule() {
   return (
     <div id="total" className={comfortaa.className}>
       <BackToTopButton />
-      {/* <NavBar /> */}
       <NavClem />
       <Formules />
       <Footer />

@@ -33,7 +33,6 @@ export default function BebeSoin() {
   return (
     <div id="total" className={comfortaa.className}>
       <BackToTopButton />
-      {/* <NavBar /> */}
       <NavClem />
       <SoinsBebe />
       <Footer />
