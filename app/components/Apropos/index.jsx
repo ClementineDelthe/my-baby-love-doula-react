@@ -21,19 +21,14 @@ const alice = Alice({
 const Apropos = () => {
   return (
 
-    <div id="apropos" className="md:pt-32 flex flex-col justify-center">
-      <div className="apropos-desktop md:apropos-desktop bg-cover bg-center h-64 md:h-[700px] flex items-center justify-center text-[#fff] pt-40 opacity-85">
-        <h1 className={`${sendFlowers.className} text-xl md:text-3xl font-bold`}>Lolita Garnier</h1>
+    <div id="apropos" className="flex flex-col justify-center">
+      <div className="apropos-desktop md:apropos-desktop bg-cover bg-center h-64 md:h-[1000px] flex items-center justify-center text-[#fff] opacity-85">
+        <h1 className={`${sendFlowers.className} text-xl md:text-3xl font-bold text-center`}>Lolita,<br></br>Doula et praticienne en soins féminins et bébé
+
+</h1>
       </div>
       <div className="min-h-[90vh] pt-10 flex justify-center items-center">
         <div className="flex flex-col md:flex-row md:justify-around md:items-center space-y-6 md:space-y-0 md:space-x-8 mx-auto px-4">
-          <Image
-            src={Portrait}
-            alt="bain sensoriel"
-            width={350}
-            height={500}
-            className="h-auto max-w-full rounded-lg"
-          />
           <div className="bg-rose-poudre px-8 py-6 shadow text-[#3f3a36] md:max-w-lg">
             <h2 className={`${sendFlowers.className} text-2xl font-bold leading-tight mt-1.5 mb-2.5`}>
               Lolita Garnier
@@ -50,6 +45,13 @@ const Apropos = () => {
               prenant soin de vous.<br></br> A très vite, Lolita
             </p>
           </div>
+          <Image
+            src={Portrait}
+            alt="bain sensoriel"
+            width={350}
+            height={500}
+            className="h-auto max-w-full rounded-lg"
+          />
         </div>
       </div>
     </div>

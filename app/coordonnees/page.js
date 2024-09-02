@@ -21,6 +21,7 @@ import { Send_Flowers } from "next/font/google";
 import { Alice } from "next/font/google";
 import Link from "next/link";
 import Contact from "../components/Contact";
+import Logo from "../components/Logo";
 
 const comfortaa = Comfortaa({
   subsets: ['latin'],
@@ -43,6 +44,7 @@ export default function Coordonnees() {
       <BackToTopButton />
       <NavClem />
       <Contact />
+      {/* <Logo /> */}
       <Footer />
     </div>
   );

@@ -4,7 +4,6 @@ import Tarifs from "../components/Tarifs";
 // import Slider from "./components/Marques";
 import Gallery from "../components/Gallery";
 import Description from "../components/Description";
-import Marques from "../components/Marques";
 import BackToTopButton from "../components/BackToTopButton";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -22,6 +21,7 @@ import { Alice } from "next/font/google";
 import Link from "next/link";
 import Contact from "../components/Contact";
 import Retrouve from "../components/Retrouve";
+import Logo from "../components/Logo";
 
 const comfortaa = Comfortaa({
   subsets: ['latin'],
@@ -44,6 +44,7 @@ export default function Retrouvez() {
       <BackToTopButton />
       <NavClem />
       <Retrouve />
+      {/* <Logo /> */}
       <Footer />
     </div>
   );

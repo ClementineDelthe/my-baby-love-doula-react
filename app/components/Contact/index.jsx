@@ -16,7 +16,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   return (
-    <div id="contact" className="min-h-[90vh] flex items-center justify-center pt-10 md:pt-36">
+    <div id="contact" className="min-h-[90vh] flex items-center justify-center pt-10 md:pt-16">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="flex flex-col md:flex-row items-center justify-center">
           <div className="flex-shrink-0 mb-6 md:mb-0 md:mr-8">
@@ -30,7 +30,7 @@ const Contact = () => {
           </div>
           <div className="text-center md:text-left leading-10">
             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-              Contacte moi
+              Contacte-moi
             </h2>
             <ul className="text-gray-500 dark:text-gray-400 font-medium">
               <li className="mb-4">

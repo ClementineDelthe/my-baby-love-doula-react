@@ -7,7 +7,7 @@ import { Send_Flowers } from "next/font/google";
 import { Alice } from "next/font/google";
 import Link from "next/link";
 import Gallery from "../components/Gallery";
-import { Footer } from "flowbite-react";
+import Footer from "../components/Footer";
 import NavClem from "../components/NavClem";
 import BackToTopButton from "../components/BackToTopButton";
 import Formules from "../components/Formules";

@@ -51,7 +51,7 @@ const Tarifs = () => {
             {categories.map((cat, index) => (
               <div
                 key={index}
-                className={`bg-[#F2F3F5] rounded-full cursor-pointer ${
+                className={`bg-[#F9F1E7] rounded-full cursor-pointer ${
                   selectedCategory === index ? "z-40" : ""
                 }`}
                 onClick={() => selectCategory(index)}

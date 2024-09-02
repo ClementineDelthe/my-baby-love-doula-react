@@ -77,7 +77,7 @@ const SoinsFeminins = () => {
   ];
   return (
     <div id="soins-feminins" className="min-h-screen">
-    <div className="max-w-6xl mx-auto px-4 pt-10 md:pt-36">
+    <div className="max-w-6xl mx-auto px-4 pt-10 md:pt-16">
       <div className="space-y-2 py-6">
         <div className="space-y-2">
           <h2 className={`${sendFlowers.className} text-3xl font-bold tracking-tight pb-2 text-[#DD2D4A]`}>
@@ -101,10 +101,10 @@ const SoinsFeminins = () => {
               className="p-6 mb-2 w-full"
             >
               <div className="p-2 flex flex-col flex-grow justify-between items-center text-center w-full">
-                <div className={`w-full ${soin.photo} bg-cover bg-center flex items-center justify-center text-[#DD2D4A] pt-40 opacity-85 cursor-pointer rounded-lg`}
+                <div className={`w-full ${soin.photo} bg-cover bg-center flex items-center justify-center text-[#OOO] pt-40 opacity-85 cursor-pointer rounded-lg`}
                 onClick={() => toggleDescription(index)}
                 >
-                  <h3 className={`${sendFlowers.className} pb-2 font-extrabold text-lg`}>{soin.title}</h3>
+                  <h3 className={`${sendFlowers.className} pb-2 font-extrabold text-lg bg-[#FFF] rounded-md m-1 p-2 opacity-85 hover:opacity-100`}>{soin.title}</h3>
                 </div>
                 <div className="py-2 w-full">
                   {showDescription[index] &&

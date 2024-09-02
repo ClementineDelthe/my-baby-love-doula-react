@@ -22,6 +22,7 @@ import { Comfortaa } from "next/font/google";
 import { Send_Flowers } from "next/font/google";
 import { Alice } from "next/font/google";
 import Link from "next/link";
+import Logo from "./components/Logo";
 
 const comfortaa = Comfortaa({
   subsets: ['latin'],
@@ -44,6 +45,7 @@ export default function Home() {
       <BackToTopButton />
       <NavClem />
       <Apropos />
+      <Logo />
       <Footer />
     </div>
   );

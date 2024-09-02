@@ -12,8 +12,8 @@ import Oracle from "../../assets/soin-oracle2.jpg"
 
 const Gallery = () => {
   return (
-    <div id="gallery" className=" py-12">
-      <div className="contain max-w-7xl mx-auto pt-32">
+    <div id="gallery" className="py-12">
+      <div className="contain max-w-7xl mx-auto pt-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="grid gap-4">
             <div className="">
@@ -34,15 +34,6 @@ const Gallery = () => {
                 className="h-auto max-w-full rounded-lg"
               />
             </div>
-            {/* <div className="">
-              <Image
-                src={Soin1}
-                alt="Soin"
-                width={700}
-                height={600}
-                className="h-auto max-w-full rounded-lg"
-              />
-            </div> */}
           </div>
           <div className="grid gap-4">
             <div className="">
@@ -63,15 +54,6 @@ const Gallery = () => {
                 className="h-auto max-w-full rounded-lg"
               />
             </div>
-            {/* <div className="">
-              <Image
-                src={Bain2}
-                alt="Bain Sensoriel"
-                width={700}
-                height={600}
-                className="h-auto max-w-full rounded-lg"
-              />
-            </div> */}
           </div>
           <div className="grid gap-4">
             <div className="">
@@ -92,15 +74,6 @@ const Gallery = () => {
                 className="h-auto max-w-full rounded-lg"
               />
             </div>
-            {/* <div className="">
-              <Image
-                src={MassageBebe2}
-                alt="Lolita Garnier"
-                width={700}
-                height={600}
-                className="h-auto max-w-full rounded-lg"
-              />
-            </div> */}
           </div>
           <div className="grid gap-4">
             <div className="">
@@ -121,15 +94,6 @@ const Gallery = () => {
                 className="h-auto max-w-full rounded-lg"
               />
             </div>
-            {/* <div className="">
-              <Image
-                src={Soin2}
-                alt="Soin"
-                width={700}
-                height={600}
-                className="h-auto max-w-full rounded-lg"
-              />
-            </div> */}
           </div>
         </div>
       </div>
