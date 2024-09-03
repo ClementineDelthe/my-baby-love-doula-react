@@ -30,27 +30,27 @@ const Formules = () => {
       title: "Parenthèse enchantée",
       prix: "160€",
       description: "Massage femme enceinte ET Douceur du rebozo",
-      photo: "bg-massage-deesse",
+      photo: "bg-formule-enchantee",
     },
     {
       title: "Amour pour toujours",
       prix: "210€",
       description: "Un soin féminin au choix ET Un rituel du bain sensoriel®",
-      photo: "bg-massage-deesse",
+      photo: "bg-formule-deesse",
     },
     {
       title: "Tendre découverte",
       prix: "150€",
       description:
         "4 séances massage bébé : Apprentissage massage du corps complet de votre bébé + soulager les maux de bébé",
-      photo: "bg-massage-deesse",
+      photo: "bg-formule-bebe",
     },
     {
       title: "Instant infini",
       prix: "240€",
       description:
         "Rituel du bain sensoriel® photographié. Avec Amélie, Mayä Photographie.",
-        photo: "bg-massage-deesse",
+        photo: "bg-formule-infini",
     },
   ];
   return (

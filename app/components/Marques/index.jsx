@@ -9,7 +9,7 @@ import YellowTemple3 from "../../assets/YT_pic3.jpg";
 
 const Marques = () => {
   return (
-    <div id="marques" className="contain h-[45vh]">
+    <div id="marques" className="contain h-[70vh] pt-10">
       <Carousel
         autoPlay
         interval={6000}
@@ -17,49 +17,34 @@ const Marques = () => {
         showStatus={false}
         showThumbs={false}
         stopOnHover
-        className="mx-auto maw-w-screen-md"
+        className="mx-auto max-w-screen-lg"
       >
-        <div className="p-8">
+        <div className="">
           <Image
             src={YellowTemple1}
             alt="YellowTemple1"
-            width={400}
-            height={500}
-            className="object-contain h-48 w-96"
+            width={800}
+            height={950}
+            className="md:object-contain h-96 w-full rounded-lg"
           />
-
-          {/* <div className="p-4">
-            <h2 className="text-3xl text-gray-900 italic">marque 1</h2>
-            <p className="">la super marque 1</p>
-          </div> */}
         </div>
-        <div className="p-8">
+        <div className="">
           <Image
             src={YellowTemple2}
             alt="YellowTemple2"
-            width={150}
-            height={300}
-            className="object-contain h-48 w-96"
+            width={800}
+            height={950}
+            className="md:object-contain h-96 w-full rounded-lg"
           />
-
-          {/* <div className="p-4">
-            <h2 className="text-3xl text-gray-900 italic">marque 1</h2>
-            <p className="">la super photo 1</p>
-          </div> */}
         </div>
-        <div className="p-8">
+        <div className="">
           <Image
             src={YellowTemple3}
             alt="YellowTemple3"
-            width={400}
-            height={500}
-            className="object-contain h-48 w-96"
+            width={800}
+            height={950}
+            className="md:object-contain h-96 w-full rounded-lg"
           />
-
-          {/* <div className="p-4">
-            <h2 className="text-3xl text-gray-900 italic">marque 1</h2>
-            <p className="">la super marque 1</p>
-          </div> */}
         </div>
       </Carousel>
     </div>

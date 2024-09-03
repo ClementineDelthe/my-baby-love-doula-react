@@ -2,6 +2,10 @@ import { Wrapper, Status } from "@googlemaps/react-wrapper";
 import Image from "next/image";
 import Link from "next/link";
 import YellowTemple from "../../assets/yellow-temple.jpg";
+import YellowTemple1 from "../../assets/YT_pic1.jpg";
+import YellowTemple2 from "../../assets/YT_pic2.jpg";
+import YellowTemple3 from "../../assets/YT_pic3.jpg";
+
 import PresentationRounded from "../../assets/presentation-contact.jpg";
 // import Portrait from "../../assets/portrait-zoomout.jpg";
 import HomePic1 from "../../assets/domicile_pic2.jpg";
@@ -33,11 +37,7 @@ const Retrouve = () => {
               Retrouve-moi dans mon cocon sur Villenave d&apos;Ornon
             </h2>
             <div className="my-4 text-lg">
-              <Link href="https://www.google.com/maps/place/My+baby+love+-+Doula/@44.7782579,-0.5424504,17z/data=!3m1!4b1!4m6!3m5!1s0xd5527e745720d09:0x2be563342a7d92c3!8m2!3d44.7782541!4d-0.5398755!16s%2Fg%2F11vj05ws4m?entry=ttu">
-                <p>Déplacement à domicile<br /> Bordeaux CUB / Arès</p>
-              </Link>
               <div className="py-4 flex flex-col items-center justify-center">
-
                 <div className="flex flex-col md:flex-row md:justify-between w-full items-center">
                   <Image
                     src={HomePic1}
@@ -76,12 +76,46 @@ const Retrouve = () => {
               </div>
             </div>
 
-            <div className="mb-4 text-xl font-semibold">
+            <div className="text-xl font-semibold flex flex-col items-center justify-center">
               <Link href="https://www.google.com/maps/place/53+Av.+du+Truc+Vert,+33950+L%C3%A8ge-Cap-Ferret/@44.7259654,-1.2196288,17z/data=!3m1!4b1!4m5!3m4!1s0xd535f843c1d4777:0x4308683d18c0fe5!8m2!3d44.7259616!4d-1.2170539?entry=ttu">
                 <p>Yellow Temple</p>
               </Link>
-              <Marques />
+              <Image
+                src={YellowTemple}
+                alt="Yellow Temple"
+                width={500}
+                height={650}
+                className="rounded-lg shadow-lg my-4"
+              />
+              <div className="flex flex-col md:flex-row md:justify-between w-full items-center py-5">
+                <Image
+                  src={YellowTemple1}
+                  alt="YellowTemple1"
+                  width={250}
+                  height={400}
+                  className="rounded-lg mb-4 md:mb-0"
+                />
+                <Image
+                  src={YellowTemple2}
+                  alt="YellowTemple2"
+                  width={250}
+                  height={400}
+                  className="rounded-lg mb-4 md:mb-0"
+                />
+                <Image
+                  src={YellowTemple3}
+                  alt="YellowTemple3"
+                  width={250}
+                  height={400}
+                  className="rounded-lg mb-4 md:mb-0"
+                />
+              </div>
+              {/* <Marques /> */}
             </div>
+
+            <Link href="https://www.google.com/maps/place/My+baby+love+-+Doula/@44.7782579,-0.5424504,17z/data=!3m1!4b1!4m6!3m5!1s0xd5527e745720d09:0x2be563342a7d92c3!8m2!3d44.7782541!4d-0.5398755!16s%2Fg%2F11vj05ws4m?entry=ttu">
+                <p className="pb-2">Déplacement à domicile Bordeaux CUB / Arès</p>
+              </Link>
           </div>
         </div>
       </div>

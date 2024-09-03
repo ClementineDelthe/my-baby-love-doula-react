@@ -76,6 +76,19 @@ body {
   background-image: url(../app/assets/massage-bebe4-long.jpg);
  }
 
+ .bg-formule-enchantee {
+  background-image: url(../app/assets/massage-dos2.jpg);
+ }
+ .bg-formule-deesse {
+  background-image: url(../app/assets/bain-sensoriel2-long.jpg);
+ }
+ .bg-formule-bebe {
+  background-image: url(../app/assets/massage-bebe12.jpg);
+ }
+ .bg-formule-infini {
+  background-image: url(../app/assets/bain-sensoriel-lolita.jpg);
+ }
+
 @layer components {
   .button {
     @apply px-4 py-2 bg-[#f3e8e6] border border-[#fff] rounded-full cursor-pointer hover:shadow-lg active:scale-95 active:bg-[#F2F3F5] transition transform duration-100 ease-out
