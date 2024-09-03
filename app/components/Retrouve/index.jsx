@@ -77,7 +77,7 @@ const Retrouve = () => {
             </div>
 
             <div className="text-xl font-semibold flex flex-col items-center justify-center">
-              <Link href="https://www.google.com/maps/place/53+Av.+du+Truc+Vert,+33950+L%C3%A8ge-Cap-Ferret/@44.7259654,-1.2196288,17z/data=!3m1!4b1!4m5!3m4!1s0xd535f843c1d4777:0x4308683d18c0fe5!8m2!3d44.7259616!4d-1.2170539?entry=ttu">
+              <Link href="https://www.yellowtemple.fr/" target="_blank">
                 <p>Yellow Temple</p>
               </Link>
               <Image
