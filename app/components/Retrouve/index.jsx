@@ -83,7 +83,7 @@ const Retrouve = () => {
               <Link href="https://www.yellowtemple.fr/" target="_blank">
                 <p className="pb-2">Yellow Temple</p>
               </Link>
-              <p className="text-sm text-center">Maison holistique centrée sur le bien-être, située sur la belle presqu&apos;île du cap ferret, à Petit Piquey. Venez découvrir ce lieu plein de charme entre les dunes, l&apos;eau du bassin et les pins. Véritable ode à la détente, je vous accueille dans cette maison pour la réalisation de toutes mes prestations. Venez vivre une expérience de détente absolu dans un cadre exceptionnel.</p>
+              <p className="text-sm text-center">Maison holistique centr&eacute;e sur le bien-&ecirc;tre, situ&eacute;e sur la belle presqu&apos;&icirc;le du cap ferret, &agrave; Petit Piquey. Venez d&eacute;couvrir ce lieu plein de charme entre les dunes, l&apos;eau du bassin et les pins. V&eacute;ritable ode &agrave; la d&eacute;tente, je vous accueille dans cette maison pour la r&eacute;alisation de toutes mes prestations. Venez vivre une exp&eacute;rience de d&eacute;tente absolu dans un cadre exceptionnel.</p>
               <Image
                 src={YellowTemple}
                 alt="Yellow Temple"
