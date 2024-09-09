@@ -83,7 +83,7 @@ const Retrouve = () => {
               <Link href="https://www.yellowtemple.fr/" target="_blank">
                 <p className="pb-2">Yellow Temple</p>
               </Link>
-              <p className="text-sm text-center">Maison holistique centrée sur le bien-être, située sur la belle presqu'île du cap ferret, à Petit Piquey. Venez découvrir ce lieu plein de charme entre les dunes, l'eau du bassin et les pins. Véritable ode à la détente, je vous accueille dans cette maison pour la réalisation de toutes mes prestations. Venez vivre une expérience de détente absolu dans un cadre exceptionnel.</p>
+              <p className="text-sm text-center">Maison holistique centrée sur le bien-être, située sur la belle presqu&apos;île du cap ferret, à Petit Piquey. Venez découvrir ce lieu plein de charme entre les dunes, l&apos;eau du bassin et les pins. Véritable ode à la détente, je vous accueille dans cette maison pour la réalisation de toutes mes prestations. Venez vivre une expérience de détente absolu dans un cadre exceptionnel.</p>
               <Image
                 src={YellowTemple}
                 alt="Yellow Temple"
