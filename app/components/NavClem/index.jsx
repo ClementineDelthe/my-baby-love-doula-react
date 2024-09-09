@@ -53,7 +53,8 @@ const NavClem = () => {
                 navbar ? "p-12 md:p-0 block" : "hidden"
               }`}
             >
-              <ul className={`${sendFlowers.className} h-screen md:h-auto items-center justify-center md:flex  md:pt-4`}>
+              {/* <ul className={`${sendFlowers.className} h-screen md:h-auto items-center justify-center md:flex  md:pt-4`}> */}
+              <ul className={`${alice.className} h-screen md:h-auto items-center justify-center md:flex  md:pt-4`}>
                 <li className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0 md:hover:bg-transparent">
                   <Link
                     href="/"
@@ -69,12 +70,13 @@ const NavClem = () => {
                   <Link
                     href=""
                   >
-                    Les Soins
+                    Soins et prestations
                   </Link>
                   <div className={`hidden group-hover:block absolute text-left text-base border border-[#FFF] shadow bg-[#FFF] py-2 rounded-sm pr-4 pl-2 ${showSoins ? 'block' : 'hidden'}`}>
-                    <Link href="feminin" className="cursor-pointer">Féminins<br></br></Link>
+                    <Link href="/feminin" className="cursor-pointer">Massage<br></br></Link>
                     <Link href="/rebozo" className="cursor-pointer">Rebozo<br></br></Link>
                     <Link href="/bebe" className="cursor-pointer">Bébé<br></br></Link>
+                    <Link href="/bain" className="cursor-pointer">Bain Bébé<br></br></Link>
                   </div>
                 </li>
                 <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0 md:hover:bg-transparent">

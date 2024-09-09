@@ -39,6 +39,28 @@ body {
 /* #soins-all {
   background-image: url(../app/assets/bg1.png);
 } */
+
+.comfortaa-text {
+  /* font-family: "Playwrite CU", cursive;
+  font-optical-sizing: auto;
+  font-feature-settings: "liga" on;
+  font-variant-ligatures: common-ligatures;
+  text-transform: none !important;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: normal; */
+  text-align: start;
+  transition-property: opacity, transform;
+  font-family: "Playwrite CU", cursive;
+  font-weight: 100;
+  font-style: normal;
+  font-stretch: normal;
+  font-optical-sizing: auto;
+  line-height: initial;
+  opacity: 1;
+  transition-duration: 350ms;
+}
+
  .apropos-mobile {
   background-image: url(../app/assets/bebe-charlotte.jpg);
  }

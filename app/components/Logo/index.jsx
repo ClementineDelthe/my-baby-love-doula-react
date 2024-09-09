@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import LogoLolita from "../../assets/Lolita_Doula.png";
+import LogoLolita from "../../assets/logo_blanc_plein.jpeg";
 
 const Logo = () => {
   return (

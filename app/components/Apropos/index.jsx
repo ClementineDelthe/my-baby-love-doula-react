@@ -6,9 +6,6 @@ import Portrait from "../../assets/portrait-zoomout.jpg";
 import PortraitAPropos from "../../assets/apropos.jpg"
 import BebeCharlotte from "../../assets/bebe-charlotte.jpg"
 
-
-
-
 const sendFlowers = Send_Flowers({
   subsets: ['latin'],
   weight: ['400'],

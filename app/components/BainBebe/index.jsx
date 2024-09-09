@@ -19,7 +19,8 @@ const alice = Alice({
   subsets: ['latin'],
   weight: ['400'],
 });
-const SoinsBebe = () => {
+
+const BainBebe = () => {
   const baseSrc = "/img/";
 
   const [showDescription, setShowDescription] = useState({});
@@ -31,37 +32,20 @@ const SoinsBebe = () => {
     }));
   };
 
-  const soinsbebe = [
+  const bainsbebe = [
     {
-      image: MassageBebe,
-      title: "Massage bébé",
-      prix: "1h - 45€*",
-      sentence: "Découvrir son bébé autrement.",
+      // image: `${baseSrc}massage-bebe3.jpg`,
+      image: BainSensoriel,
+      title: "Rituel du bain sensoriel®",
+      prix: "2h - 120€*",
+      sentence: "Instants de détente absolue et d'émotions pour vous et votre bébé.",
       description:
-        "Découvrir son bébé autrement. Moment de découverte et de douceur familiale. Vous apprendrez les gestes pour apaiser bébé et embellirez votre connexion par le toucher.",
-      photo: "bg-massage-bebe",
-    },
-    {
-      image: SoulagerMaux,
-      title: "Soulager les maux de bébé",
-      prix: "1h - 45€*",
-      sentence: "Permet de libérer votre tout petit de certains maux.",
-      description:
-        "Permet de libérer votre tout petit de certains maux. Votre enfant est imprégné de tensions liées à son développement. Vous serez en mesure de reproduire les gestes pour le soulager. ",
-      photo: "bg-soulager-maux",
-    },
-    {
-      image: MassageYogaBambin,
-      title: "Massage/Yoga bambin ",
-      prix: "1h - 55*",
-      sentence: "De façon ludique, vous apprendrez des gestes de massage et une initiation au yoga bambin.",
-      description:
-        "De façon ludique, vous apprendrez des gestes de massage et une initiation au yoga bambin. Un beau moment de partage à poursuivre à la maison.",
-      photo: "bg-massage-yoga-bambin",
+        "Instants de détente absolue et d'émotions pour votre bébé et vous. Vous permet de créer du lien et de prendre confiance dans votre rôle. Le bain enveloppé est réalisé ensemble afin que vous puissiez vous l'approprier et le reproduire. Plusieurs outils vous seront présentés pour vous accompagner dans votre parentalité.",
+      photo: "bg-bain-sensoriel",
     },
   ];
   return (
-    <div id="soins-bebe" className="min-h-screen">
+    <div id="bain-bebe" className="min-h-screen">
     <div className="max-w-6xl mx-auto px-4 pt-10 md:pt-16">
       <div className="space-y-2 py-6">
         <div className="space-y-2">
@@ -70,7 +54,7 @@ const SoinsBebe = () => {
           </h2>
         </div>
         <div className="mx-auto justify-items-center justify-center mt-10 mb-5">
-          {soinsbebe.map((soin, index) => (
+          {bainsbebe.map((soin, index) => (
             <div
               key={index}
               className="p-6 mb-2 w-full"
@@ -102,6 +86,6 @@ const SoinsBebe = () => {
     </div>
   </div>
   );
-};
+}
 
-export default SoinsBebe;
+export default BainBebe;

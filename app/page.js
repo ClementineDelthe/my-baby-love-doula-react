@@ -23,6 +23,10 @@ import { Send_Flowers } from "next/font/google";
 import { Alice } from "next/font/google";
 import Link from "next/link";
 import Logo from "./components/Logo";
+import Head from 'next/head';
+
+
+
 
 const comfortaa = Comfortaa({
   subsets: ['latin'],
@@ -42,6 +46,11 @@ const alice = Alice({
 export default function Home() {
   return (
     <div id="total" className={comfortaa.className}>
+      <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100&display=swap" rel="stylesheet"/>
+      </Head>
       <BackToTopButton />
       <NavClem />
       <Apropos />

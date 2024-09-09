@@ -83,7 +83,7 @@ const SoinsFeminins = () => {
           <h2 className={`${sendFlowers.className} text-3xl font-bold tracking-tight pb-2 text-[#DD2D4A]`}>
             Soins Feminins
           </h2>
-          <p className="pb-2 ">
+          <p className={`${alice.className} pb-2 `}>
               Inspiré de l&apos;ayurvédique, je propose des massages du corps
               complet à l&apos;huile chaude, mêlant bercement, serrage, massage
               enveloppant. Véritable rituel, je prends le temps de vous écouter
@@ -119,7 +119,7 @@ const SoinsFeminins = () => {
         </div>
         <p className={`${alice.className} italic text-sm`}>*Une majoration peut s&apos;exercer en fonction du lieu d&apos;habitation et du jour du RDV</p>
         <br />
-        <Link href="/formule" className={`${alice.className} button bg-rose-poudre`}>Voir les formules</Link>
+        <Link href="/formule" className={`${alice.className} button bg-rose-poudre border-none`}>Voir les formules</Link>
       </div>
     </div>
   </div>

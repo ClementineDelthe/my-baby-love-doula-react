@@ -78,7 +78,7 @@ const SoinsRebozo = () => {
       sentence:
         "En postpartum immédiat, avec votre bébé, je vous fais un massage.",
       description:
-        `A réaliser en postpartum immédiat, idéalement dans les 15 jours maximum suivant votre accouchement. Dans votre cocon, avec votre bébé, je me faufile discrètement. Un temps pour vous, durant lequel je vous propose un bain de pieds aux plantes, suivi d'un massage des pieds et des jambes ( possibilité de faire une autre zone comme le cou et les épaules).
+        `A réaliser en postpartum immédiat, idéalement dans le mois suivant votre accouchement. Dans votre cocon, avec votre bébé, je me faufile discrètement. Un temps pour vous, durant lequel je vous propose un bain de pieds aux plantes, suivi d'un massage jambes et dos .
         Je suis spectatrice des moments de douceur familiale que vous vivez et je serai attentive à votre histoire, votre récit. Une belle manière de libérer votre vécu de fin de grossesse, votre enfantement et vos premiers pas en tant que parent Je réalise un resserrage du bassin pour adoucir votre bassin, vos tensions et douleurs. Cela aide vos organes et vos os à reprendre le chemin vers leur place initial. Par cette parenthèse, on vient clôturer symboliquement la fin de votre grossesse et honorer la mère que vous êtes.`,
         photo: "bg-douceur-rebozo"
     },
@@ -131,7 +131,7 @@ const SoinsRebozo = () => {
         </div>
         <p className={`${alice.className} italic text-sm`}>*Une majoration peut s&apos;exercer en fonction du lieu d&apos;habitation et du jour du RDV</p>
         <br />
-        <Link href="/formule" className={`${alice.className} button bg-rose-poudre`}>Voir les formules</Link>
+        <Link href="/formule" className={`${alice.className} button bg-rose-poudre border-none`}>Voir les formules</Link>
       </div>
     </div>
   </div>
