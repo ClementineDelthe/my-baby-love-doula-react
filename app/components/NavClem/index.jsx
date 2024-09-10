@@ -54,7 +54,6 @@ const NavClem = () => {
                 navbar ? "p-12 md:p-0 block" : "hidden"
               }`}
             >
-              {/* <ul className={`${sendFlowers.className} h-screen md:h-auto items-center justify-center md:flex  md:pt-4`}> */}
               <ul className={`${alice.className} h-screen md:h-auto items-center justify-center md:flex  md:pt-4`}>
                 <li className="md:pb-6 text-xl text-white py-4 md:py-2 px-6 text-start border-b-2 md:border-b-0 md:hover:bg-transparent">
                   <Link
