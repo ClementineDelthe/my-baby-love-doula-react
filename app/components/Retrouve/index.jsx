@@ -59,7 +59,7 @@ const Retrouve = () => {
                       alt="bain sensoriel"
                       width={250}
                       height={400}
-                      className="rounded-lg"
+                      className="rounded-lg mb-4 md:mb-0"
                     />
 
                     <video
