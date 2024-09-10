@@ -8,8 +8,12 @@ import YellowTemple3 from "../../assets/YT_pic3.jpg";
 
 import PresentationRounded from "../../assets/presentation-contact.jpg";
 // import Portrait from "../../assets/portrait-zoomout.jpg";
-import HomePic1 from "../../assets/domicile_pic2.jpg";
-import HomePic2 from "../../assets/bain-sensoriel2.jpg";
+import Retrouve1 from "../../assets/retrouve1.jpeg";
+import Retrouve2 from "../../assets/retrouve2.jpeg";
+import Retrouve3 from "../../assets/retrouve3.jpeg";
+import Retrouve4 from "../../assets/retrouve4.jpeg";
+import Retrouve5 from "../../assets/retrouve5.jpeg";
+
 
 
 
@@ -36,18 +40,70 @@ const Retrouve = () => {
             <h2 className="text-xl font-semibold pb-2">
               Retrouve-moi dans mon cocon sur Villenave d&apos;Ornon
             </h2>
-            <p className="text-sm text-center">
-              Situé au cœur de Villenave d'ornon, mon cocon est spécialement conçu pour vous accueillir dans un environnement chaleureux et accueillant. Car chaque moment passé avec votre bébé est précieux, je souhaite vous offrir un cadre propice à l'apaisement et à la convivialité.
-              <br/>
-              Mon espace est équipé de tout le nécessaire pour garantir le confort des petits et le bien-être des parents. Que vous veniez pour des ateliers d'apprentissage du massage bébé ou le rituel du bain sensoriel® vous trouverez ici un lieu où vous pourrez vous sentir à l'aise et soutenu.
-              <br/>
-              J'ai hâte de continuer à vous accueillir et de partager avec vous des moments inoubliables
-            </p>
+
             <div className="my-4 text-lg">
               <div className="py-4 flex flex-col items-center justify-center">
-                <div className="max-w-4xl flex flex-col md:flex-row md:justify-between w-full items-center">
+                <div className="max-w-4xl flex flex-col md:flex-row md:justify-between w-full items-center pb-4">
                   <Image
-                    src={HomePic1}
+                    src={Retrouve1}
+                    alt="bain sensoriel"
+                    width={250}
+                    height={400}
+                    className="rounded-lg mb-4 md:mb-0"
+                  />
+                  <Image
+                    src={Retrouve2}
+                    alt="bain sensoriel"
+                    width={250}
+                    height={400}
+                    className="rounded-lg mb-4 md:mb-0"
+                  />
+                  {/* <video
+                    controls
+                    width={250}
+                    height="auto"
+                    className="rounded-lg shadow-lg mb-4 md:mb-0"
+                  >
+                    <source src="/videos/domicile_vid.mp4" type="video/mp4" />
+                  </video> */}
+                  <Image
+                    src={Retrouve3}
+                    alt="bain sensoriel"
+                    width={250}
+                    height={400}
+                    className="rounded-lg"
+                  />
+                </div>
+                <p className="text-sm text-center">
+                  Situé au cœur de Villenave d&apos;ornon, mon cocon est spécialement conçu pour vous accueillir dans un environnement chaleureux et accueillant. Car chaque moment passé avec votre bébé est précieux, je souhaite vous offrir un cadre propice à l&apos;apaisement et à la convivialité.
+                  <br/>
+                  Mon espace est équipé de tout le nécessaire pour garantir le confort des petits et le bien-être des parents. Que vous veniez pour des ateliers d&apos;apprentissage du massage bébé ou le rituel du bain sensoriel® vous trouverez ici un lieu où vous pourrez vous sentir à l&apos;aise et soutenu.
+                  <br/>
+                  J&apos;ai hâte de continuer à vous accueillir et de partager avec vous des moments inoubliables
+                </p>
+                <div className="max-w-4xl flex flex-col md:flex-row md:justify-center w-full items-center py-4">
+                  <video
+                    controls
+                    width={250}
+                    height="auto"
+                    className="rounded-lg shadow-lg mb-4 md:mb-0"
+                  >
+                    <source src="/videos/domicile_vid.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <p className="text-sm text-center py-2">
+                  Mon cocon se métamorphose pour recevoir les femmes dans un cadre intimiste et douillet. Favorisant la déconnexion et l&apos;apaisement, j&apos;aménage mon espace pour le rendre cosy et propice à la confidence. Que ce soit au sol ou sur table, les massages proposés sont pensés à travers le confort, la douceur et la chaleur ambiante. En lumière naturelle ou éclairée par les bougies, vous serez transportées dans mon univers pour une parenthèse enchantée.
+                </p>
+                <div className="max-w-4xl flex flex-col md:flex-row md:justify-between w-full items-center py-4">
+                  <Image
+                    src={Retrouve4}
+                    alt="bain sensoriel"
+                    width={250}
+                    height={400}
+                    className="rounded-lg mb-4 md:mb-0"
+                  />
+                  <Image
+                    src={Retrouve5}
                     alt="bain sensoriel"
                     width={250}
                     height={400}
@@ -59,19 +115,16 @@ const Retrouve = () => {
                     height="auto"
                     className="rounded-lg shadow-lg mb-4 md:mb-0"
                   >
-                    <source src="/videos/domicile_vid.mp4" type="video/mp4" />
+                    <source src="/videos/retrouve6.mp4" type="video/mp4" />
                   </video>
-                  <Image
-                    src={HomePic2}
+                  {/* <Image
+                    src={Retrouve3}
                     alt="bain sensoriel"
                     width={250}
                     height={400}
                     className="rounded-lg"
-                  />
+                  /> */}
                 </div>
-                <p className="text-sm text-center py-2">
-                  Mon cocon se métamorphose pour recevoir les femmes dans un cadre intimiste et douillet. Favorisant la déconnexion et l'apaisement, j'aménage mon espace pour le rendre cosy et propice à la confidence. Que ce soit au sol ou sur table, les massages proposés sont pensés à travers le confort, la douceur et la chaleur ambiante. En lumière naturelle ou éclairée par les bougies, vous serez transportées dans mon univers pour une parenthèse enchantée.
-                </p>
                 <Link href="https://www.google.com/maps/place/My+baby+love+-+Doula/@44.7782579,-0.5424504,17z/data=!3m1!4b1!4m6!3m5!1s0xd5527e745720d09:0x2be563342a7d92c3!8m2!3d44.7782541!4d-0.5398755!16s%2Fg%2F11vj05ws4m?entry=ttu">
                   <p className="pt-2">Déplacement &agrave; domicile Bordeaux CUB / Arès</p>
                 </Link>
