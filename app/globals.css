@@ -72,6 +72,10 @@ body {
   background-image: url(../app/assets/banniere-bain-bebe-paysage2.jpg);
  }
 
+ .retrouve-desktop {
+  background-image: url(../app/assets/retrouve4.jpeg);
+ }
+
  .bg-douceur-rebozo {
   background-image: url(../app/assets/douceur-rebozo-long.jpg);
  }

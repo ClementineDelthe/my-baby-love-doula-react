@@ -55,7 +55,7 @@ const NavClem = () => {
               }`}
             >
               <ul className={`${alice.className} h-screen md:h-auto items-center justify-center md:flex  md:pt-4`}>
-                <li className="md:pb-6 text-xl text-white py-4 md:py-2 px-6 text-start border-b-2 md:border-b-0 md:hover:bg-transparent">
+                <li className="md:pb-6 text-xl text-white py-4 md:py-2 px-6 text-start border-b md:border-b-0 md:hover:bg-transparent">
                   <Link
                     href="/"
                     // onClick={() => [
@@ -66,7 +66,7 @@ const NavClem = () => {
                     A propos
                   </Link>
                 </li>
-                <li className="md:pb-6 text-xl text-white py-4 md:py-2 px-6 text-center border-b-2 md:border-b-0 md:hover:bg-transparent relative">
+                <li className="md:pb-6 text-xl text-white py-4 md:py-2 px-6 text-center border-b md:border-b-0 md:hover:bg-transparent relative">
                   {/* Version mobile : affichage avec clic */}
                   <div className="flex items-center justify-between cursor-pointer md:hidden" onClick={() => setActiveSection(activeSection === 'soins' ? null : 'soins')}>
                     <p className="">Soins et prestations</p>
@@ -108,12 +108,12 @@ const NavClem = () => {
                     </div>
                   </div>
                 </li>
-                <li className="md:pb-6 text-xl text-white py-4 md:py-2 px-6 text-start border-b-2 md:border-b-0 md:hover:bg-transparent">
+                <li className="md:pb-6 text-xl text-white py-4 md:py-2 px-6 text-start border-b md:border-b-0 md:hover:bg-transparent">
                   <Link href="/galerie" onClick={() => setNavbar(!navbar)}>
                     Galerie
                   </Link>
                 </li>
-                <li className="md:pb-6 text-xl text-white py-4 md:py-2 px-6 text-center border-b-2 md:border-b-0 md:hover:bg-transparent relative">
+                <li className="md:pb-6 text-xl text-white py-4 md:py-2 px-6 text-center border-b md:border-b-0 md:hover:bg-transparent relative">
                   {/* Version mobile : affichage avec clic */}
                   <div className="flex items-center justify-between cursor-pointer md:hidden" onClick={() => setActiveSection(activeSection === 'tarifs' ? null : 'tarifs')}>
                     <p>Tarifs</p>
@@ -151,7 +151,7 @@ const NavClem = () => {
                     </div>
                   </div>
                 </li>
-                <li className="md:pb-6 text-xl text-white py-4 md:py-2 px-6 text-center border-b-2 md:border-b-0 md:hover:bg-transparent relative">
+                <li className="md:pb-6 text-xl text-white py-4 md:py-2 px-6 text-center border-b md:border-b-0 md:hover:bg-transparent relative">
                   {/* Version mobile : affichage avec clic */}
                   <div className="flex items-center justify-between cursor-pointer md:hidden" onClick={() => setActiveSection(activeSection === 'contact' ? null : 'contact')}>
                     <p>Contact</p>
