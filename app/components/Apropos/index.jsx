@@ -20,7 +20,7 @@ const Apropos = () => {
 
     <div id="apropos" className="flex flex-col justify-center">
       <div className="apropos-desktop md:apropos-desktop bg-cover bg-center h-64 md:h-[1000px] flex items-center justify-center text-[#fff] opacity-85">
-        <h1 className={`${sendFlowers.className} text-xl md:text-3xl font-bold text-center`}>Lolita,<br></br>Doula et praticienne en soins féminins et bébé
+        <h1 className={`${sendFlowers.className} text-xl md:text-3xl font-bold text-center`}>Lolita,<br/>Accompagnante périnatale<br/>Praticienne en soins féminins et bébé
 
 </h1>
       </div>

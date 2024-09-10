@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import LogoLolita from "../../assets/Lolita_Doula.png";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { Bars3Icon, XMarkIcon, ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/24/solid";
 import { Send_Flowers } from "next/font/google";
 import { Alice } from "next/font/google";
 
@@ -19,6 +19,7 @@ const alice = Alice({
 const NavClem = () => {
   const [navbar, setNavbar] = useState(false);
   const [showSoins, setShowSoins] = useState(false);
+  const [activeSection, setActiveSection] = useState(null);
 
   return (
     <div>
@@ -29,7 +30,7 @@ const NavClem = () => {
               <div className="flex space-x-3">
                 <Link href="/">
                   <h2 className={` ${sendFlowers.className} self-center text-2xl font-semibold whitespace-nowrap`}>
-                    My Baby Love Doula
+                    My Baby Love
                   </h2>
                 </Link>
               </div>
@@ -55,55 +56,138 @@ const NavClem = () => {
             >
               {/* <ul className={`${sendFlowers.className} h-screen md:h-auto items-center justify-center md:flex  md:pt-4`}> */}
               <ul className={`${alice.className} h-screen md:h-auto items-center justify-center md:flex  md:pt-4`}>
-                <li className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0 md:hover:bg-transparent">
+                <li className="md:pb-6 text-xl text-white py-4 md:py-2 px-6 text-start border-b-2 md:border-b-0 md:hover:bg-transparent">
                   <Link
                     href="/"
-                    onClick={() => [
-                      setNavbar(!navbar),
-                      setShowSoins(!showSoins),
-                    ]}
+                    // onClick={() => [
+                    //   setNavbar(!navbar),
+                    //   setShowSoins(!showSoins),
+                    // ]}
                   >
                     A propos
                   </Link>
                 </li>
-                <li className="group pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0 md:hover:bg-transparent">
-                  <Link
-                    href=""
+                <li className="md:pb-6 text-xl text-white py-4 md:py-2 px-6 text-center border-b-2 md:border-b-0 md:hover:bg-transparent relative">
+                  {/* Version mobile : affichage avec clic */}
+                  <div className="flex items-center justify-between cursor-pointer md:hidden" onClick={() => setActiveSection(activeSection === 'soins' ? null : 'soins')}>
+                    <p className="">Soins et prestations</p>
+                    <p className="">
+                      {activeSection === 'soins' ? (
+                        <ChevronUpIcon className="h-5 w-5 text-white" />
+                      ) : (
+                        <ChevronDownIcon className="h-5 w-5 text-white" />
+                      )}
+                    </p>
+                  </div>
+
+                  {/* Submenu mobile avec effet slide-down */}
+                  <div
+                    className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+                      activeSection === 'soins' ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+                    }`}
                   >
-                    Soins et prestations
-                  </Link>
-                  <div className={`hidden group-hover:block absolute text-left text-base border border-[#FFF] shadow bg-[#FFF] py-2 rounded-sm pr-4 pl-2 ${showSoins ? 'block' : 'hidden'}`}>
-                    <Link href="/feminin" className="cursor-pointer">Massage<br></br></Link>
-                    <Link href="/rebozo" className="cursor-pointer">Rebozo<br></br></Link>
-                    <Link href="/bebe" className="cursor-pointer">Bébé<br></br></Link>
-                    <Link href="/bain" className="cursor-pointer">Bain Bébé<br></br></Link>
+                    <Link href="/feminin" className="block py-2 cursor-pointer text-left text-sm">Massage</Link>
+                    <Link href="/rebozo" className="block py-2 cursor-pointer text-left text-sm">Rebozo</Link>
+                    <Link href="/bebe" className="block py-2 cursor-pointer text-left text-sm">Bébé</Link>
+                    <Link href="/bain" className="block py-2 cursor-pointer text-left text-sm">Bain Bébé</Link>
+                  </div>
+
+                  {/* Version laptop : affichage avec hover */}
+                  <div className="hidden md:block group">
+                    <Link href="">
+                      <div className="flex items-center justify-between">
+                        <p>Soins et prestations</p>
+                      </div>
+                    </Link>
+
+                    {/* Submenu laptop avec le carré blanc en hover */}
+                    <div className="hidden group-hover:block absolute text-left text-base border border-[#FFF] shadow bg-[#FFF] py-2 rounded-sm pr-4 pl-2">
+                      <Link href="/feminin" className="cursor-pointer block py-2 px-1">Massage</Link>
+                      <Link href="/rebozo" className="cursor-pointer block py-2 px-1">Rebozo</Link>
+                      <Link href="/bebe" className="cursor-pointer block py-2 px-1">Bébé</Link>
+                      <Link href="/bain" className="cursor-pointer block py-2 px-1">Bain Bébé</Link>
+                    </div>
                   </div>
                 </li>
-                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0 md:hover:bg-transparent">
+                <li className="md:pb-6 text-xl text-white py-4 md:py-2 px-6 text-start border-b-2 md:border-b-0 md:hover:bg-transparent">
                   <Link href="/galerie" onClick={() => setNavbar(!navbar)}>
                     Galerie
                   </Link>
                 </li>
-                <li className="group pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0 md:hover:bg-transparent">
-                  <Link href=""
-                  >
-                    Tarifs
-                  </Link>
+                <li className="md:pb-6 text-xl text-white py-4 md:py-2 px-6 text-center border-b-2 md:border-b-0 md:hover:bg-transparent relative">
+                  {/* Version mobile : affichage avec clic */}
+                  <div className="flex items-center justify-between cursor-pointer md:hidden" onClick={() => setActiveSection(activeSection === 'tarifs' ? null : 'tarifs')}>
+                    <p>Tarifs</p>
+                    <p className="">
+                      {activeSection === 'tarifs' ? (
+                        <ChevronUpIcon className="h-5 w-5 text-white" />
+                      ) : (
+                        <ChevronDownIcon className="h-5 w-5 text-white" />
+                      )}
+                    </p>
+                  </div>
 
-                  <div className="hidden group-hover:block dropdown-menu absolute text-left text-base border border-[#FFF] shadow bg-[#FFF] py-2 rounded-sm pr-4 pl-2">
-                    <Link href="/tarif" className="cursor-pointer">Prestations<br></br></Link>
-                    <Link href="/formule" className="cursor-pointer">Formules<br></br></Link>
+                  {/* Submenu mobile avec effet slide-down */}
+                  <div
+                    className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+                      activeSection === 'tarifs' ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <Link href="/tarif" className="block py-2 cursor-pointer text-left text-sm">Prestations<br></br></Link>
+                    <Link href="/formule" className="block py-2 cursor-pointer text-left text-sm">Formules<br></br></Link>
+                  </div>
+
+                  {/* Version laptop : affichage avec hover */}
+                  <div className="hidden md:block group">
+                    <Link href="">
+                      <div className="flex items-center justify-between">
+                        <p>Tarifs</p>
+                      </div>
+                    </Link>
+
+                    {/* Submenu laptop avec le carré blanc en hover */}
+                    <div className="hidden group-hover:block absolute text-left text-base border border-[#FFF] shadow bg-[#FFF] py-2 rounded-sm pr-4 pl-2">
+                      <Link href="/tarif" className="block py-2 cursor-pointer text-left px-1">Prestations<br></br></Link>
+                      <Link href="/formule" className="block py-2 cursor-pointer text-left px-1">Formules<br></br></Link>
+                    </div>
                   </div>
                 </li>
-                <li className="group pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0 md:hover:bg-transparent">
-                  <Link href=""
-                  >
-                    Contact
-                  </Link>
+                <li className="md:pb-6 text-xl text-white py-4 md:py-2 px-6 text-center border-b-2 md:border-b-0 md:hover:bg-transparent relative">
+                  {/* Version mobile : affichage avec clic */}
+                  <div className="flex items-center justify-between cursor-pointer md:hidden" onClick={() => setActiveSection(activeSection === 'contact' ? null : 'contact')}>
+                    <p>Contact</p>
+                    <p className="">
+                      {activeSection === 'contact' ? (
+                        <ChevronUpIcon className="h-5 w-5 text-white" />
+                      ) : (
+                        <ChevronDownIcon className="h-5 w-5 text-white" />
+                      )}
+                    </p>
+                  </div>
 
-                  <div className="hidden group-hover:block dropdown-menu absolute text-left text-base border border-[#FFF] shadow bg-[#FFF] py-2 rounded-sm pr-4 pl-2">
-                    <Link href="/coordonnees" className="cursor-pointer">Contacte moi<br></br></Link>
-                    <Link href="/retrouvemoi" className="cursor-pointer">Retrouve moi<br></br></Link>
+                  {/* Submenu mobile avec effet slide-down */}
+                  <div
+                    className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+                      activeSection === 'contact' ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <Link href="/coordonnees" className="block py-2 cursor-pointer text-left text-sm">Contacte-moi<br></br></Link>
+                    <Link href="/retrouvemoi" className="block py-2 cursor-pointer text-left text-sm">Retrouve-moi<br></br></Link>
+                  </div>
+
+                  {/* Version laptop : affichage avec hover */}
+                  <div className="hidden md:block group">
+                    <Link href="">
+                      <div className="flex items-center justify-between">
+                        <p>Contact</p>
+                      </div>
+                    </Link>
+
+                    {/* Submenu laptop avec le carré blanc en hover */}
+                    <div className="hidden group-hover:block absolute text-left text-base border border-[#FFF] shadow bg-[#FFF] py-2 rounded-sm pr-4 pl-2">
+                      <Link href="/coordonnees" className="block py-2 cursor-pointer text-left px-1 min-w-28">Contacte-moi<br></br></Link>
+                      <Link href="/retrouvemoi" className="block py-2 cursor-pointer text-left px-1 min-w-28">Retrouve-moi<br></br></Link>
+                    </div>
                   </div>
                 </li>
               </ul>

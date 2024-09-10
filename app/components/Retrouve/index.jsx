@@ -29,16 +29,23 @@ const Retrouve = () => {
   return (
 
     <div id="retrouve" className="flex flex-col items-center justify-center pt-16 md:pt-24">
-    <div className="mx-auto w-full max-w-4xl">
+    <div className="mx-auto w-full max-w-6xl">
       <div className="">
         <div className="text-center">
           <div>
-            <h2 className="text-xl font-semibold">
+            <h2 className="text-xl font-semibold pb-2">
               Retrouve-moi dans mon cocon sur Villenave d&apos;Ornon
             </h2>
+            <p className="text-sm text-center">
+              Situé au cœur de Villenave d'ornon, mon cocon est spécialement conçu pour vous accueillir dans un environnement chaleureux et accueillant. Car chaque moment passé avec votre bébé est précieux, je souhaite vous offrir un cadre propice à l'apaisement et à la convivialité.
+              <br/>
+              Mon espace est équipé de tout le nécessaire pour garantir le confort des petits et le bien-être des parents. Que vous veniez pour des ateliers d'apprentissage du massage bébé ou le rituel du bain sensoriel® vous trouverez ici un lieu où vous pourrez vous sentir à l'aise et soutenu.
+              <br/>
+              J'ai hâte de continuer à vous accueillir et de partager avec vous des moments inoubliables
+            </p>
             <div className="my-4 text-lg">
               <div className="py-4 flex flex-col items-center justify-center">
-                <div className="flex flex-col md:flex-row md:justify-between w-full items-center">
+                <div className="max-w-4xl flex flex-col md:flex-row md:justify-between w-full items-center">
                   <Image
                     src={HomePic1}
                     alt="bain sensoriel"
@@ -62,10 +69,13 @@ const Retrouve = () => {
                     className="rounded-lg"
                   />
                 </div>
+                <p className="text-sm text-center py-2">
+                  Mon cocon se métamorphose pour recevoir les femmes dans un cadre intimiste et douillet. Favorisant la déconnexion et l'apaisement, j'aménage mon espace pour le rendre cosy et propice à la confidence. Que ce soit au sol ou sur table, les massages proposés sont pensés à travers le confort, la douceur et la chaleur ambiante. En lumière naturelle ou éclairée par les bougies, vous serez transportées dans mon univers pour une parenthèse enchantée.
+                </p>
                 <Link href="https://www.google.com/maps/place/My+baby+love+-+Doula/@44.7782579,-0.5424504,17z/data=!3m1!4b1!4m6!3m5!1s0xd5527e745720d09:0x2be563342a7d92c3!8m2!3d44.7782541!4d-0.5398755!16s%2Fg%2F11vj05ws4m?entry=ttu">
                   <p className="pt-2">Déplacement &agrave; domicile Bordeaux CUB / Arès</p>
                 </Link>
-                <div className="w-full py-5">
+                <div className="w-full max-w-5xl py-5">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.124952567947!2d-0.5424504237519604!3d44.7782578789438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527e745720d09%3A0x2be563342a7d92c3!2sMy%20baby%20love%20-%20Doula!5e0!3m2!1sfr!2sfr!4v1707322023998!5m2!1sfr!2sfr"
                     width="100%"
@@ -94,7 +104,7 @@ const Retrouve = () => {
               <Link href="https://www.google.com/maps/place/Yellow+Temple/@44.7265863,-1.2187049,17z/data=!3m1!4b1!4m6!3m5!1s0xd535f4d87dac557:0xb40a72f0479a2d3b!8m2!3d44.7265863!4d-1.21613!16s%2Fg%2F11kphk8vrh?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
                 <p className="text-sm text-center">Yellow Temple, 53 avenue du Truc Vert, 33950 Lège-Cap-Ferret</p>
               </Link>
-              <div className="flex flex-col md:flex-row md:justify-between w-full items-center py-5">
+              <div className="max-w-4xl flex flex-col md:flex-row md:justify-between w-full items-center py-5">
                 <Image
                   src={YellowTemple1}
                   alt="YellowTemple1"
