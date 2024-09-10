@@ -21,8 +21,7 @@ const Apropos = () => {
     <div id="apropos" className="flex flex-col justify-center">
       <div className="apropos-desktop md:apropos-desktop bg-cover bg-center h-64 md:h-[1000px] flex items-center justify-center text-[#fff] opacity-85">
         <h1 className={`${sendFlowers.className} text-xl md:text-3xl font-bold text-center`}>Lolita,<br/>Accompagnante périnatale<br/>Praticienne en soins féminins et bébé
-
-</h1>
+        </h1>
       </div>
       <div className="min-h-[90vh] pt-10 flex justify-center items-center">
         <div className="flex flex-col md:flex-row md:justify-around md:items-center space-y-6 md:space-y-0 md:space-x-8 mx-auto px-4">

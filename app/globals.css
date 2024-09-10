@@ -68,6 +68,10 @@ body {
   background-image: url(../app/assets/bebe-charlotte-desktop.jpg);
  }
 
+ .bainbebe-desktop {
+  background-image: url(../app/assets/banniere-bain-bebe-paysage2.jpg);
+ }
+
  .bg-douceur-rebozo {
   background-image: url(../app/assets/douceur-rebozo-long.jpg);
  }
