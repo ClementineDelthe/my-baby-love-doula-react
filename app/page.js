@@ -20,6 +20,7 @@ import Apropos from "./components/Apropos";
 config.autoAddCss = false;
 import { Comfortaa } from "next/font/google";
 import { Send_Flowers } from "next/font/google";
+import { Homemade_Apple } from 'next/font/google';
 import { Alice } from "next/font/google";
 import Link from "next/link";
 import Logo from "./components/Logo";

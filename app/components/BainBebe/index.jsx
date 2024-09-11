@@ -18,6 +18,7 @@ import { Send_Flowers } from "next/font/google";
 import { Alice } from "next/font/google";
 
 
+
 const sendFlowers = Send_Flowers({
   subsets: ['latin'],
   weight: ['400'],
@@ -69,7 +70,7 @@ const BainBebe = () => {
             height={300}
             className="h-auto max-w-full rounded-lg pb-4 md:pb-0"
           />
-          <p className="px-4 md:px-10">
+          <p className={`${alice.className}px-4 md:px-10`}>
             C&apos;est quoi ?
             <br/>
             Un accompagnement global au Postpartum pour la famille autour de l&apos;expérience du bain :
@@ -82,7 +83,7 @@ const BainBebe = () => {
           </p>
         </div>
         <div className="flex flex-col-reverse md:flex-row items-center justify-between py-4 md:py-1">
-          <p className="px-4 md:px-10">
+          <p className={`${alice.className}px-4 md:px-10`}>
             Pour qui ?
             <br/>
             Pour les familles qui veulent partager un moment de douceur familiale tout en apprenant des nouvelles façon de prendre soin de bébé.
@@ -109,7 +110,7 @@ const BainBebe = () => {
             height={300}
             className="h-auto max-w-full rounded-lg pb-4 md:pb-0"
           />
-          <p className="px-4 md:px-10">
+          <p className={`${alice.className}px-4 md:px-10`}>
             Pour quoi faire ce rituel ?
             <br/>
             Encourager les parents en les valorisant dans leurs compétences parentales.
@@ -120,7 +121,7 @@ const BainBebe = () => {
           </p>
         </div>
         <div className="flex flex-col-reverse md:flex-row items-center justify-between pt-4 md:pt-10">
-          <p className="px-4 md:px-10">
+          <p className={`${alice.className}px-4 md:px-10`}>
             Comment se passe le rituel ?
             <br/>
             → L'accueil : Je mets en place un environnement chaleureux et intime sur mesure pour vous accueillir dans les meilleures conditions. Un temps d'échange sera consacré pour comprendre vos besoins et vous offrir une écoute juste de votre histoire.
@@ -171,7 +172,7 @@ const BainBebe = () => {
             </div>
           ))}
         </div> */}
-        <p className={`${alice.className} italic text-sm`}>2h - 120€*<br/>*Une majoration peut s&apos;exercer en fonction du lieu d&apos;habitation et du jour du RDV</p>
+        <p className={`${alice.className} italic text-sm mt-4`}>2h - 120€*<br/>*Une majoration peut s&apos;exercer en fonction du lieu d&apos;habitation et du jour du RDV</p>
         <br />
         <Link href="/formule" className={`${alice.className} button bg-rose-poudre border-none`}>Voir les formules</Link>
       </div>

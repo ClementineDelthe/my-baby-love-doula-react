@@ -103,14 +103,15 @@ body {
   background-image: url(../app/assets/massage-bebe7-long.jpg);
  }
  .bg-massage-yoga-bambin {
-  background-image: url(../app/assets/massage-bebe4-long.jpg);
+  /* background-image: url(../app/assets/massage-bebe4-long.jpg); */
+  background-image: url(../app/assets/massage-yoga-bambin.jpeg);
  }
 
  .bg-formule-enchantee {
   background-image: url(../app/assets/massage-dos2.jpg);
  }
  .bg-formule-deesse {
-  background-image: url(../app/assets/bain-sensoriel2-long.jpg);
+  background-image: url(../app/assets/formule-amour-toujours2.jpg);
  }
  .bg-formule-bebe {
   background-image: url(../app/assets/massage-bebe12.jpg);

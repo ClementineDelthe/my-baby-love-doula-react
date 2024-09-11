@@ -6,6 +6,8 @@ import LogoLolita from "../../assets/Lolita_Doula.png";
 import { Bars3Icon, XMarkIcon, ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/24/solid";
 import { Send_Flowers } from "next/font/google";
 import { Alice } from "next/font/google";
+import { Homemade_Apple } from 'next/font/google';
+
 
 const sendFlowers = Send_Flowers({
   subsets: ['latin'],
@@ -14,6 +16,10 @@ const sendFlowers = Send_Flowers({
 const alice = Alice({
   subsets: ['latin'],
   weight: ['400'],
+});
+const homemadeApple = Homemade_Apple({
+  subsets: ['latin'],
+  weight: '400',
 });
 
 const NavClem = () => {
@@ -29,7 +35,7 @@ const NavClem = () => {
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <div className="flex space-x-3">
                 <Link href="/">
-                  <h2 className={` ${sendFlowers.className} self-center text-2xl font-semibold whitespace-nowrap`}>
+                  <h2 className={` ${homemadeApple.className} self-center text-2xl font-semibold whitespace-nowrap`}>
                     My Baby Love
                   </h2>
                 </Link>
