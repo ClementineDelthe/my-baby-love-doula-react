@@ -9,15 +9,10 @@ import PourQui from "../../assets/bain-bebe-pour-qui.jpeg";
 import PourQuoi from "../../assets/bain-bebe-pour-quoi.jpeg";
 import Deroule from "../../assets/bain-bebe-deroule.jpeg";
 
-
-
-
 import { useState } from "react";
 import Link from "next/link";
 import { Send_Flowers } from "next/font/google";
 import { Alice } from "next/font/google";
-
-
 
 const sendFlowers = Send_Flowers({
   subsets: ['latin'],

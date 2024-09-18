@@ -4,6 +4,9 @@ import MassageFemmeEnceinte from "../../assets/massage-ventre.jpg";
 import MassagePostNatal from "../../assets/massage-dos6.jpg";
 import MassageDeesse from "../../assets/massage-deesse.jpg";
 import MassageEnergetique from "../../assets/massage_energetique.jpeg"
+import MassageAyurvedique from "../../assets/massage_ayurvedique.jpeg"
+import MassagePostPartum from "../../assets/massage-dos4.jpg"
+
 
 
 import { useState } from "react";
@@ -53,6 +56,24 @@ const SoinsFeminins = () => {
       setShowSoinEnergetique(true);
     } else {
       setShowSoinEnergetique(false);
+    }
+  }
+
+  const [showSoinAyurvedique, setShowSoinAyurvedique] = useState(false);
+  const toggleSoinAyurvedique = () => {
+    if(showSoinAyurvedique === false) {
+      setShowSoinAyurvedique(true);
+    } else {
+      setShowSoinAyurvedique(false);
+    }
+  }
+
+  const [showSoinPostPartum, setShowSoinPostPartum] = useState(false);
+  const toggleSoinPostPartum = () => {
+    if(showSoinPostPartum === false) {
+      setShowSoinPostPartum(true);
+    } else {
+      setShowSoinPostPartum(false);
     }
   }
 
@@ -194,11 +215,12 @@ const SoinsFeminins = () => {
                 Que ce soit en fin de journée pour évacuer le stress ou en début de journée pour se recharger en énergie, le massage énergétique crânien et dos est une pratique qui s'adapte à tous les besoins. Chaque séance devient un moment unique de relaxation profonde et de renouvellement intérieur.
                 Combiné avec des pierres de lithothérapie, ce massage prend une dimension d&apos;autant plus holistique et apaisante. Les pierres, choisies pour leurs propriétés énergétiques spécifiques et vos besoins, sont placées stratégiquement sur le corps pour amplifier les effets du massage.
                 Venez vous offrir une expérience riche et complète, permettant de retrouver un état de paix intérieure. Les bienfaits se font sentir bien au-delà de la séance. Une véritable invitation à prendre soin de soi.
+                <br></br>
+                Massage du dos, des épaules, de la tête et du visage 45 minutes + 15 minutes d'échange = 60 euros - 1h
               </p>
             }
           </div>
         </div>
-
         <div className="md:relative flex flex-col md:flex-row-reverse items-center justify-between md:min-h-60 py-5">
           <div className="md:w-1/5 md:min-h-[400px]">
             <Image
@@ -220,18 +242,70 @@ const SoinsFeminins = () => {
                 Cette approche holistique ne se limite pas à l'apaisement physique ; elle vise également à nourrir votre esprit et votre âme. En utilisant une huile chaude, biologique, elle vous enveloppera, ajoutant une dimension supplémentaire à votre expérience de relaxation.
                 Vous êtes invitée à vous abandonner à ce moment de pure détente, où chaque pression et chaque mouvement sont destinés à harmoniser votre énergie et à revitaliser votre être tout entier. Parce que vous méritez de vous sentir bien dans votre peau, de vous sentir forte et aimée.
                 Prenez soin de vous, car votre bien-être est précieux.
+                <br></br>
+                Bain de pieds + temps d'accompagnement + massage corps complet 1h15 = 110 euros - 1h45
               </p>
             }
           </div>
         </div>
-        <div className="md:relative flex flex-col md:flex-row items-center justify-between md:min-h-80 py-5">
+        <div className="md:relative flex flex-col md:flex-row items-center justify-between md:min-h-60 py-5">
+          <div className="md:w-1/5 min-h-[300px]">
+            <Image
+                src={MassageAyurvedique}
+                alt="Massage ayurvédique"
+                width={200}
+                height={300}
+                className="md:absolute md:top-0 md:left-0 h-auto max-w-full rounded-lg pb-4 md:pb-0"
+              />
+          </div>
+          <div className="px-4 md:px-10 md:w-4/5">
+            <h3 className="mb-2">Massage ayurvédique</h3>
+            <p className={`${homemadeApple.className} mb-2`}>“Une invitation à un voyage de bien-être.”</p>
+            <button onClick={toggleSoinAyurvedique} className={`${alice.className} button bg-rose-poudre border-none mb-2`}>{showSoinAyurvedique === true ? "Voir moins" : "Voir plus"}</button>
+            {
+              (showSoinAyurvedique === true) &&
+              <p className="text-sm">
+                Inspiré de la médecine traditionnelle indienne, l&apos;ayurvéda, le massage est bien plus qu'un simple soin corporel. Il s'agit d'une véritable thérapie holistique visant à harmoniser le corps et l'esprit. Utilisant de l&apos;huile chaude et des gestes spécifiques à chaque dosha (constitution corporelle), le massage ayurvédique aide à détoxifier le corps, améliorer la circulation sanguine et renforcer le système immunitaire. Les mouvements lents et rythmiques, combinés à une pression légère, favorisent la relaxation profonde et la libération des tensions accumulées. C'est une invitation à un voyage intérieur, où chaque toucher devient une caresse apaisante pour l'âme, permettant de retrouver l'équilibre et la sérénité.
+                Un bain de pied aux plantes avec un gommage démarre le rituel, invitant à la détente. Ensuite, une serviette chaude et moelleuse enveloppe les pieds. Enfin, vous êtes convié à vous installer sur la table de massage chauffée afin que de profiter d&apos;un pure moment de détente où chaque zone de votre corps recevra une attention particulière. Chaque mouvement est pensé pour maximiser votre confort, afin de vous emmener dans un état de relaxation profonde. Les tensions accumulées se dissoudront lentement, vous laissant une sensation de légèreté mentale et physique. C&apos;est un véritable voyage sensoriel qui vous attend, une parenthèse de bien-être où le temps semble s&apos;arrêter pour vous offrir une pause bien méritée.
+                <br></br>
+                Bain de pied + massage 1 h + 15 min d'échange = 80 euros - 1h15
+              </p>
+            }
+          </div>
+        </div>
+        {/* <div className="md:relative flex flex-col md:flex-row-reverse items-center justify-between md:min-h-60 py-5">
+          <div className="md:w-1/5 md:min-h-[400px]">
+            <Image
+                src={MassageDeesse}
+                alt="Massage Déesse"
+                width={200}
+                height={300}
+                className="md:absolute md:top-0 md:right-0 h-auto max-w-full rounded-lg pb-4 md:pb-0"
+              />
+          </div>
+          <div className="px-4 md:px-10 md:w-4/5">
+            <h3 className="mb-2">Massage ayurvédique</h3>
+            <p className={`${homemadeApple.className} mb-2`}>“Une invitation à un voyage de bien-être.”</p>
+            <button onClick={toggleSoinAyurvedique} className={`${alice.className} button bg-rose-poudre border-none mb-2`}>{showSoinAyurvedique === true ? "Voir moins" : "Voir plus"}</button>
+            {
+              (showSoinAyurvedique === true) &&
+              <p className="text-sm">
+                Inspiré de la médecine traditionnelle indienne, l&apos;ayurvéda, le massage est bien plus qu'un simple soin corporel. Il s'agit d'une véritable thérapie holistique visant à harmoniser le corps et l'esprit. Utilisant de l&apos;huile chaude et des gestes spécifiques à chaque dosha (constitution corporelle), le massage ayurvédique aide à détoxifier le corps, améliorer la circulation sanguine et renforcer le système immunitaire. Les mouvements lents et rythmiques, combinés à une pression légère, favorisent la relaxation profonde et la libération des tensions accumulées. C'est une invitation à un voyage intérieur, où chaque toucher devient une caresse apaisante pour l'âme, permettant de retrouver l'équilibre et la sérénité.
+                Un bain de pied aux plantes avec un gommage démarre le rituel, invitant à la détente. Ensuite, une serviette chaude et moelleuse enveloppe les pieds. Enfin, vous êtes convié à vous installer sur la table de massage chauffée afin que de profiter d&apos;un pure moment de détente où chaque zone de votre corps recevra une attention particulière. Chaque mouvement est pensé pour maximiser votre confort, afin de vous emmener dans un état de relaxation profonde. Les tensions accumulées se dissoudront lentement, vous laissant une sensation de légèreté mentale et physique. C&apos;est un véritable voyage sensoriel qui vous attend, une parenthèse de bien-être où le temps semble s&apos;arrêter pour vous offrir une pause bien méritée.
+                <br></br>
+                Bain de pied + massage 1 h + 15 min d'échange = 80 euros - 1h15
+              </p>
+            }
+          </div>
+        </div> */}
+        <div className="md:relative flex flex-col md:flex-row-reverse items-center justify-between md:min-h-80 py-5">
           <div className="md:w-1/5">
             <Image
                 src={MassageFemmeEnceinte}
                 alt="Massage Femme Enceinte"
                 width={200}
                 height={300}
-                className="md:absolute md:top-0 md:left-0 h-auto max-w-full rounded-lg pb-4 md:pb-0"
+                className="md:absolute md:top-0 md:right-0 h-auto max-w-full rounded-lg pb-4 md:pb-0"
               />
           </div>
           <div className="px-4 md:px-10 text-left md:w-4/5">
@@ -252,6 +326,33 @@ const SoinsFeminins = () => {
               <br></br>
               Bain de pieds + temps d'échange + massage corps complet 1h30 = 120 euros
             </p>
+            }
+          </div>
+
+        </div>
+        <div className="md:relative flex flex-col md:flex-row items-center justify-between md:min-h-60 py-5">
+          <div className="md:w-1/5 min-h-[300px]">
+            <Image
+                src={MassagePostPartum}
+                alt="Massage post partum"
+                width={200}
+                height={300}
+                className="md:absolute md:top-0 md:left-0 h-auto max-w-full rounded-lg pb-4 md:pb-0"
+              />
+          </div>
+          <div className="px-4 md:px-10 md:w-4/5">
+            <h3 className="mb-2">Massage post partum</h3>
+            <p className={`${homemadeApple.className} mb-2`}>“Pour retrouver une harmonie intérieur et apaiser votre coprs”</p>
+            <button onClick={toggleSoinPostPartum} className={`${alice.className} button bg-rose-poudre border-none mb-2`}>{showSoinPostPartum === true ? "Voir moins" : "Voir plus"}</button>
+            {
+              (showSoinPostPartum === true) &&
+              <p className="text-sm">
+                L'enfantement vous a apporté votre merveille et c'est le plus beau cadeau qui soit. Cependant, physiquement le corps a subi beaucoup de tension et il met du temps à se remettre de cet évènement... Votre être tout entier à conçu un enfant et s'approprie doucement ces changements. Par le rituel du massage, je vous offre un cadre sécurisant et doux pour aborder tous les sujets que vous aurez besoin de me confier. J'écouterais avec empathie et justesse votre histoire, vos maux, vos victoires. Par le massage ayurvédique, je cherche à rééquilibrer vos énergies, apaiser votre corps qui a tant donné et vous procurer une parenthèse bienvenue à votre esprit. L&apos;huile chaude, choisie avec soin, nourrit votre peau tout en éveillant vos sens. Les gestes précis et bienveillants, hérités de traditions millénaires, vous enveloppent d'une douceur réconfortante, vous permettant de laisser derrière vous les fatigues et les préoccupations. Je clôture le soin par un resserrage du bassin. Cela permet d'apaiser les tensions du bassin. Symboliquement et physiquement, cela ferme ce dernier, honore la fin de votre grossesse et célèbre votre nouvelle vie de maman. Vous pourrez ainsi vous reconnecter à vous-même, retrouver une harmonie intérieure et entamer cette nouvelle étape de votre vie avec plénitude et confiance.
+                Ce moment de détente profonde est aussi une invitation à l'introspection, à écouter les murmures de votre âme et à accueillir les nouvelles émotions qui accompagnent la maternité. Vous ressortirez de cette expérience revitalisée, avec une énergie renouvelée, prête à embrasser pleinement les joies et les défis de votre rôle de maman.
+                Le massage postpartum est réalisé dès que vous le souhaitez et jusqu'à ce que vous en fassiez la demande même plusieurs années après. En cas de césarienne, il est recommandé d'attendre la cicatrisation ou de demander l'avis de votre sage-femme ou gynécologue.
+                <br></br>
+                Bain de pieds + temps d'accompagnement + massage corps complet 1h15+ resserage bassin = 120 euros - 2h
+              </p>
             }
           </div>
         </div>
