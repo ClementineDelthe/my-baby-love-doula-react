@@ -110,7 +110,7 @@ const BainBebe = () => {
             <br/>
             Encourager les parents en les valorisant dans leurs compétences parentales.
             <br/>
-            Permettre aux familles de mieux vivre leur postpartum et de s'offrir une parenthèse afin de se (re) connecter avec leur bébé.
+            Permettre aux familles de mieux vivre leur postpartum et de s&apos;offrir une parenthèse afin de se (re) connecter avec leur bébé.
             <br/>
             Célébrer la vie, ritualiser ce passage pour les parents et leur enfant et souhaiter la bienvenue à bébé.
           </p>
@@ -119,13 +119,13 @@ const BainBebe = () => {
           <p className={`${alice.className}px-4 md:px-10`}>
             Comment se passe le rituel ?
             <br/>
-            → L'accueil : Je mets en place un environnement chaleureux et intime sur mesure pour vous accueillir dans les meilleures conditions. Un temps d'échange sera consacré pour comprendre vos besoins et vous offrir une écoute juste de votre histoire.
+            → L&apos;accueil : Je mets en place un environnement chaleureux et intime sur mesure pour vous accueillir dans les meilleures conditions. Un temps d&apos;échange sera consacré pour comprendre vos besoins et vous offrir une écoute juste de votre histoire.
             <br/>
-            → L'emmaillotage : je prends le temps de vous montrer la pratique de l'emmaillotage de bain que vous pourrez faire sur un poupon puis sur votre enfant.
+            → L&apos;emmaillotage : je prends le temps de vous montrer la pratique de l&apos;emmaillotage de bain que vous pourrez faire sur un poupon puis sur votre enfant.
             <br/>
-            → Le bain sensoriel : lorsque les conditions sont réunis, nous faisons ensemble la mise dans l'eau de bébé. Avec des mouvements précis et en fonction des besoins de votre enfant, je vous montre les gestes à reproduire. Petit à petit, je vous passe le relais et chaque partenaire peut passer un temps les yeux dans les yeux avec bébé. La sortie du bain se fait sur l'un des parents.
+            → Le bain sensoriel : lorsque les conditions sont réunis, nous faisons ensemble la mise dans l&apos;eau de bébé. Avec des mouvements précis et en fonction des besoins de votre enfant, je vous montre les gestes à reproduire. Petit à petit, je vous passe le relais et chaque partenaire peut passer un temps les yeux dans les yeux avec bébé. La sortie du bain se fait sur l&apos;un des parents.
             <br/>
-            → L'instant cocon : du peau à peau vous est proposé, ainsi qu'allaiter votre tout petit si c'est le cas. Je vous propose ensuite de souhaiter la bienvenue à bébé avec un protocole de réflexologie et une initiation au massage.
+            → L&apos;instant cocon : du peau à peau vous est proposé, ainsi qu&apos;allaiter votre tout petit si c&apos;est le cas. Je vous propose ensuite de souhaiter la bienvenue à bébé avec un protocole de réflexologie et une initiation au massage.
           </p>
           <Image
             src={Deroule}
