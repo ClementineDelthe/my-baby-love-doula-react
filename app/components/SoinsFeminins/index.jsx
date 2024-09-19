@@ -207,7 +207,6 @@ const SoinsFeminins = () => {
           <div className="px-4 md:px-10 md:w-4/5">
             <h3 className="mb-2">Massage énergétique crânien et dos</h3>
             <p className={`${homemadeApple.className} mb-2`}>“Véritable ode à la détente et à la revitalisation.”</p>
-            <button onClick={toggleSoinEnergetique} className={`${alice.className} button bg-rose-poudre border-none mb-2`}>{showSoinEnergetique === true ? "Voir moins" : "Voir plus"}</button>
             {
               (showSoinEnergetique === true) &&
               <p className="text-sm">
@@ -219,6 +218,7 @@ const SoinsFeminins = () => {
                 Massage du dos, des épaules, de la tête et du visage 45 minutes + 15 minutes d&apos;échange = 60 euros - 1h
               </p>
             }
+            <button onClick={toggleSoinEnergetique} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showSoinEnergetique === true ? "Voir moins" : "Voir plus"}</button>
           </div>
         </div>
         <div className="md:relative flex flex-col md:flex-row-reverse items-center justify-between md:min-h-60 py-5">
@@ -234,7 +234,6 @@ const SoinsFeminins = () => {
           <div className="px-4 md:px-10 md:w-4/5">
             <h3 className="mb-2">Massage déesse</h3>
             <p className={`${homemadeApple.className} mb-2`}>“Toutes les femmes méritent d&apos;être honorées et célébrées.”</p>
-            <button onClick={toggleSoinDeesse} className={`${alice.className} button bg-rose-poudre border-none mb-2`}>{showSoinDeesse === true ? "Voir moins" : "Voir plus"}</button>
             {
               (showSoinDeesse === true) &&
               <p className="text-sm">
@@ -246,6 +245,7 @@ const SoinsFeminins = () => {
                 Bain de pieds + temps d&apos;accompagnement + massage corps complet 1h15 = 110 euros - 1h45
               </p>
             }
+            <button onClick={toggleSoinDeesse} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showSoinDeesse === true ? "Voir moins" : "Voir plus"}</button>
           </div>
         </div>
         <div className="md:relative flex flex-col md:flex-row items-center justify-between md:min-h-60 py-5">
@@ -261,7 +261,6 @@ const SoinsFeminins = () => {
           <div className="px-4 md:px-10 md:w-4/5">
             <h3 className="mb-2">Massage ayurvédique</h3>
             <p className={`${homemadeApple.className} mb-2`}>“Une invitation à un voyage de bien-être.”</p>
-            <button onClick={toggleSoinAyurvedique} className={`${alice.className} button bg-rose-poudre border-none mb-2`}>{showSoinAyurvedique === true ? "Voir moins" : "Voir plus"}</button>
             {
               (showSoinAyurvedique === true) &&
               <p className="text-sm">
@@ -271,6 +270,7 @@ const SoinsFeminins = () => {
                 Bain de pied + massage 1 h + 15 min d&apos;échange = 80 euros - 1h15
               </p>
             }
+            <button onClick={toggleSoinAyurvedique} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showSoinAyurvedique === true ? "Voir moins" : "Voir plus"}</button>
           </div>
         </div>
         {/* <div className="md:relative flex flex-col md:flex-row-reverse items-center justify-between md:min-h-60 py-5">
@@ -286,7 +286,7 @@ const SoinsFeminins = () => {
           <div className="px-4 md:px-10 md:w-4/5">
             <h3 className="mb-2">Massage ayurvédique</h3>
             <p className={`${homemadeApple.className} mb-2`}>“Une invitation à un voyage de bien-être.”</p>
-            <button onClick={toggleSoinAyurvedique} className={`${alice.className} button bg-rose-poudre border-none mb-2`}>{showSoinAyurvedique === true ? "Voir moins" : "Voir plus"}</button>
+            <button onClick={toggleSoinAyurvedique} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showSoinAyurvedique === true ? "Voir moins" : "Voir plus"}</button>
             {
               (showSoinAyurvedique === true) &&
               <p className="text-sm">
@@ -311,7 +311,6 @@ const SoinsFeminins = () => {
           <div className="px-4 md:px-10 text-left md:w-4/5">
             <h3 className="mb-2">Massage femme enceinte</h3>
             <p className={`${homemadeApple.className} mb-2`}>“Une période unique dans la vie d&apos;une femme.”</p>
-            <button onClick={toggleSoinEnceinte} className={`${alice.className} button bg-rose-poudre border-none mb-2`}>{showSoinEnceinte === true ? "Voir moins" : "Voir plus"}</button>
             {
               (showSoinEnceinte === true) &&
             <p className="text-sm ">
@@ -327,6 +326,7 @@ const SoinsFeminins = () => {
               Bain de pieds + temps d&apos;échange + massage corps complet 1h30 = 120 euros
             </p>
             }
+            <button onClick={toggleSoinEnceinte} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showSoinEnceinte === true ? "Voir moins" : "Voir plus"}</button>
           </div>
 
         </div>
@@ -343,7 +343,6 @@ const SoinsFeminins = () => {
           <div className="px-4 md:px-10 md:w-4/5">
             <h3 className="mb-2">Massage post partum</h3>
             <p className={`${homemadeApple.className} mb-2`}>“Pour retrouver une harmonie intérieur et apaiser votre coprs”</p>
-            <button onClick={toggleSoinPostPartum} className={`${alice.className} button bg-rose-poudre border-none mb-2`}>{showSoinPostPartum === true ? "Voir moins" : "Voir plus"}</button>
             {
               (showSoinPostPartum === true) &&
               <p className="text-sm">
@@ -354,6 +353,7 @@ const SoinsFeminins = () => {
                 Bain de pieds + temps d&apos;accompagnement + massage corps complet 1h15+ resserage bassin = 120 euros - 2h
               </p>
             }
+            <button onClick={toggleSoinPostPartum} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showSoinPostPartum === true ? "Voir moins" : "Voir plus"}</button>
           </div>
         </div>
 
