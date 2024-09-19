@@ -2,6 +2,7 @@
 import Image from "next/image";
 import SoinBebe from "../../assets/massage-bebe12.jpg";
 import BainSensoriel1 from "../../assets/bain-sensoriel-lolita.jpg";
+import BainSensoriel2 from "../../assets/bain-sensoriel-gallery.jpg";
 import Massage4Mains from "../../assets/massage-4mains.jpg";
 import MassageNuque from "../../assets/massage-nuque.jpg";
 import MassageBebe from "../../assets/massage-bebe3.jpg";
@@ -15,7 +16,8 @@ import Gallery3 from "../../assets/gallery3.jpeg"
 import MassageYogaBambin from "../../assets/massage-yoga-bambin.jpeg"
 import AmourToujours from "../../assets/amour-toujours.jpeg"
 import MassageDos from "../../assets/massage-dos.jpg"
-
+import PiedBebe from "../../assets/pied-bebe.jpg"
+import MassageHuile from "../../assets/massage-huile.jpg"
 
 
 const Gallery = () => {
@@ -66,7 +68,8 @@ const Gallery = () => {
           <div className="grid gap-4">
             <div className="">
               <Image
-                src={Massage4Mains}
+                // src={Massage4Mains}
+                src={MassageHuile}
                 alt="Icone Femme"
                 width={500}
                 height={400}
@@ -75,7 +78,7 @@ const Gallery = () => {
             </div>
             <div className="">
               <Image
-                src={Massage2}
+                src={PiedBebe}
                 alt="Soin"
                 width={700}
                 height={600}
@@ -155,7 +158,7 @@ const Gallery = () => {
             </div>
             <div className="">
               <Image
-                src={Massage2}
+                src={BainSensoriel2}
                 alt="Soin"
                 width={700}
                 height={600}
@@ -166,7 +169,7 @@ const Gallery = () => {
           <div className="grid gap-4">
             <div className="">
               <Image
-                src={MassageVentre}
+                src={Massage2}
                 alt="Bain Sensoriel"
                 width={700}
                 height={600}
@@ -184,88 +187,6 @@ const Gallery = () => {
             </div>
           </div>
         </div>
-        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
-          <div className="grid gap-4">
-            <div className="">
-              <Image
-                src={MassageBebe}
-                alt="Soin"
-                width={700}
-                height={600}
-                className="h-auto max-w-full rounded-lg"
-              />
-            </div>
-            <div className="">
-              <Image
-                src={Oracle}
-                alt="Soin et Oracle"
-                width={700}
-                height={600}
-                className="h-auto max-w-full rounded-lg"
-              />
-            </div>
-          </div>
-          <div className="grid gap-4">
-            <div className="">
-              <Image
-                src={RituelRebozo}
-                alt="Icone Femme"
-                width={700}
-                height={600}
-                className="h-auto max-w-full rounded-lg"
-              />
-            </div>
-            <div className="">
-              <Image
-                src={BainSensoriel1}
-                alt="Icone Femme"
-                width={700}
-                height={600}
-                className="h-auto max-w-full rounded-lg"
-              />
-            </div>
-          </div>
-          <div className="grid gap-4">
-            <div className="">
-              <Image
-                src={Massage4Mains}
-                alt="Icone Femme"
-                width={500}
-                height={400}
-                className="h-auto max-w-full rounded-lg"
-              />
-            </div>
-            <div className="">
-              <Image
-                src={Massage2}
-                alt="Soin"
-                width={700}
-                height={600}
-                className="h-auto max-w-full rounded-lg"
-              />
-            </div>
-          </div>
-          <div className="grid gap-4">
-            <div className="">
-              <Image
-                src={MassageVentre}
-                alt="Bain Sensoriel"
-                width={700}
-                height={600}
-                className="h-auto max-w-full rounded-lg"
-              />
-            </div>
-            <div className="">
-              <Image
-                src={MassageNuque}
-                alt="Icone Femme"
-                width={700}
-                height={600}
-                className="h-auto max-w-full rounded-lg"
-              />
-            </div>
-          </div>
-        </div> */}
       </div>
     </div>
   );
