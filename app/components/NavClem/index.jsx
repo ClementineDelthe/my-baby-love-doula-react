@@ -91,7 +91,7 @@ const NavClem = () => {
                       activeSection === 'soins' ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
                     }`}
                   >
-                    <Link href="/feminin" className="block py-2 cursor-pointer text-left text-sm">Massage</Link>
+                    <Link href="/feminin" className="block py-2 cursor-pointer text-left text-sm">Massages</Link>
                     <Link href="/rebozo" className="block py-2 cursor-pointer text-left text-sm">Rebozo</Link>
                     <Link href="/bebe" className="block py-2 cursor-pointer text-left text-sm">Bébé</Link>
                     <Link href="/bain" className="block py-2 cursor-pointer text-left text-sm">Bain Bébé</Link>
@@ -176,7 +176,7 @@ const NavClem = () => {
                       activeSection === 'contact' ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
                     }`}
                   >
-                    <Link href="/coordonnees" className="block py-2 cursor-pointer text-left text-sm">Contacte-moi<br></br></Link>
+                    <Link href="/coordonnees" className="block py-2 cursor-pointer text-left text-sm">Contact & Rendez-vous<br></br></Link>
                     <Link href="/retrouvemoi" className="block py-2 cursor-pointer text-left text-sm">Retrouve-moi<br></br></Link>
                   </div>
 
@@ -190,7 +190,7 @@ const NavClem = () => {
 
                     {/* Submenu laptop avec le carré blanc en hover */}
                     <div className="hidden group-hover:block absolute text-left text-base border border-[#FFF] shadow bg-[#FFF] py-2 rounded-sm pr-4 pl-2">
-                      <Link href="/coordonnees" className="block py-2 cursor-pointer text-left px-1 min-w-28">Contacte-moi<br></br></Link>
+                      <Link href="/coordonnees" className="block py-2 cursor-pointer text-left px-1 min-w-28">Contact & Rendez-vous<br></br></Link>
                       <Link href="/retrouvemoi" className="block py-2 cursor-pointer text-left px-1 min-w-28">Retrouve-moi<br></br></Link>
                     </div>
                   </div>

@@ -1,24 +1,27 @@
-import { Wrapper, Status } from "@googlemaps/react-wrapper";
+"use client";
+import { useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import LogoLolita from "../../assets/Lolita_Doula.png";
-import PresentationRounded from "../../assets/presentation-contact.jpg";
-// import Portrait from "../../assets/portrait-zoomout.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Portrait from "../../assets/portrait.jpg";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-
-// const aProposImage = require('../../assets/a_propos.png');
-
 const Contact = () => {
+  // Use useEffect to load the Calendly script only on the client-side
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script); // Cleanup script when component unmounts
+    };
+  }, []);
+
   return (
     <div id="contact" className="min-h-[90vh] flex items-center justify-center pt-10 md:pt-16">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div className="flex flex-col md:flex-row items-center justify-center">
+        <div className="flex flex-col md:flex-row items-center justify-center mb-10 md:mb-[50px]">
           <div className="flex-shrink-0 mb-6 md:mb-0 md:mr-8">
             <Image
               src={Portrait}
@@ -40,7 +43,7 @@ const Contact = () => {
                 >
                   <FontAwesomeIcon
                     icon={faEnvelope}
-                    style={{ color: '#FCD4CD' }}
+                    style={{ color: "#FCD4CD" }}
                   />
                   &nbsp;mybabylove.doula@gmail.com
                 </a>
@@ -49,7 +52,7 @@ const Contact = () => {
                 <a href="tel:+33782384003" className="hover:underline">
                   <FontAwesomeIcon
                     icon={faPhone}
-                    style={{ color: '#FCD4CD' }}
+                    style={{ color: "#FCD4CD" }}
                   />
                   &nbsp;07 82 38 40 03
                 </a>
@@ -63,7 +66,7 @@ const Contact = () => {
                 >
                   <FontAwesomeIcon
                     icon={faInstagram}
-                    style={{ color: '#FCD4CD' }}
+                    style={{ color: "#FCD4CD" }}
                   />
                   &nbsp;mybabylove_doula
                 </a>
@@ -77,7 +80,7 @@ const Contact = () => {
                 >
                   <FontAwesomeIcon
                     icon={faFacebook}
-                    style={{ color: '#FCD4CD' }}
+                    style={{ color: "#FCD4CD" }}
                   />
                   &nbsp;My Baby Love Doula
                 </a>
@@ -85,6 +88,14 @@ const Contact = () => {
             </ul>
           </div>
         </div>
+
+        {/* Calendly widget loaded client-side */}
+        <div className="flex flex-col items-center justify-center mb-2"><p>Prenez rendez-vous pour votre moment de douceur</p></div>
+        <div
+          className="calendly-inline-widget"
+          data-url="https://calendly.com/mybabylove-doula?text_color=4c261a&primary_color=d52d5d"
+          style={{ minWidth: "320px", height: "700px" }}
+        ></div>
       </div>
     </div>
   );
