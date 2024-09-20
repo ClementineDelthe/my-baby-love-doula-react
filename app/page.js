@@ -47,11 +47,11 @@ const alice = Alice({
 export default function Home() {
   return (
     <div id="total" className={comfortaa.className}>
-      <Head>
+      {/* <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
         <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100&display=swap" rel="stylesheet"/>
-      </Head>
+      </Head> */}
       <BackToTopButton />
       <NavClem />
       <Apropos />

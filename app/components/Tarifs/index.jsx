@@ -6,6 +6,22 @@ import Image from "next/image";
 import SoinBebe from "../../assets/bebe-zoom-main-cube.jpg";
 import SoinFeminin from "../../assets/massage-dos5-cube.jpg";
 import SoinRebozo from "../../assets/massage-4mains3-cube.jpg";
+import { Comfortaa, Send_Flowers } from "next/font/google";
+import { Alice } from "next/font/google";
+import { Homemade_Apple } from 'next/font/google';
+
+const comfortaa = Comfortaa({
+  subsets: ['latin'],
+  weight: ['400'],
+});
+const sendFlowers = Send_Flowers({
+  subsets: ['latin'],
+  weight: ['400'],
+});
+const alice = Alice({
+  subsets: ['latin'],
+  weight: ['400'],
+});
 
 import { useState } from "react";
 
@@ -43,7 +59,9 @@ const Tarifs = () => {
   return (
     <div id="tarifs" className="py-6 min-h-[90vh] pt-">
       <div className="p-8 mx-auto my-5 max-w-7xl ">
-        <h2 className="text-2xl font-semibold text-[#3f3a36] mb-10">
+        {/* <h2 className="text-2xl font-semibold text-[#3f3a36] mb-10"> */}
+        <h2 className={`${sendFlowers.className} text-3xl font-bold tracking-tight mb-10 text-[#DD2D4A]`}>
+
           Les tarifs
         </h2>
         <div className="flex justify-center items-center">
@@ -65,7 +83,7 @@ const Tarifs = () => {
 
                   "
                 />
-                <h3 className="text-center text-sm md:text-base">{cat.nom}</h3>
+                <h3 className={`${alice.className} text-center text-sm md:text-base`}>{cat.nom}</h3>
               </div>
             ))}
           </div>
@@ -74,7 +92,7 @@ const Tarifs = () => {
           <ul className="my-8">
             {tarifsFeminins.map((tarif, index) => (
               <li key={index} className="mb-10">
-                <div className="flex justify-between">
+                <div className={`${alice.className} flex justify-between`}>
                   <p>{tarif.nom}</p>
                   <p className="text-slate-300 opacity-55 text-end">
                     {tarif.prix}€
@@ -89,7 +107,7 @@ const Tarifs = () => {
           <ul className="my-8">
             {tarifsRebozo.map((tarif, index) => (
               <li key={index} className="mb-10">
-                <div className="flex justify-between border-b">
+                <div className={`${alice.className} flex justify-between border-b`}>
                   <p>{tarif.nom}</p>
                   <p className="text-slate-300 opacity-55 text-end">
                     {tarif.prix}€
@@ -104,7 +122,7 @@ const Tarifs = () => {
           <ul className="my-8">
             {tarifsBebe.map((tarif, index) => (
               <li key={index} className="mb-10">
-                <div className="flex justify-between">
+                <div className={`${alice.className} flex justify-between`}>
                   <p>{tarif.nom}</p>
                   <p className="text-slate-300 opacity-55 text-end">
                     {tarif.prix}€
@@ -115,14 +133,16 @@ const Tarifs = () => {
             ))}
           </ul>
         ) : null}
-        <p className="mt-16 italic">
-          Les prix indiqués sont les prix appliqués à chaque prestation, pour un
-          devis personnalisé merci de me contacter directement.
-        </p>
-        <p className="mt-4 italic">
-          * Une majoration peut s&apos;exercer en fonction du lieu
-          d&apos;habitation et du jour du RDV
-        </p>
+        <div className={`${alice.className}`}>
+          <p className="mt-16 italic">
+            Les prix indiqués sont les prix appliqués à chaque prestation, pour un
+            devis personnalisé merci de me contacter directement.
+          </p>
+          <p className="mt-4 italic">
+            * Une majoration peut s&apos;exercer en fonction du lieu
+            d&apos;habitation et du jour du RDV
+          </p>
+        </div>
       </div>
     </div>
   );

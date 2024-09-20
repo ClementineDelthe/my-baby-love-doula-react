@@ -5,6 +5,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Portrait from "../../assets/portrait.jpg";
+import { Comfortaa, Alice } from "next/font/google";
+
+const comfortaa = Comfortaa({
+  subsets: ['latin'],
+  weight: ['400'],
+});
+const alice = Alice({
+  subsets: ['latin'],
+  weight: ['400'],
+});
 
 const Contact = () => {
   // Use useEffect to load the Calendly script only on the client-side
@@ -19,7 +29,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <div id="contact" className="min-h-[90vh] flex items-center justify-center pt-10 md:pt-16">
+    <div id="contact" className={`${alice.className} min-h-[90vh] flex items-center justify-center pt-10 md:pt-16`}>
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="flex flex-col md:flex-row items-center justify-center mb-10 md:mb-[50px]">
           <div className="flex-shrink-0 mb-6 md:mb-0 md:mr-8">
@@ -45,7 +55,7 @@ const Contact = () => {
                     icon={faEnvelope}
                     style={{ color: "#FCD4CD" }}
                   />
-                  &nbsp;mybabylove.doula@gmail.com
+                  &nbsp;&nbsp;mybabylove.doula@gmail.com
                 </a>
               </li>
               <li className="mb-4">
@@ -54,7 +64,7 @@ const Contact = () => {
                     icon={faPhone}
                     style={{ color: "#FCD4CD" }}
                   />
-                  &nbsp;07 82 38 40 03
+                  &nbsp;&nbsp;07 82 38 40 03
                 </a>
               </li>
               <li className="mb-4">
@@ -68,7 +78,7 @@ const Contact = () => {
                     icon={faInstagram}
                     style={{ color: "#FCD4CD" }}
                   />
-                  &nbsp;mybabylove_doula
+                  &nbsp;&nbsp;mybabylove_doula
                 </a>
               </li>
               <li>
@@ -82,7 +92,7 @@ const Contact = () => {
                     icon={faFacebook}
                     style={{ color: "#FCD4CD" }}
                   />
-                  &nbsp;My Baby Love Doula
+                  &nbsp;&nbsp;My Baby Love Doula
                 </a>
               </li>
             </ul>

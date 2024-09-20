@@ -35,8 +35,8 @@ const NavClem = () => {
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <div className="flex space-x-3">
                 <Link href="/">
-                  <h2 className={` ${homemadeApple.className} self-center text-2xl font-semibold whitespace-nowrap`}>
-                    My Baby Love
+                  <h2 className={` ${homemadeApple.className} self-center text-xl font-semibold whitespace-nowrap`}>
+                    My baby love
                   </h2>
                 </Link>
               </div>
