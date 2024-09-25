@@ -73,7 +73,8 @@ body {
  }
 
  .retrouve-desktop {
-  background-image: url(../app/assets/retrouve4.jpeg);
+  background-image: url(../app/assets/retrouve4-bandeau.jpg);
+  /* background-image: url(../app/assets/retrouve4.jpeg); */
  }
 
  .bg-douceur-rebozo {

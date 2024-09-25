@@ -1,4 +1,4 @@
-import { Wrapper, Status } from "@googlemaps/react-wrapper";
+// import { Wrapper, Status } from "@googlemaps/react-wrapper";
 import { Send_Flowers, Alice, Comfortaa } from "next/font/google";
 
 import Image from "next/image";
@@ -31,7 +31,6 @@ const alice = Alice({
 const Retrouve = () => {
   return (
     <div>
-
       <div className="retrouve-desktop md:apropos-desktop bg-cover bg-center h-64 md:h-[500px] flex items-center justify-center text-[#fff] opacity-85 md:mt-16">
         {/* <h1 className={`${sendFlowers.className} text-xl md:text-3xl font-bold text-center`}>Retrouve-moi dans mon cocon sur Villenave d&apos;Ornon
         </h1> */}
@@ -41,8 +40,8 @@ const Retrouve = () => {
         <div className="">
           <div className="text-center">
             <div>
-              <h2 className={`${alice.className} text-xl font-semibold pb-2 text-[#DD2D4A]`}>
-                Retrouve-moi dans mon cocon sur Villenave d&apos;Ornon
+              <h2 className={`${alice.className} text-2xl font-semibold pb-2 text-[#DD2D4A]`}>
+                Retrouve-moi dans mon cocon sur<br/>Villenave d&apos;Ornon
               </h2>
 
               <div className="my-4 text-lg">
@@ -73,7 +72,7 @@ const Retrouve = () => {
                     />
                   </div>
                   <p className={`${comfortaa.className} text-sm text-center`}>
-                    Situé au cœur de Villenave d&apos;ornon, mon cocon est spécialement conçu pour vous accueillir dans un environnement chaleureux et accueillant. Car chaque moment passé avec votre bébé est précieux, je souhaite vous offrir un cadre propice à l&apos;apaisement et à la convivialité.
+                    Situé au cœur de Villenave d&apos;ornon, mon cocon est spécialement conçu pour vous accueillir dans un environnement chaleureux et accueillant. Car chaque moment passé avec votre bébé est précieux, je souhaite vous offrir un cadre propice à la tendresse et à la convivialité.
                     <br/>
                     Mon espace est équipé de tout le nécessaire pour garantir le confort des petits et le bien-être des parents. Que vous veniez pour des ateliers d&apos;apprentissage du massage bébé ou le rituel du bain sensoriel® vous trouverez ici un lieu où vous pourrez vous sentir à l&apos;aise et soutenu.
                     <br/>
@@ -104,7 +103,7 @@ const Retrouve = () => {
                     />
                   </div>
                   <p className={`${comfortaa.className} text-sm text-center py-2`}>
-                    Mon cocon se métamorphose pour recevoir les femmes dans un cadre intimiste et douillet. Favorisant la déconnexion et l&apos;apaisement, j&apos;aménage mon espace pour le rendre cosy et propice à la confidence. Que ce soit au sol ou sur table, les massages proposés sont pensés à travers le confort, la douceur et la chaleur ambiante. En lumière naturelle ou éclairée par les bougies, vous serez transportées dans mon univers pour une parenthèse enchantée.
+                    Mon cocon se métamorphose pour recevoir les femmes dans un cadre intimiste et douillet. Favorisant la déconnexion et la confidence, j&apos;aménage mon espace pour le rendre cosy et chaleureux. Que ce soit au sol ou sur table, les massages proposés sont pensés à travers le confort, la douceur et la chaleur ambiante. En lumière naturelle ou éclairée par les bougies, vous serez transportées dans mon univers pour une parenthèse enchantée.
                   </p>
 
                   <Link href="https://www.google.com/maps/place/My+baby+love+-+Doula/@44.7782579,-0.5424504,17z/data=!3m1!4b1!4m6!3m5!1s0xd5527e745720d09:0x2be563342a7d92c3!8m2!3d44.7782541!4d-0.5398755!16s%2Fg%2F11vj05ws4m?entry=ttu">
@@ -126,7 +125,7 @@ const Retrouve = () => {
 
               <div className="text-xl font-semibold flex flex-col items-center justify-center">
                 <Link href="https://www.yellowtemple.fr/" target="_blank">
-                  <p className={`${alice.className} pb-2 text-[#DD2D4A]`}>Yellow Temple</p>
+                  <p className={`${alice.className} pb-2 pt-5 md:pt-0 text-[#DD2D4A] text-2xl`}>Yellow Temple</p>
                 </Link>
                 <p className={`${comfortaa.className} text-sm text-center`}>Maison holistique centr&eacute;e sur le bien-&ecirc;tre, situ&eacute;e sur la belle presqu&apos;&icirc;le du cap ferret, &agrave; Petit Piquey. Venez d&eacute;couvrir ce lieu plein de charme entre les dunes, l&apos;eau du bassin et les pins. V&eacute;ritable ode &agrave; la d&eacute;tente, je vous accueille dans cette maison pour la r&eacute;alisation de toutes mes prestations. Venez vivre une exp&eacute;rience de d&eacute;tente absolu dans un cadre exceptionnel.</p>
                 <Image
