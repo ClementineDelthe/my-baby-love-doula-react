@@ -107,7 +107,7 @@ const NavClem = () => {
 
                     {/* Submenu laptop avec le carré blanc en hover */}
                     <div className="hidden group-hover:block absolute text-left text-base border border-[#FFF] shadow bg-[#FFF] py-2 rounded-sm pr-4 pl-2">
-                      <Link href="/feminin" className="cursor-pointer block py-2 px-1">Massage</Link>
+                      <Link href="/feminin" className="cursor-pointer block py-2 px-1">Massages</Link>
                       <Link href="/rebozo" className="cursor-pointer block py-2 px-1">Rebozo</Link>
                       <Link href="/bebe" className="cursor-pointer block py-2 px-1">Bébé</Link>
                       <Link href="/bain" className="cursor-pointer block py-2 px-1">Bain Bébé</Link>
@@ -144,11 +144,11 @@ const NavClem = () => {
 
                   {/* Version laptop : affichage avec hover */}
                   <div className="hidden md:block group">
-                    <Link href="">
-                      <div className="flex items-center justify-between">
-                        <p>Tarifs</p>
-                      </div>
-                    </Link>
+                    {/* <Link href=""> */}
+                    <div className="flex items-center justify-between">
+                      <p>Tarifs</p>
+                    </div>
+                    {/* </Link> */}
 
                     {/* Submenu laptop avec le carré blanc en hover */}
                     <div className="hidden group-hover:block absolute text-left text-base border border-[#FFF] shadow bg-[#FFF] py-2 rounded-sm pr-4 pl-2">
@@ -182,11 +182,11 @@ const NavClem = () => {
 
                   {/* Version laptop : affichage avec hover */}
                   <div className="hidden md:block group">
-                    <Link href="">
-                      <div className="flex items-center justify-between">
-                        <p>Contact</p>
-                      </div>
-                    </Link>
+                    {/* <Link href=""> */}
+                    <div className="flex items-center justify-between">
+                      <p>Contact</p>
+                    </div>
+                    {/* </Link> */}
 
                     {/* Submenu laptop avec le carré blanc en hover */}
                     <div className="hidden group-hover:block absolute text-left text-base border border-[#FFF] shadow bg-[#FFF] py-2 rounded-sm pr-4 pl-2">

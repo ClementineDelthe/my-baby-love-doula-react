@@ -32,19 +32,21 @@ const Tarifs = () => {
     { nom: "Bébé", img: SoinBebe },
   ];
   const tarifsFeminins = [
-    { nom: "Massage Femme Enceinte", prix: "120" },
-    { nom: "Massage Postnatal", prix: "120" },
-    { nom: "Massage Déesse", prix: "120" },
+    { nom: "Massage Femme Enceinte", prixDomicile: "1h-80€/ 2h-120€", prixCocon: "1h-70€/ 2h-100€"},
+    { nom: "Massage Postnatal", prixDomicile: "1h-80€/ 2h-120€", prixCocon: "1h-70€/ 2h-100€"},
+    { nom: "Massage Energétique crânien et dos", prixDomicile: "1h-60€", prixCocon: "1h-50€"},
+    { nom: "Massage Déesse", prixDomicile: "1h45-110€", prixCocon: "1h45-90€"},
+    { nom: "Massage Ayurvédique", prixDomicile: "1h15-80€", prixCocon: "1h15-70€"},
   ];
   const tarifsRebozo = [
-    { nom: "Douceur du Rebozo*", prix: "60" },
-    { nom: "Rituel autour du Rebozo*", prix: "250" },
+    { nom: "Douceur du Rebozo", prixDomicile: "1h-1h30 60€", prixCocon: "1h-1h30 50€" },
+    { nom: "Rituel autour du Rebozo", prixCocon: "3h-250€" },
   ];
   const tarifsBebe = [
-    // { nom: "Rituel du Bain Sensoriel®️*", prix: "120" },
-    { nom: "Massage bébé*", prix: "55" },
-    { nom: "Soulager les maux de bébé*", prix: "55" },
-    { nom: "Massage/Yoga bambin*", prix: "60" },
+    { nom: "Rituel du Bain Sensoriel®", prixDomicile: "2h-120€", prixCocon: "2h-100€ avec lange offert" },
+    { nom: "Massage bébé", prixDomicile: "1h-55€", prixCocon: "1h-45€" },
+    { nom: "Soulager les maux de bébé", prixDomicile: "1h-55€", prixCocon: "1h-45€" },
+    { nom: "Massage/Yoga bambin", prixDomicile: "1h-60€", prixCocon: "1h-50€" },
   ];
 
   const [affichage, setAffichage] = useState(null);
@@ -89,43 +91,130 @@ const Tarifs = () => {
           </div>
         </div>
         {affichage === 0 ? (
+          // <ul className="my-8">
+          //   {tarifsFeminins.map((tarif, index) => (
+          //     <li key={index} className="mb-10">
+          //       <div className={`${alice.className} flex justify-between`}>
+          //         <p>{tarif.nom}</p>
+          //         <p className="text-slate-300 opacity-55 text-end">
+          //           {tarif.prixDomicile}€
+          //         </p>
+          //       </div>
+          //       <hr className="rounded-lg shadow" />
+          //     </li>
+          //   ))}
+          // </ul>
           <ul className="my-8">
+
+            <h4 className={`${sendFlowers.className} text-2xl font-semibold mt-8 pb-4`}>Dans mon cocon sur Villenave-d'Ornon</h4>
             {tarifsFeminins.map((tarif, index) => (
               <li key={index} className="mb-10">
                 <div className={`${alice.className} flex justify-between`}>
                   <p>{tarif.nom}</p>
                   <p className="text-slate-300 opacity-55 text-end">
-                    {tarif.prix}€
+                    {tarif.prixCocon}
+                  </p>
+                </div>
+                <hr className="rounded-lg shadow" />
+              </li>
+            ))}
+            <h4 className={`${sendFlowers.className} text-2xl font-semibold mt-8 pb-4`}>À domicile ou au Yellow Temple</h4>
+            {tarifsFeminins.map((tarif, index) => (
+              <li key={index} className="mb-10">
+                <div className={`${alice.className} flex justify-between`}>
+                  <p>{tarif.nom}</p>
+                  <p className="text-slate-300 opacity-55 text-end">
+                    {tarif.prixDomicile}
                   </p>
                 </div>
                 <hr className="rounded-lg shadow" />
               </li>
             ))}
           </ul>
+
         ) : null}
         {affichage === 1 ? (
+          // <ul className="my-8">
+          //   {tarifsRebozo.map((tarif, index) => (
+          //     <li key={index} className="mb-10">
+          //       <div className={`${alice.className} flex justify-between border-b`}>
+          //         <p>{tarif.nom}</p>
+          //         <p className="text-slate-300 opacity-55 text-end">
+          //           {tarif.prixDomicile}€
+          //         </p>
+          //       </div>
+          //       {/* <hr className="rounded-lg shadow bg-red-400 opacity-55" /> */}
+          //     </li>
+          //   ))}
+          // </ul>
           <ul className="my-8">
+
+            <h4 className={`${sendFlowers.className} text-2xl font-semibold mt-8 pb-4`}>Dans mon cocon sur Villenave-d'Ornon</h4>
             {tarifsRebozo.map((tarif, index) => (
               <li key={index} className="mb-10">
-                <div className={`${alice.className} flex justify-between border-b`}>
+                <div className={`${alice.className} flex justify-between`}>
                   <p>{tarif.nom}</p>
                   <p className="text-slate-300 opacity-55 text-end">
-                    {tarif.prix}€
+                    {tarif.prixCocon}
                   </p>
                 </div>
-                {/* <hr className="rounded-lg shadow bg-red-400 opacity-55" /> */}
+                <hr className="rounded-lg shadow" />
+              </li>
+            ))}
+            <h4 className={`${sendFlowers.className} text-2xl font-semibold mt-8 pb-4`}>À domicile ou au Yellow Temple</h4>
+            {tarifsRebozo.map((tarif, index) => (
+              <li key={index} className="mb-10">
+                {
+                  (tarif.prixDomicile) &&
+                  <div>
+                    <div className={`${alice.className} flex justify-between`}>
+                      <p>{tarif.nom}</p>
+                      <p className="text-slate-300 opacity-55 text-end">
+                        {tarif.prixDomicile}
+                      </p>
+                    </div>
+                    <hr className="rounded-lg shadow" />
+                  </div>
+                }
               </li>
             ))}
           </ul>
         ) : null}
         {affichage === 2 ? (
+          // <ul className="my-8">
+          //   {tarifsBebe.map((tarif, index) => (
+          //     <li key={index} className="mb-10">
+          //       <div className={`${alice.className} flex justify-between`}>
+          //         <p>{tarif.nom}</p>
+          //         <p className="text-slate-300 opacity-55 text-end">
+          //           {tarif.prixDomicile}€
+          //         </p>
+          //       </div>
+          //       <hr className="rounded-lg shadow" />
+          //     </li>
+          //   ))}
+          // </ul>
           <ul className="my-8">
+
+            <h4 className={`${sendFlowers.className} text-2xl font-semibold mt-8 pb-4`}>Dans mon cocon sur Villenave-d'Ornon</h4>
             {tarifsBebe.map((tarif, index) => (
               <li key={index} className="mb-10">
                 <div className={`${alice.className} flex justify-between`}>
                   <p>{tarif.nom}</p>
                   <p className="text-slate-300 opacity-55 text-end">
-                    {tarif.prix}€
+                    {tarif.prixCocon}
+                  </p>
+                </div>
+                <hr className="rounded-lg shadow" />
+              </li>
+            ))}
+            <h4 className={`${sendFlowers.className} text-2xl font-semibold mt-8 pb-4`}>À domicile ou au Yellow Temple</h4>
+            {tarifsBebe.map((tarif, index) => (
+              <li key={index} className="mb-10">
+                <div className={`${alice.className} flex justify-between`}>
+                  <p>{tarif.nom}</p>
+                  <p className="text-slate-300 opacity-55 text-end">
+                    {tarif.prixDomicile}
                   </p>
                 </div>
                 <hr className="rounded-lg shadow" />
@@ -139,8 +228,7 @@ const Tarifs = () => {
             devis personnalisé merci de me contacter directement.
           </p>
           <p className="mt-4 italic">
-            * Une majoration peut s&apos;exercer en fonction du lieu
-            d&apos;habitation et du jour du RDV
+            * Des frais supplémentaires peuvent s'ajouter suivant le secteur et les frais de parking.
           </p>
         </div>
       </div>
