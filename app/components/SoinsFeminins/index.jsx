@@ -142,7 +142,7 @@ const SoinsFeminins = () => {
                   </span>
                   <br/>
                   <i className="text-sm">
-                    massage 1h30 + temps d'accompagnement
+                    massage 1h30 + temps d&apos;accompagnement
                     <br/>
                     <Link href="/tarif" className="">*voir les conditions tarifaires</Link>
                   </i>
@@ -184,7 +184,7 @@ const SoinsFeminins = () => {
                   </span>
                   <br/>
                   <i className="text-sm">
-                    massage 1h30 + temps d'accompagnement
+                    massage 1h30 + temps d&apos;accompagnement
                     <br/>
                     <Link href="/tarif" className="">*voir les conditions tarifaires</Link>
                   </i>

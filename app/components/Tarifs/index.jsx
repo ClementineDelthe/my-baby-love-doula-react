@@ -106,7 +106,7 @@ const Tarifs = () => {
           // </ul>
           <ul className="my-8">
 
-            <h4 className={`${sendFlowers.className} text-2xl font-semibold mt-8 pb-4`}>Dans mon cocon sur Villenave-d'Ornon</h4>
+            <h4 className={`${sendFlowers.className} text-2xl font-semibold mt-8 pb-4`}>Dans mon cocon sur Villenave-d&apos;Ornon</h4>
             {tarifsFeminins.map((tarif, index) => (
               <li key={index} className="mb-10">
                 <div className={`${alice.className} flex justify-between`}>
@@ -149,7 +149,7 @@ const Tarifs = () => {
           // </ul>
           <ul className="my-8">
 
-            <h4 className={`${sendFlowers.className} text-2xl font-semibold mt-8 pb-4`}>Dans mon cocon sur Villenave-d'Ornon</h4>
+            <h4 className={`${sendFlowers.className} text-2xl font-semibold mt-8 pb-4`}>Dans mon cocon sur Villenave-d&apos;Ornon</h4>
             {tarifsRebozo.map((tarif, index) => (
               <li key={index} className="mb-10">
                 <div className={`${alice.className} flex justify-between`}>
@@ -196,7 +196,7 @@ const Tarifs = () => {
           // </ul>
           <ul className="my-8">
 
-            <h4 className={`${sendFlowers.className} text-2xl font-semibold mt-8 pb-4`}>Dans mon cocon sur Villenave-d'Ornon</h4>
+            <h4 className={`${sendFlowers.className} text-2xl font-semibold mt-8 pb-4`}>Dans mon cocon sur Villenave-d&apos;Ornon</h4>
             {tarifsBebe.map((tarif, index) => (
               <li key={index} className="mb-10">
                 <div className={`${alice.className} flex justify-between`}>
@@ -228,7 +228,7 @@ const Tarifs = () => {
             devis personnalisé merci de me contacter directement.
           </p>
           <p className="mt-4 italic">
-            * Des frais supplémentaires peuvent s'ajouter suivant le secteur et les frais de parking.
+            * Des frais supplémentaires peuvent s&apos;ajouter suivant le secteur et les frais de parking.
           </p>
         </div>
       </div>
