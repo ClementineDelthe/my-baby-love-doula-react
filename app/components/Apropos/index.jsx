@@ -30,12 +30,12 @@ const Apropos = () => {
               Lolita Garnier
             </h2>
             <p className={`${alice.className} text-gray-800 text-sm mt-7 mb-2 leading-relaxed`}>
-              Passionnée par le soin et prendre soin, j&apos;ai été infirmière en
-              chirurgie cancérologique pendant 7 ans. Maman de deux enfants,
-              j&apos;ai compris la nécessité et le besoin d&apos;apporter plus de
-              confort et de bien-être durant cette période et dans la vie en
-              général. Je souhaite mettre la femme au cœur de mon
-              engagement. Pour que toutes les femmes se sentent légitimes
+              Passionn&eacute;e par le soin et prendre soin, j&apos;ai &eacute;t&eacute; infirmière en
+              chirurgie canc&eacute;rologique pendant 7 ans. Maman de deux enfants,
+              j&apos;ai compris la n&eacute;cessit&eacute; et le besoin d&apos;apporter plus de
+              confort et de bien-être durant cette p&eacute;riode et dans la vie en
+              g&eacute;n&eacute;ral. Je souhaite mettre la femme au cœur de mon
+              engagement. Pour que toutes les femmes se sentent l&eacute;gitimes
               dans leur corps et leur esprit. Je vous propose un
               accompagnement complet pour accueillir vos histoires en
               prenant soin de vous.<br></br> A très vite, Lolita
