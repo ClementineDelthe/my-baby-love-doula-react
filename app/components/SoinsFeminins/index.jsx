@@ -96,17 +96,22 @@ const SoinsFeminins = () => {
             Soins Feminins
           </h2>
           <p className={`${alice.className} pb-2 `}>
-              Inspiré de l&apos;ayurvédique, je propose des massages du corps
-              complet à l&apos;huile chaude, mêlant bercement, serrage, massage
-              enveloppant. Véritable rituel, je prends le temps de vous écouter
-              dans un cadre bienveillant autour d&apos;une tisane et d&apos;un
-              bain de pieds aux plantes.
-            </p>
+            Je prend soin de toutes les femmes, pour toutes les &eacute;tapes de votre vie.
+            <br/>
+            Formée &agrave; diff&eacute;rentes pratique, je vous propose des soins en fonction de vos besoins et de vos d&eacute;sirs.
+          </p>
             {/* <p className={`${alice.className} text-sm pb-4 font-semibold`}>
               Rituel de 2H-2H30 dont 1H30 de massage - 120€*
             </p> */}
+            <ul className="block md:hidden">
+              <li><Link href="#massage-femme-enceinte" className={`${alice.className}`}>✨ Massage Femme Enceinte</Link></li>
+              <li><Link href="#massage-post-partum" className={`${alice.className}`}>✨ Massage Post Partum</Link></li>
+              <li><Link href="#massage-energetique" className={`${alice.className}`}>✨ Massage Crânien-Dos</Link></li>
+              <li><Link href="#massage-deesse" className={`${alice.className}`}>✨ Massage Déesse</Link></li>
+              <li><Link href="#massage-ayurvedique" className={`${alice.className}`}>✨ Massage Ayurvédique</Link></li>
+            </ul>
         </div>
-        <div id="massage-femme-enceinte" className="md:relative flex flex-col md:flex-row-reverse items-center justify-between md:min-h-80 py-5">
+        <div id="massage-femme-enceinte" className={`md:relative flex flex-col md:flex-row-reverse items-center justify-between md:min-h-80 py-5 ${(showSoinEnceinte === true) ? "" : "" }`}>
           <div className="md:w-1/5">
             <Image
                 src={MassageFemmeEnceinte}
@@ -216,7 +221,9 @@ const SoinsFeminins = () => {
                 Venez vous offrir une expérience riche et complète, permettant de retrouver un état de paix intérieure. Les bienfaits se font sentir bien au-delà de la séance. Une véritable invitation à prendre soin de soi.
                 <br></br>
                 <span className="font-bold">
-                 Massage du dos, des épaules, de la tête et du visage 45 minutes + 15 minutes d&apos;échange = 60 euros - 1h
+                 Massage du dos, des épaules, de la tête et du visage 45 minutes + 15 minutes d&apos;échange
+                  <br/>
+                  <Link href="/tarif" className="">1h à partir de 50€</Link>
                 </span>
               </p>
             }
@@ -246,7 +253,9 @@ const SoinsFeminins = () => {
                 Prenez soin de vous, car votre bien-être est précieux.
                 <br></br>
                 <span className="font-bold">
-                  Bain de pieds + temps d&apos;accompagnement + massage corps complet 1h15 = 110 euros - 1h45
+                  Bain de pieds + temps d&apos;accompagnement + massage corps complet 1h15
+                  <br/>
+                  <Link href="/tarif" className="">1h45 à partir de 90€</Link>
                 </span>
               </p>
             }
@@ -273,7 +282,9 @@ const SoinsFeminins = () => {
                 Un bain de pied aux plantes avec un gommage démarre le rituel, invitant à la détente. Ensuite, une serviette chaude et moelleuse enveloppe les pieds. Enfin, vous êtes convié à vous installer sur la table de massage chauffée afin que de profiter d&apos;un pure moment de détente où chaque zone de votre corps recevra une attention particulière. Chaque mouvement est pensé pour maximiser votre confort, afin de vous emmener dans un état de relaxation profonde. Les tensions accumulées se dissoudront lentement, vous laissant une sensation de légèreté mentale et physique. C&apos;est un véritable voyage sensoriel qui vous attend, une parenthèse de bien-être où le temps semble s&apos;arrêter pour vous offrir une pause bien méritée.
                 <br></br>
                 <span className="font-bold">
-                  Bain de pied + massage 1 h + 15 min d&apos;échange = 80 euros - 1h15
+                  Bain de pied + massage 1 h + 15 min d&apos;échange
+                  <br/>
+                  <Link href="/tarif" className="">1h15 à partir de 70€</Link>
                 </span>
               </p>
             }
@@ -281,7 +292,7 @@ const SoinsFeminins = () => {
             </div>
 
         </div>
-        <p className={`${alice.className} italic text-sm md:pt-10`}>*Une majoration peut s&apos;exercer en fonction du lieu d&apos;habitation et du jour du RDV</p>
+        <p className={`${alice.className} italic text-sm md:pt-10`}>*Une majoration peut s&apos;exercer en fonction du lieu d&apos;habitation et du jour de la prestation</p>
         <br />
         <Link href="/formule" className={`${alice.className} button bg-rose-poudre border-none`}>Voir les formules</Link>
       </div>

@@ -75,23 +75,23 @@ const BainBebe = () => {
             className="h-auto max-w-full rounded-lg pb-4 md:pb-0"
           />
           <div className="px-4 md:px-10">
-            <p className={`${homemadeApple.className} mt-2 md:my-0 text-[#DD2D4A]`}>C&apos;est quoi&nbsp;?</p>
+            <p className={`${homemadeApple.className} mt-2 md:my-0 text-[#DD2D4A] text-xl`}>C&apos;est quoi&nbsp;?</p>
             <p className={`${comfortaa.className}`}>
               {/* C&apos;est quoi ? */}
               <br/>
               Un accompagnement global au Postpartum pour la famille autour de l&apos;expérience du bain :
-              <br/>
-              → Permettre à votre enfant de revivre ses sensations in utéro et de se défaire de ses tensions.
-              <br/>
-              → Pouvoir raconter son récit de naissance. Etre entendu sur son histoire et ses premiers pas de parents avec bienveillance et non jugement.
-              <br/>
-              → Recevoir des nouveaux outils et de nouvelles compétences tout en étant acteur de chaque étape du rituel.
+              <br/><br/>
+              →&nbsp;Permettre à votre enfant de revivre ses sensations in utéro et de se défaire de ses tensions.
+              <br/><br/>
+              →&nbsp;Pouvoir raconter son récit de naissance. Etre entendu sur son histoire et ses premiers pas de parents avec bienveillance et non jugement.
+              <br/><br/>
+              →&nbsp;Recevoir des nouveaux outils et de nouvelles compétences tout en étant acteur de chaque étape du rituel.
             </p>
           </div>
         </div>
         <div className="flex flex-col-reverse md:flex-row items-center justify-between my-10 md:py-1">
           <div className="px-4 md:px-10">
-            <p className={`${homemadeApple.className} mt-2 md:my-0 text-[#DD2D4A]`}>Pour qui&nbsp;?</p>
+            <p className={`${homemadeApple.className} mt-2 md:my-0 text-[#DD2D4A] text-xl`}>Pour qui&nbsp;?</p>
             <p className={`${comfortaa.className}`}>
               {/* Pour qui ? */}
               <br/>
@@ -121,7 +121,7 @@ const BainBebe = () => {
             className="h-auto max-w-full rounded-lg pb-4 md:pb-0"
           />
           <div className="px-4 md:px-10">
-            <p className={`${homemadeApple.className} mt-2 md:my-0 text-[#DD2D4A]`}>Pour quoi faire ce rituel&nbsp;?</p>
+            <p className={`${homemadeApple.className} mt-2 md:my-0 text-[#DD2D4A] text-xl`}>Pour quoi faire ce rituel&nbsp;?</p>
             <p className={`${comfortaa.className}`}>
               {/* Pour quoi faire ce rituel ? */}
               <br/>
@@ -135,17 +135,17 @@ const BainBebe = () => {
         </div>
         <div className="flex flex-col-reverse md:flex-row items-center justify-between mt-6 md:my-16">
           <div className="px-4 md:px-10">
-            <p className={`${homemadeApple.className} mt-2 md:my-0 text-[#DD2D4A]`}>Comment se passe le rituel&nbsp;?</p>
+            <p className={`${homemadeApple.className} mt-2 md:my-0 text-[#DD2D4A] text-xl`}>Comment se passe le rituel&nbsp;?</p>
             <p className={`${comfortaa.className}`}>
               {/* Comment se passe le rituel ? */}
               <br/>
-              → L&apos;accueil : Je mets en place un environnement chaleureux et intime sur mesure pour vous accueillir dans les meilleures conditions. Un temps d&apos;échange sera consacré pour comprendre vos besoins et vous offrir une écoute juste de votre histoire.
-              <br/>
-              → L&apos;emmaillotage : je prends le temps de vous montrer la pratique de l&apos;emmaillotage de bain que vous pourrez faire sur un poupon puis sur votre enfant.
-              <br/>
-              → Le bain sensoriel : lorsque les conditions sont réunis, nous faisons ensemble la mise dans l&apos;eau de bébé. Avec des mouvements précis et en fonction des besoins de votre enfant, je vous montre les gestes à reproduire. Petit à petit, je vous passe le relais et chaque partenaire peut passer un temps les yeux dans les yeux avec bébé. La sortie du bain se fait sur l&apos;un des parents.
-              <br/>
-              → L&apos;instant cocon : du peau à peau vous est proposé, ainsi qu&apos;allaiter votre tout petit si c&apos;est le cas. Je vous propose ensuite de souhaiter la bienvenue à bébé avec un protocole de réflexologie et une initiation au massage.
+              →&nbsp;<span className={`${alice.className} font-extrabold text-xl`}>L&apos;accueil</span> : Je mets en place un environnement chaleureux et intime sur mesure pour vous accueillir dans les meilleures conditions. Un temps d&apos;échange sera consacré pour comprendre vos besoins et vous offrir une écoute juste de votre histoire.
+              <br/><br/>
+              →&nbsp;<span className={`${alice.className} font-extrabold text-xl`}>L&apos;emmaillotage</span> : je prends le temps de vous montrer la pratique de l&apos;emmaillotage de bain que vous pourrez faire sur un poupon puis sur votre enfant.
+              <br/><br/>
+              →&nbsp;<span className={`${alice.className} font-extrabold text-xl`}>Le bain sensoriel</span> : lorsque les conditions sont réunis, nous faisons ensemble la mise dans l&apos;eau de bébé. Avec des mouvements précis et en fonction des besoins de votre enfant, je vous montre les gestes à reproduire. Petit à petit, je vous passe le relais et chaque partenaire peut passer un temps les yeux dans les yeux avec bébé. La sortie du bain se fait sur l&apos;un des parents.
+              <br/><br/>
+              →&nbsp;<span className={`${alice.className} font-extrabold text-xl`}>L&apos;instant cocon</span> : du peau à peau vous est proposé, ainsi qu&apos;allaiter votre tout petit si c&apos;est le cas. Je vous propose ensuite de souhaiter la bienvenue à bébé avec un protocole de réflexologie et une initiation au massage.
             </p>
           </div>
           <Image
@@ -156,8 +156,61 @@ const BainBebe = () => {
             className="h-auto max-w-full rounded-lg pb-4 md:pb-0"
           />
         </div>
+        <div className="flex flex-col md:flex-row items-center justify-between my-10 md:py-1">
+          <Image
+            src={CestQuoi}
+            alt="bain bébé"
+            width={200}
+            height={300}
+            className="h-auto max-w-full rounded-lg pb-4 md:pb-0"
+          />
+          <div className="px-4 md:px-10">
+            <p className={`${homemadeApple.className} mt-2 md:my-0 text-[#DD2D4A] text-xl`}>Rituel du bain sensoriel photographié&nbsp;:</p>
+            <p className={`${comfortaa.className}`}>
+              {/* C&apos;est quoi ? */}
+              <br/>
+              Je travaille avec Amélie, Mayä Photographie, photographe lifestyle.
+              <br/><br/>
+              Le tarif de la photographe comprend&nbsp;:
+              <br/><br/>
+              →&nbsp;Prises de vue&nbsp;:
+              <br/>
+              •⁠ Famille/change bébé
+              <br/>
+              •⁠ Bain
+              <br/>
+              •⁠ Peau à peau et/ou allaitement si souhaité
+              <br/>
+              •⁠ Massage bébé
+              <br/>
+              •⁠ Bébé seul/détails au macro
+              <br/><br/>
+              →&nbsp;Trie et post traitement
+              <br/>
+              →&nbsp;Livraison sur galerie privé
+              <br/>
+              →&nbsp;10 photos HD au choix
+              <br/><br/>
+              <span className="font-bold">
+                220€ dans mon cocon sur Villenave-d'Ornon
+                <br/>
+                240€ A domicile autour de Bordeaux
+                <br/>
+                270€ au Yellow Temple et ses alentours
+              </span>
+              <br/><br/>
+              <Link href="https://www.mayaphotographie.fr/" target="_blank">
+                N'hésitez pas à aller découvrir le travail d'Amélie : www.mayaphotographie.fr
+              </Link>
+              <br/><br/>
+              <pan className="italic text-xs">
+                * Des frais supplémentaires peuvent s'appliquer en fonction de la zone géographique.
+              </pan>
+            </p>
+          </div>
+        </div>
       <div className="py-6">
-        <p className={`${alice.className} italic text-sm mt-4`}>2h - 120€*<br/>*Une majoration peut s&apos;exercer en fonction du lieu d&apos;habitation et du jour du RDV</p>
+        <p className={`${alice.className} italic text-sm mt-4`}>2h - 120€*<br/>*Une majoration peut s&apos;exercer en fonction du lieu d&apos;habitation et du jour de la prestation</p>
         <br />
         <Link href="/formule" className={`${alice.className} button bg-rose-poudre border-none`}>Voir les formules</Link>
       </div>

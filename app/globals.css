@@ -61,6 +61,13 @@ body {
   transition-duration: 350ms;
 }
 
+.beige-cloud-bg {
+  background-image: url(../app/assets/beige_cloud.png);
+  background-repeat: no-repeat;  /* Prevent the image from repeating */
+  background-position: 35% center; /* Center both horizontally and vertically */
+  background-size: 220%; /* Or 'contain' or 'cover' depending on the desired effect */
+}
+
  .apropos-mobile {
   background-image: url(../app/assets/bebe-charlotte.jpg);
  }

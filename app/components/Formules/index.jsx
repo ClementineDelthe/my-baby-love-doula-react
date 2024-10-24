@@ -200,6 +200,7 @@ const Formules = () => {
               </div>
             </div>
           </div>
+          <p className={`${alice.className} italic text-sm pt-10`}>*Une majoration peut s&apos;exercer en fonction du lieu d&apos;habitation et du jour de la prestation</p>
         </div>
       </div>
     </div>
