@@ -209,6 +209,25 @@ const BainBebe = () => {
             </p>
           </div>
         </div>
+        <div className="mt-2 md:pt-10">
+          <p className={`${homemadeApple.className} text-md pb-2`}>
+            <span className="text-[#DD2D4A]">Offrez un moment de bonheur.</span>
+          </p>
+          <p className={`text-md ${comfortaa.className}`}>
+            Vous pouvez retrouver toutes mes prestations en carte cadeau.
+            <br/>
+            Vous pouvez venir les retirer sur Villenave d'Ornon ou au Yellow Temple.
+            <br/>
+            Je peux également les envoyer directement par voie postale.
+            <br/>
+            Je peux aussi vous les envoyer de façon dématérialisée.
+            <br/>
+            N'hésitez pas à me contacter, retrouvez moi
+            <span className="text-[#DD2D4A]">
+              <Link href="/coordonnees"> ici.</Link>
+            </span>
+          </p>
+        </div>
       <div className="py-6">
         <p className={`${alice.className} italic text-sm mt-4`}>2h - 120€*<br/>*Une majoration peut s&apos;exercer en fonction du lieu d&apos;habitation et du jour de la prestation</p>
         <br />
