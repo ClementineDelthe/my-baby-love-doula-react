@@ -192,7 +192,7 @@ const BainBebe = () => {
               →&nbsp;10 photos HD au choix
               <br/><br/>
               <span className="font-bold">
-                220€ dans mon cocon sur Villenave-d'Ornon
+                220€ dans mon cocon sur Villenave-d&apos;Ornon
                 <br/>
                 240€ A domicile autour de Bordeaux
                 <br/>
@@ -200,11 +200,11 @@ const BainBebe = () => {
               </span>
               <br/><br/>
               <Link href="https://www.mayaphotographie.fr/" target="_blank">
-                N'hésitez pas à aller découvrir le travail d'Amélie : www.mayaphotographie.fr
+                N&apos;hésitez pas à aller découvrir le travail d&apos;Amélie : www.mayaphotographie.fr
               </Link>
               <br/><br/>
               <pan className="italic text-xs">
-                * Des frais supplémentaires peuvent s'appliquer en fonction de la zone géographique.
+                * Des frais supplémentaires peuvent s&apos;appliquer en fonction de la zone géographique.
               </pan>
             </p>
           </div>
@@ -216,13 +216,13 @@ const BainBebe = () => {
           <p className={`text-md ${comfortaa.className}`}>
             Vous pouvez retrouver toutes mes prestations en carte cadeau.
             <br/>
-            Vous pouvez venir les retirer sur Villenave d'Ornon ou au Yellow Temple.
+            Vous pouvez venir les retirer sur Villenave d&apos;Ornon ou au Yellow Temple.
             <br/>
             Je peux également les envoyer directement par voie postale.
             <br/>
             Je peux aussi vous les envoyer de façon dématérialisée.
             <br/>
-            N'hésitez pas à me contacter, retrouvez moi
+            N&apos;hésitez pas à me contacter, retrouvez moi
             <span className="text-[#DD2D4A]">
               <Link href="/coordonnees"> ici.</Link>
             </span>
