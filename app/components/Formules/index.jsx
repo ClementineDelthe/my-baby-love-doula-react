@@ -9,6 +9,8 @@ import ParentheseEnchantee from "../../assets/massage-dos4.jpg"
 import AmourPourToujours from "../../assets/amour-toujours.jpeg"
 import TendreDecouverte from "../../assets/massage-bebe5.jpg";
 import InstantInfini from "../../assets/bain-sensoriel-lolita.jpg";
+import { Homemade_Apple } from 'next/font/google';
+import Link from "next/link";
 
 const comfortaa = Comfortaa({
   subsets: ['latin'],
@@ -21,6 +23,10 @@ const sendFlowers = Send_Flowers({
 const alice = Alice({
   subsets: ['latin'],
   weight: ['400'],
+});
+const homemadeApple = Homemade_Apple({
+  subsets: ['latin'],
+  weight: '400',
 });
 
 const Formules = () => {
@@ -114,14 +120,14 @@ const Formules = () => {
                   />
               </div>
               <div className="px-4 md:px-10 md:w-4/5">
-                <h3 className={`mb-2 text-xl ${alice.className} text-[#DD2D4A]`}>Parenthèse enchantée</h3>
+                <h3 className={`mb-2 text-2xl ${alice.className} text-[#DD2D4A]`}>Parenthèse enchantée</h3>
                 {/* <p className={`${homemadeApple.className} mb-2`}>“Véritable ode à la détente et à la revitalisation.”</p> */}
                 {
                   (showFormuleParentheseEnchantee === true) &&
-                  <p className={`text-sm ${comfortaa.className}`}>
+                  <p className={`text-lg ${comfortaa.className}`}>
                     Massage femme enceinte ET Douceur du rebozo
                     <br></br>
-                    160€*
+                    A partir de 160€*
                   </p>
                 }
                 <button onClick={toggleFormuleParentheseEnchantee} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showFormuleParentheseEnchantee === true ? "Voir moins" : "Voir plus"}</button>
@@ -138,14 +144,14 @@ const Formules = () => {
                   />
               </div>
               <div className="px-4 md:px-10 md:w-4/5">
-                <h3 className={`mb-2 text-xl ${alice.className} text-[#DD2D4A]`}>Amour pour toujours</h3>
+                <h3 className={`mb-2 text-2xl ${alice.className} text-[#DD2D4A]`}>Amour pour toujours</h3>
                 {/* <p className={`${homemadeApple.className} mb-2`}>“Toutes les femmes méritent d&apos;être honorées et célébrées.”</p> */}
                 {
                   (showFormuleAmourToujours === true) &&
-                  <p className={`text-sm ${comfortaa.className}`}>
+                  <p className={`text-lg ${comfortaa.className}`}>
                     Un soin féminin au choix ET Un rituel du bain sensoriel®
                     <br></br>
-                    210€*
+                    A partir de 210€*
                   </p>
                 }
                 <button onClick={toggleFormuleAmourToujours} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showFormuleAmourToujours === true ? "Voir moins" : "Voir plus"}</button>
@@ -162,14 +168,14 @@ const Formules = () => {
                   />
               </div>
               <div className="px-4 md:px-10 md:w-4/5">
-                <h3 className={`mb-2 text-xl ${alice.className} text-[#DD2D4A]`}>Tendre découverte</h3>
+                <h3 className={`mb-2 text-2xl ${alice.className} text-[#DD2D4A]`}>Tendre découverte</h3>
                 {/* <p className={`${homemadeApple.className} mb-2`}>“Véritable ode à la détente et à la revitalisation.”</p> */}
                 {
                   (showFormuleTendreDecouverte === true) &&
-                  <p className={`text-sm ${comfortaa.className}`}>
+                  <p className={`text-lg ${comfortaa.className}`}>
                     4 séances massage bébé : Apprentissage massage du corps complet de votre bébé + soulager les maux de bébé
                     <br></br>
-                    150€*
+                    A partir de 150€*
                   </p>
                 }
                 <button onClick={toggleFormuleTendreDecouverte} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showFormuleTendreDecouverte === true ? "Voir moins" : "Voir plus"}</button>
@@ -186,20 +192,41 @@ const Formules = () => {
                   />
               </div>
               <div className="px-4 md:px-10 md:w-4/5">
-                <h3 className={`mb-2 text-xl ${alice.className} text-[#DD2D4A]`}>Instant infini</h3>
+                <h3 className={`mb-2 text-2xl ${alice.className} text-[#DD2D4A]`}>Instant infini</h3>
                 {/* <p className={`${homemadeApple.className} mb-2`}>“Toutes les femmes méritent d&apos;être honorées et célébrées.”</p> */}
                 {
                   (showFormuleInstantInfini === true) &&
-                  <p className={`text-sm ${comfortaa.className}`}>
-                    Rituel du bain sensoriel® photographié. Avec Amélie, Mayä Photographie.
+                  <p className={`text-lg ${comfortaa.className}`}>
+                    Rituel du bain sensoriel® photographié.
+                    <br/>
+                    Avec Amélie, Mayä Photographie.
                     <br></br>
-                    240€*
+                    A partir de 240€*
                   </p>
                 }
                 <button onClick={toggleFormuleInstantInfini} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showFormuleInstantInfini === true ? "Voir moins" : "Voir plus"}</button>
               </div>
             </div>
           </div>
+          <div className="mt-2 md:pt-10">
+          <p className={`${homemadeApple.className} text-md pb-2`}>
+            <span className="text-[#DD2D4A]">Offrez un moment de bonheur.</span>
+          </p>
+          <p className={`text-md ${comfortaa.className}`}>
+            Vous pouvez retrouver toutes mes formules en carte cadeau.
+            <br/>
+            Vous pouvez venir les retirer sur Villenave d'Ornon ou au Yellow Temple.
+            <br/>
+            Je peux également les envoyer directement par voie postale.
+            <br/>
+            Je peux aussi vous les envoyer de façon dématérialisée.
+            <br/>
+            N'hésitez pas à me contacter, retrouvez moi
+            <span className="text-[#DD2D4A]">
+              <Link href="/coordonnees"> ici.</Link>
+            </span>
+          </p>
+        </div>
           <p className={`${alice.className} italic text-sm pt-10`}>*Une majoration peut s&apos;exercer en fonction du lieu d&apos;habitation et du jour de la prestation</p>
         </div>
       </div>

@@ -39,14 +39,15 @@ const Tarifs = () => {
     { nom: "Massage Ayurvédique", prixDomicile: "1h15-80€", prixCocon: "1h15-70€"},
   ];
   const tarifsRebozo = [
-    { nom: "Douceur du Rebozo", prixDomicile: "1h-1h30 60€", prixCocon: "1h-1h30 50€" },
-    { nom: "Rituel autour du Rebozo", prixCocon: "3h-250€" },
+    { nom: "Douceur du Rebozo", prixDomicile: "1h-1h30 60€", prixCocon: "1h-1h30 50€", prixYT:"1h-1h30 60€" },
+    { nom: "Rituel autour du Rebozo", prixCocon: "3h-250€", prixYT: "3h-250€" },
   ];
   const tarifsBebe = [
-    { nom: "Rituel du Bain Sensoriel®", prixDomicile: "2h-120€", prixCocon: "2h-100€ avec lange offert" },
-    { nom: "Massage bébé", prixDomicile: "1h-55€", prixCocon: "1h-45€" },
-    { nom: "Soulager les maux de bébé", prixDomicile: "1h-55€", prixCocon: "1h-45€" },
-    { nom: "Massage/Yoga bambin", prixDomicile: "1h-60€", prixCocon: "1h-50€" },
+    { nom: "Rituel du Bain Sensoriel®", prixDomicile: "2h-120€", prixCocon: "2h-100€", prixYT: "2h-120€" },
+    { nom: "Rituel du Bain Sensoriel® Photographié", prixDomicile: "2h-240€", prixCocon: "2h-220€", prixYT: "2h-270€" },
+    { nom: "Massage bébé", prixDomicile: "1h-55€", prixCocon: "1h-45€", prixYT: "1h-55€" },
+    { nom: "Soulager les maux de bébé", prixDomicile: "1h-55€", prixCocon: "1h-45€", prixYT: "1h-55€" },
+    { nom: "Massage/Yoga bambin", prixDomicile: "1h-60€", prixCocon: "1h-50€", prixYT: "1h-60€" },
   ];
 
   const [affichage, setAffichage] = useState(null);
@@ -161,7 +162,7 @@ const Tarifs = () => {
                 <hr className="rounded-lg shadow" />
               </li>
             ))}
-            <h4 className={`${sendFlowers.className} text-2xl font-semibold mt-8 pb-4`}>À domicile ou au Yellow Temple</h4>
+            <h4 className={`${sendFlowers.className} text-2xl font-semibold mt-8 pb-4`}>À domicile</h4>
             {tarifsRebozo.map((tarif, index) => (
               <li key={index} className="mb-10">
                 {
@@ -171,6 +172,23 @@ const Tarifs = () => {
                       <p>{tarif.nom}</p>
                       <p className="text-slate-300 opacity-55 text-end">
                         {tarif.prixDomicile}
+                      </p>
+                    </div>
+                    <hr className="rounded-lg shadow" />
+                  </div>
+                }
+              </li>
+            ))}
+            <h4 className={`${sendFlowers.className} text-2xl font-semibold mt-8 pb-4`}>Au Yellow Temple</h4>
+            {tarifsRebozo.map((tarif, index) => (
+              <li key={index} className="mb-10">
+                {
+                  (tarif.prixYT) &&
+                  <div>
+                    <div className={`${alice.className} flex justify-between`}>
+                      <p>{tarif.nom}</p>
+                      <p className="text-slate-300 opacity-55 text-end">
+                        {tarif.prixYT}
                       </p>
                     </div>
                     <hr className="rounded-lg shadow" />
@@ -208,7 +226,7 @@ const Tarifs = () => {
                 <hr className="rounded-lg shadow" />
               </li>
             ))}
-            <h4 className={`${sendFlowers.className} text-2xl font-semibold mt-8 pb-4`}>À domicile ou au Yellow Temple</h4>
+            <h4 className={`${sendFlowers.className} text-2xl font-semibold mt-8 pb-4`}>À domicile autour de Bordeaux</h4>
             {tarifsBebe.map((tarif, index) => (
               <li key={index} className="mb-10">
                 <div className={`${alice.className} flex justify-between`}>
@@ -218,6 +236,23 @@ const Tarifs = () => {
                   </p>
                 </div>
                 <hr className="rounded-lg shadow" />
+              </li>
+            ))}
+            <h4 className={`${sendFlowers.className} text-2xl font-semibold mt-8 pb-4`}>Au Yellow Temple et ses alentours</h4>
+            {tarifsBebe.map((tarif, index) => (
+              <li key={index} className="mb-10">
+                {
+                  (tarif.prixYT) &&
+                  <div>
+                    <div className={`${alice.className} flex justify-between`}>
+                      <p>{tarif.nom}</p>
+                      <p className="text-slate-300 opacity-55 text-end">
+                        {tarif.prixYT}
+                      </p>
+                    </div>
+                    <hr className="rounded-lg shadow" />
+                  </div>
+                }
               </li>
             ))}
           </ul>

@@ -18,6 +18,7 @@ import AmourToujours from "../../assets/amour-toujours.jpeg"
 import MassageDos from "../../assets/massage-dos.jpg"
 import PiedBebe from "../../assets/pied-bebe.jpg"
 import MassageHuile from "../../assets/massage-huile.jpg"
+import Link from "next/link";
 
 
 const Gallery = () => {
@@ -186,6 +187,11 @@ const Gallery = () => {
               />
             </div>
           </div>
+        </div>
+        <div className="mt-4 italic">
+          <Link href="https://www.mayaphotographie.fr/" target="_blank">
+            Photographies réalisées par Amélie, Mayä Photographie. Tous droits reservés.
+          </Link>
         </div>
       </div>
     </div>
