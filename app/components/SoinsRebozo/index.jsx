@@ -48,7 +48,9 @@ const SoinsRebozo = () => {
       setShowSoinRituelRebozo(false);
     }
   }
+
   const [showSoinDouceurRebozo, setShowSoinDouceurRebozo] = useState(false);
+  const [showContreIndicationsDouceurRebozo, setShowContreIndicationsDouceurRebozo] = useState(false);
   const toggleSoinDouceurRebozo = () => {
     if(showSoinDouceurRebozo === false) {
       setShowSoinDouceurRebozo(true);
@@ -56,6 +58,9 @@ const SoinsRebozo = () => {
       setShowSoinDouceurRebozo(false);
     }
   }
+  const toggleContreIndicationsDouceurRebozo = () => {
+    setShowContreIndicationsDouceurRebozo(!showContreIndicationsDouceurRebozo);
+  };
 
 
   const soinsrebozo = [
@@ -115,10 +120,12 @@ const SoinsRebozo = () => {
                   <span className="font-extrabold">1h/1h30 - 60€*</span>
 
                 </p>
-                <p className={`${alice.className} text-xl text-[#DD2D4A]`}>Les contre-indications</p>
-                <p className={`text-lg ${comfortaa.className}`}>
-                  En cas de césarienne, il est recommandé d&apos;attendre la cicatrisation ou de demander l&apos;avis de votre sage-femme ou gynécologue.
-                </p>
+                <p onClick={toggleContreIndicationsDouceurRebozo} className={`${alice.className} text-xl text-[#DD2D4A] cursor-pointer`}>Les contre-indications</p>
+                {showContreIndicationsDouceurRebozo && (
+                  <p className={`text-lg ${comfortaa.className}`}>
+                    En cas de césarienne, il est recommandé d&apos;attendre la cicatrisation ou de demander l&apos;avis de votre sage-femme ou gynécologue.
+                  </p>
+                )}
               </div>
             }
             <button onClick={toggleSoinDouceurRebozo} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showSoinDouceurRebozo === true ? "Voir moins" : "Voir plus"}</button>

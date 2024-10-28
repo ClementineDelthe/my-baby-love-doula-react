@@ -36,8 +36,11 @@ const homemadeApple = Homemade_Apple({
 const SoinsFeminins = () => {
   const baseSrc = "/img/";
 
-  const [showDescription, setShowDescription] = useState({});
+  // const [showDescription, setShowDescription] = useState({});
   const [showSoinEnceinte, setShowSoinEnceinte] = useState(false);
+  const [showBienfaitsSoinEnceinte, setShowBienfaitsSoinEnceinte] = useState(false);
+  const [showConditionsSoinEnceinte, setShowConditionsSoinEnceinte] = useState(false);
+  const [showContreIndicationsSoinEnceinte, setShowContreIndicationsSoinEnceinte] = useState(false);
   const toggleSoinEnceinte = () => {
     if(showSoinEnceinte === false) {
       setShowSoinEnceinte(true);
@@ -45,7 +48,19 @@ const SoinsFeminins = () => {
       setShowSoinEnceinte(false);
     }
   }
+  const toggleBienfaitsSoinEnceinte = () => {
+    setShowBienfaitsSoinEnceinte(!showBienfaitsSoinEnceinte);
+  };
+
+  const toggleConditionsSoinEnceinte = () => {
+    setShowConditionsSoinEnceinte(!showConditionsSoinEnceinte);
+  };
+
+  const toggleContreIndicationsSoinEnceinte = () => {
+    setShowContreIndicationsSoinEnceinte(!showContreIndicationsSoinEnceinte);
+  };
   const [showSoinDeesse, setShowSoinDeesse] = useState(false);
+  const [showContreIndicationsSoinDeesse, setShowContreIndicationsSoinDeesse] = useState(false);
   const toggleSoinDeesse = () => {
     if(showSoinDeesse === false) {
       setShowSoinDeesse(true);
@@ -53,7 +68,11 @@ const SoinsFeminins = () => {
       setShowSoinDeesse(false);
     }
   }
+  const toggleContreIndicationsSoinDeesse = () => {
+    setShowContreIndicationsSoinDeesse(!showContreIndicationsSoinDeesse);
+  };
   const [showSoinEnergetique, setShowSoinEnergetique] = useState(false);
+  const [showContreIndicationsSoinEnergetique, setShowContreIndicationsSoinEnergetique] = useState(false);
   const toggleSoinEnergetique = () => {
     if(showSoinEnergetique === false) {
       setShowSoinEnergetique(true);
@@ -61,8 +80,12 @@ const SoinsFeminins = () => {
       setShowSoinEnergetique(false);
     }
   }
+  const toggleContreIndicationsSoinEnergetique = () => {
+    setShowContreIndicationsSoinEnergetique(!showContreIndicationsSoinEnergetique);
+  };
 
   const [showSoinAyurvedique, setShowSoinAyurvedique] = useState(false);
+  const [showContreIndicationsSoinAyurvedique, setShowContreIndicationsSoinAyurvedique] = useState(false);
   const toggleSoinAyurvedique = () => {
     if(showSoinAyurvedique === false) {
       setShowSoinAyurvedique(true);
@@ -70,8 +93,14 @@ const SoinsFeminins = () => {
       setShowSoinAyurvedique(false);
     }
   }
+  const toggleContreIndicationsSoinAyurvedique = () => {
+    setShowContreIndicationsSoinAyurvedique(!showContreIndicationsSoinAyurvedique);
+  };
 
   const [showSoinPostPartum, setShowSoinPostPartum] = useState(false);
+  const [showBienfaitsSoinPostPartum, setShowBienfaitsSoinPostPartum] = useState(false);
+  const [showConditionsSoinPostPartum, setShowConditionsSoinPostPartum] = useState(false);
+  const [showContreIndicationsSoinPostPartum, setShowContreIndicationsSoinPostPartum] = useState(false);
   const toggleSoinPostPartum = () => {
     if(showSoinPostPartum === false) {
       setShowSoinPostPartum(true);
@@ -79,12 +108,36 @@ const SoinsFeminins = () => {
       setShowSoinPostPartum(false);
     }
   }
+  const toggleBienfaitsSoinPostPartum = () => {
+    setShowBienfaitsSoinPostPartum(!showBienfaitsSoinPostPartum);
+  };
 
-  const toggleDescription = (index) => {
-    setShowDescription((prev) => ({
+  const toggleConditionsSoinPostPartum = () => {
+    setShowConditionsSoinPostPartum(!showConditionsSoinPostPartum);
+  };
+
+  const toggleContreIndicationsSoinPostPartum = () => {
+    setShowContreIndicationsSoinPostPartum(!showContreIndicationsSoinPostPartum);
+  };
+
+  // const toggleDescription = (index) => {
+  //   setShowDescription((prev) => ({
+  //     ...prev,
+  //     [index]: !prev[index],
+  //   }));
+  // };
+
+  const [openSections, setOpenSections] = useState({});
+
+  const toggleSection = (divId, section) => {
+    setOpenSections((prev) => ({
       ...prev,
-      [index]: !prev[index],
+      [`${divId}-${section}`]: !prev[`${divId}-${section}`],
     }));
+  };
+
+  const isSectionOpen = (divId, section) => {
+    return openSections[`${divId}-${section}`] || false;
   };
 
   return (
@@ -111,6 +164,7 @@ const SoinsFeminins = () => {
               <li><Link href="#massage-ayurvedique" className={`${alice.className}`}>✨ Massage Ayurvédique</Link></li>
             </ul>
         </div>
+
         <div id="massage-femme-enceinte" className={`md:relative flex flex-col md:flex-row-reverse items-center justify-between md:min-h-80 py-5 ${(showSoinEnceinte === true) ? "" : "" }`}>
           <div className="md:w-1/5">
             <Image
@@ -131,22 +185,28 @@ const SoinsFeminins = () => {
                   La grossesse peut être douce comme difficile à vivre au quotidien. Par le rituel du massage, je vous apporte une écoute bienveillante dans un cadre chaleureux. Un temps de pause dans votre quotidien pour vous recentrer et profiter pleinement de ce que vous êtes en train de vivre. Je porte une attention particulière à chaque détail pour que vous vous sentiez en sécurité et enveloppée de bien-être. Le massage se réalise au sol, sur un matelas épais et confortable. Installée sur le côté vous aurez un coussin d&apos;allaitement. Sur le dos, j&apos;ajuste votre position à l&apos;aide de serviettes roulées, qui viendront vous apporter confort et douceur aux niveaux des jambes. Les huiles utilisées sont spécialement sélectionnées pour leurs propriétés apaisantes et sécuritaires pour la grossesse. Elles sont délicatement chauffées pour offrir une sensation de chaleur réconfortante sur votre peau.
                   Le massage commence par des mouvements doux et enveloppants, favorisant la circulation sanguine et lymphatique. Je m&apos;attarde sur les points de tension, souvent présents dans le dos, les épaules et les jambes, pour libérer les nœuds et les inconforts. Chaque geste est pensé pour harmoniser votre énergie, vous reconnecter à vous-même et à votre bébé.
                   Après la séance, vous vous sentirez revitalisée, votre esprit apaisé et votre corps léger. Le massage prénatal est une véritable parenthèse enchantée dans le tourbillon de la grossesse, un moment privilégié où vous prenez soin de vous, en toute sérénité.
-                 <br></br>
+                <br></br>
                 </p>
-                <p className={`${alice.className} text-xl text-[#DD2D4A]`}>Les bienfaits</p>
-                <p className={`text-lg ${comfortaa.className}`}>
-                  Il vous procurera de multiples bienfaits comme une détente profonde, un assouplissement du corps, une meilleure qualité de sommeil... Il apaisera également votre bébé ! L&apos;ocytocine que vous produisez et la détente que vous aurez se répercuteront bénéfiquement sur votre bébé. N&apos;est-ce pas merveilleux de pouvoir partager ce bien-être avec votre petit trésor qui grandit en vous ?
-                </p>
-                <p className={`${alice.className} text-xl text-[#DD2D4A]`}>Les conditions de réalisation</p>
-                <p className="py-1">
+                <p onClick={toggleBienfaitsSoinEnceinte} className={`${alice.className} text-xl text-[#DD2D4A] cursor-pointer`}>Les bienfaits</p>
+                {showBienfaitsSoinEnceinte && (
                   <p className={`text-lg ${comfortaa.className}`}>
-                    Massage réalisable à partir du deuxième trimestre de grossesse jusqu&apos;à la fin.
+                    Il vous procurera de multiples bienfaits comme une détente profonde, un assouplissement du corps, une meilleure qualité de sommeil... Il apaisera également votre bébé ! L&apos;ocytocine que vous produisez et la détente que vous aurez se répercuteront bénéfiquement sur votre bébé. N&apos;est-ce pas merveilleux de pouvoir partager ce bien-être avec votre petit trésor qui grandit en vous ?
                   </p>
-                </p>
-                <p className={`${alice.className} text-xl text-[#DD2D4A]`}>Les contre-indications</p>
-                <p className={`text-lg ${comfortaa.className}`}>
-                  Les contre-indications sont : pathologie cardiaque et anomalie de tension ou de fréquence cardiaque, malaise, problème connu... diabète, contractions, grossesse à risque élevé, toutes contre-indication mentionnées par le corps médical. Si vous avez un doute, n&apos;hésitez pas à demander l&apos;aval de votre sage-femme ou gynécologue. Nous pouvons échanger pour plus de précisions également.
-                </p>
+                )}
+                <p onClick={toggleConditionsSoinEnceinte} className={`${alice.className} text-xl text-[#DD2D4A] cursor-pointer`}>Les conditions de réalisation</p>
+                {showConditionsSoinEnceinte && (
+                  <p className="py-1">
+                    <p className={`text-lg ${comfortaa.className}`}>
+                      Massage réalisable à partir du deuxième trimestre de grossesse jusqu&apos;à la fin.
+                    </p>
+                  </p>
+                )}
+                <p onClick={toggleContreIndicationsSoinEnceinte} className={`${alice.className} text-xl text-[#DD2D4A] cursor-pointer`}>Les contre-indications</p>
+                {showContreIndicationsSoinEnceinte && (
+                  <p className={`text-lg ${comfortaa.className}`}>
+                    Les contre-indications sont : pathologie cardiaque et anomalie de tension ou de fréquence cardiaque, malaise, problème connu... diabète, contractions, grossesse à risque élevé, toutes contre-indication mentionnées par le corps médical. Si vous avez un doute, n&apos;hésitez pas à demander l&apos;aval de votre sage-femme ou gynécologue. Nous pouvons échanger pour plus de précisions également.
+                  </p>
+                )}
                 <br/>
                 <p className="my-2">
                   <span className="font-bold text-lg">
@@ -188,21 +248,27 @@ const SoinsFeminins = () => {
                   L&apos;enfantement vous a apporté votre merveille et c&apos;est le plus beau cadeau qui soit. Cependant, physiquement le corps a subi beaucoup de tension et il met du temps à se remettre de cet évènement... Votre être tout entier à conçu un enfant et s&apos;approprie doucement ces changements. Par le rituel du massage, je vous offre un cadre sécurisant et doux pour aborder tous les sujets que vous aurez besoin de me confier. J&apos;écouterais avec empathie et justesse votre histoire, vos maux, vos victoires. Par le massage ayurvédique, je cherche à rééquilibrer vos énergies, apaiser votre corps qui a tant donné et vous procurer une parenthèse bienvenue à votre esprit. L&apos;huile chaude, choisie avec soin, nourrit votre peau tout en éveillant vos sens. Les gestes précis et bienveillants, hérités de traditions millénaires, vous enveloppent d&apos;une douceur réconfortante, vous permettant de laisser derrière vous les fatigues et les préoccupations. Je clôture le soin par un resserrage du bassin. Cela permet d&apos;apaiser les tensions du bassin.
                   <br/>
                 </p>
-                <p className={`${alice.className} text-xl text-[#DD2D4A]`}>Les bienfaits</p>
-                <p className={`text-lg ${comfortaa.className}`}>
-                  Symboliquement et physiquement, cela ferme le bassin, honore la fin de votre grossesse et célèbre votre nouvelle vie de maman. Vous pourrez ainsi vous reconnecter à vous-même, retrouver une harmonie intérieure et entamer cette nouvelle étape de votre vie avec plénitude et confiance.
-                  Ce moment de détente profonde est aussi une invitation à l&apos;introspection, à écouter les murmures de votre âme et à accueillir les nouvelles émotions qui accompagnent la maternité. Vous ressortirez de cette expérience revitalisée, avec une énergie renouvelée, prête à embrasser pleinement les joies et les défis de votre rôle de maman.
-                </p>
-                <p className={`${alice.className} text-xl text-[#DD2D4A]`}>Les conditions de réalisation</p>
-                <p className="py-1">
+                <p onClick={toggleBienfaitsSoinPostPartum} className={`${alice.className} text-xl text-[#DD2D4A] cursor-pointer`}>Les bienfaits</p>
+                {showBienfaitsSoinPostPartum && (
                   <p className={`text-lg ${comfortaa.className}`}>
-                    Le massage postpartum est réalisé dès que vous le souhaitez et jusqu&apos;à ce que vous en fassiez la demande même plusieurs années après.
+                    Symboliquement et physiquement, cela ferme le bassin, honore la fin de votre grossesse et célèbre votre nouvelle vie de maman. Vous pourrez ainsi vous reconnecter à vous-même, retrouver une harmonie intérieure et entamer cette nouvelle étape de votre vie avec plénitude et confiance.
+                    Ce moment de détente profonde est aussi une invitation à l&apos;introspection, à écouter les murmures de votre âme et à accueillir les nouvelles émotions qui accompagnent la maternité. Vous ressortirez de cette expérience revitalisée, avec une énergie renouvelée, prête à embrasser pleinement les joies et les défis de votre rôle de maman.
                   </p>
-                </p>
-                <p className={`${alice.className} text-xl text-[#DD2D4A]`}>Les contre-indications</p>
-                <p className={`text-lg ${comfortaa.className}`}>
-                  En cas de césarienne, il est recommandé d&apos;attendre la cicatrisation ou de demander l&apos;avis de votre sage-femme ou gynécologue.
-                </p>
+                )}
+                <p onClick={toggleConditionsSoinPostPartum} className={`${alice.className} text-xl text-[#DD2D4A] cursor-pointer`}>Les conditions de réalisation</p>
+                {showConditionsSoinPostPartum && (
+                  <p className="py-1">
+                    <p className={`text-lg ${comfortaa.className}`}>
+                      Le massage postpartum est réalisé dès que vous le souhaitez et jusqu&apos;à ce que vous en fassiez la demande même plusieurs années après.
+                    </p>
+                  </p>
+                )}
+                <p onClick={toggleContreIndicationsSoinPostPartum} className={`${alice.className} text-xl text-[#DD2D4A] cursor-pointer`}>Les contre-indications</p>
+                {showContreIndicationsSoinPostPartum && (
+                  <p className={`text-lg ${comfortaa.className}`}>
+                    En cas de césarienne, il est recommandé d&apos;attendre la cicatrisation ou de demander l&apos;avis de votre sage-femme ou gynécologue.
+                  </p>
+                )}
                 <br/>
                 <p className="my-2">
                   <span className="font-bold text-lg">
@@ -244,15 +310,17 @@ const SoinsFeminins = () => {
                 Combiné avec des pierres de lithothérapie, ce massage prend une dimension d&apos;autant plus holistique et apaisante. Les pierres, choisies pour leurs propriétés énergétiques spécifiques et vos besoins, sont placées stratégiquement sur le corps pour amplifier les effets du massage.
                 Venez vous offrir une expérience riche et complète, permettant de retrouver un état de paix intérieure. Les bienfaits se font sentir bien au-delà de la séance. Une véritable invitation à prendre soin de soi.
                 <br></br>
-                <p className={`${alice.className} text-xl text-[#DD2D4A]`}>Les contre-indications</p>
-                <p className={`text-lg ${comfortaa.className}`}>
-                  Pas de contre-indication particulière, sauf torticolis ou pathologie du dos et de la nuque.
-                  <br/>
-                  N&apos;hésitez pas à me contacter pour plus de précisions.
-                </p>
+                <p onClick={toggleContreIndicationsSoinEnergetique} className={`${alice.className} text-xl text-[#DD2D4A] cursor-pointer`}>Les contre-indications</p>
+                {showContreIndicationsSoinEnergetique && (
+                  <p className={`text-lg ${comfortaa.className}`}>
+                    Pas de contre-indication particulière, sauf torticolis ou pathologie du dos et de la nuque.
+                    <br/>
+                    N&apos;hésitez pas à me contacter pour plus de précisions.
+                  </p>
+                )}
                 <br/>
                 <span className="font-bold text-lg">
-                 Massage du dos, des épaules, de la tête et du visage 45 minutes + 15 minutes d&apos;échange
+                Massage du dos, des épaules, de la tête et du visage 45 minutes + 15 minutes d&apos;échange
                   <br/>
                   <Link href="/tarif" className="">1h à partir de 50€</Link>
                 </span>
@@ -283,10 +351,12 @@ const SoinsFeminins = () => {
                 Vous êtes invitée à vous abandonner à ce moment de pure détente, où chaque pression et chaque mouvement sont destinés à harmoniser votre énergie et à revitaliser votre être tout entier. Parce que vous méritez de vous sentir bien dans votre peau, de vous sentir forte et aimée.
                 Prenez soin de vous, car votre bien-être est précieux.
                 <br></br>
-                <p className={`${alice.className} text-xl text-[#DD2D4A]`}>Les contre-indications</p>
-                <p className={`text-lg ${comfortaa.className}`}>
-                  Merci de me contacter en amont si vous avez des pathologies cardiaques ou des problématiques de tension.
-                </p>
+                <p onClick={toggleContreIndicationsSoinDeesse} className={`${alice.className} text-xl text-[#DD2D4A] cursor-pointer`}>Les contre-indications</p>
+                {showContreIndicationsSoinDeesse && (
+                  <p className={`text-lg ${comfortaa.className}`}>
+                    Merci de me contacter en amont si vous avez des pathologies cardiaques ou des problématiques de tension.
+                  </p>
+                )}
                 <br/>
                 <span className="font-bold text-lg">
                   Bain de pieds + temps d&apos;accompagnement + massage corps complet 1h15
@@ -317,10 +387,12 @@ const SoinsFeminins = () => {
                 Inspiré de la médecine traditionnelle indienne, l&apos;ayurvéda, le massage est bien plus qu&apos;un simple soin corporel. Il s&apos;agit d&apos;une véritable thérapie holistique visant à harmoniser le corps et l&apos;esprit. Utilisant de l&apos;huile chaude et des gestes spécifiques à chaque dosha (constitution corporelle), le massage ayurvédique aide à détoxifier le corps, améliorer la circulation sanguine et renforcer le système immunitaire. Les mouvements lents et rythmiques, combinés à une pression légère, favorisent la relaxation profonde et la libération des tensions accumulées. C&apos;est une invitation à un voyage intérieur, où chaque toucher devient une caresse apaisante pour l&apos;âme, permettant de retrouver l&apos;équilibre et la sérénité.
                 Un bain de pied aux plantes avec un gommage démarre le rituel, invitant à la détente. Ensuite, une serviette chaude et moelleuse enveloppe les pieds. Enfin, vous êtes convié à vous installer sur la table de massage chauffée afin que de profiter d&apos;un pure moment de détente où chaque zone de votre corps recevra une attention particulière. Chaque mouvement est pensé pour maximiser votre confort, afin de vous emmener dans un état de relaxation profonde. Les tensions accumulées se dissoudront lentement, vous laissant une sensation de légèreté mentale et physique. C&apos;est un véritable voyage sensoriel qui vous attend, une parenthèse de bien-être où le temps semble s&apos;arrêter pour vous offrir une pause bien méritée.
                 <br></br>
-                <p className={`${alice.className} text-xl text-[#DD2D4A]`}>Les contre-indications</p>
-                <p className={`text-lg ${comfortaa.className}`}>
-                  Merci de me contacter en amont si vous avez des pathologies cardiaques ou des problématiques de tension.
-                </p>
+                <p onClick={toggleContreIndicationsSoinAyurvedique} className={`${alice.className} text-xl text-[#DD2D4A] cursor-pointer`}>Les contre-indications</p>
+                {showContreIndicationsSoinAyurvedique && (
+                  <p className={`text-lg ${comfortaa.className}`}>
+                    Merci de me contacter en amont si vous avez des pathologies cardiaques ou des problématiques de tension.
+                  </p>
+                )}
                 <br/>
                 <span className="font-bold text-lg">
                   Bain de pied + massage 1 h + 15 min d&apos;échange
@@ -333,6 +405,7 @@ const SoinsFeminins = () => {
             </div>
 
         </div>
+
         <div className="mt-2 md:pt-10">
           <p className={`${homemadeApple.className} text-md pb-2`}>
             <span className="text-[#DD2D4A]">Offrez un moment de bonheur.</span>
