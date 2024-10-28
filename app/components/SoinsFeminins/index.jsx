@@ -248,7 +248,7 @@ const SoinsFeminins = () => {
                 <p className={`text-lg ${comfortaa.className}`}>
                   Pas de contre-indication particulière, sauf torticolis ou pathologie du dos et de la nuque.
                   <br/>
-                  N'hésitez pas à me contacter pour plus de précisions.
+                  N&apos;hésitez pas à me contacter pour plus de précisions.
                 </p>
                 <br/>
                 <span className="font-bold text-lg">
@@ -340,13 +340,13 @@ const SoinsFeminins = () => {
           <p className={`text-md ${comfortaa.className}`}>
             Vous pouvez retrouver toutes mes prestations en carte cadeau.
             <br/>
-            Vous pouvez venir les retirer sur Villenave d'Ornon ou au Yellow Temple.
+            Vous pouvez venir les retirer sur Villenave d&apos;Ornon ou au Yellow Temple.
             <br/>
             Je peux également les envoyer directement par voie postale.
             <br/>
             Je peux aussi vous les envoyer de façon dématérialisée.
             <br/>
-            N'hésitez pas à me contacter, retrouvez moi
+            N&apos;hésitez pas à me contacter, retrouvez moi
             <span className="text-[#DD2D4A]">
               <Link href="/coordonnees"> ici.</Link>
             </span>
