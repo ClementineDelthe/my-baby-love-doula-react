@@ -88,7 +88,7 @@ const Formules = () => {
     },
     {
       title: "Tendre découverte",
-      prix: "150€",
+      prix: "140€",
       description:
         "4 séances massage bébé : Apprentissage massage du corps complet de votre bébé + soulager les maux de bébé",
       photo: "bg-formule-bebe",
@@ -127,7 +127,7 @@ const Formules = () => {
                   <p className={`text-lg ${comfortaa.className}`}>
                     Massage femme enceinte ET Douceur du rebozo
                     <br></br>
-                    A partir de 160€*
+                    A partir de 130€*
                   </p>
                 }
                 <button onClick={toggleFormuleParentheseEnchantee} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showFormuleParentheseEnchantee === true ? "Voir moins" : "Voir plus"}</button>
@@ -151,7 +151,7 @@ const Formules = () => {
                   <p className={`text-lg ${comfortaa.className}`}>
                     Un soin féminin au choix ET Un rituel du bain sensoriel®
                     <br></br>
-                    A partir de 210€*
+                    A partir de 180€*
                   </p>
                 }
                 <button onClick={toggleFormuleAmourToujours} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showFormuleAmourToujours === true ? "Voir moins" : "Voir plus"}</button>
@@ -175,7 +175,7 @@ const Formules = () => {
                   <p className={`text-lg ${comfortaa.className}`}>
                     4 séances massage bébé : Apprentissage massage du corps complet de votre bébé + soulager les maux de bébé
                     <br></br>
-                    A partir de 150€*
+                    A partir de 140€*
                   </p>
                 }
                 <button onClick={toggleFormuleTendreDecouverte} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showFormuleTendreDecouverte === true ? "Voir moins" : "Voir plus"}</button>

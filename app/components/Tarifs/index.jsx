@@ -31,23 +31,41 @@ const Tarifs = () => {
     { nom: "Rebozo", img: SoinRebozo },
     { nom: "Bébé", img: SoinBebe },
   ];
+  // const tarifsFeminins = [
+  //   { nom: "Massage Femme Enceinte", prixDomicile: "1h-80€/ 2h-120€", prixCocon: "1h-70€/ 2h-100€"},
+  //   { nom: "Massage Postnatal", prixDomicile: "1h-80€/ 2h-120€", prixCocon: "1h-70€/ 2h-100€"},
+  //   { nom: "Massage Energétique crânien et dos", prixDomicile: "1h-60€", prixCocon: "1h-50€"},
+  //   { nom: "Massage Déesse", prixDomicile: "1h45-110€", prixCocon: "1h45-90€"},
+  //   { nom: "Massage Ayurvédique", prixDomicile: "1h15-80€", prixCocon: "1h15-70€"},
+  // ];
+  // const tarifsRebozo = [
+  //   { nom: "Douceur du Rebozo", prixDomicile: "1h-1h30 60€", prixCocon: "1h-1h30 60€", prixYT:"1h-1h30 60€" },
+  //   { nom: "Rituel autour du Rebozo", prixCocon: "3h-250€", prixYT: "3h-250€" },
+  // ];
+  // const tarifsBebe = [
+  //   { nom: "Rituel du Bain Sensoriel®", prixDomicile: "2h-120€", prixCocon: "2h-100€", prixYT: "2h-120€" },
+  //   { nom: "Rituel du Bain Sensoriel® Photographié", prixDomicile: "2h-240€", prixCocon: "2h-220€", prixYT: "2h-270€" },
+  //   { nom: "Massage bébé", prixDomicile: "1h-55€", prixCocon: "1h-45€", prixYT: "1h-55€" },
+  //   { nom: "Soulager les maux de bébé", prixDomicile: "1h-55€", prixCocon: "1h-45€", prixYT: "1h-55€" },
+  //   // { nom: "Massage/Yoga bambin", prixDomicile: "1h-60€", prixCocon: "1h-50€", prixYT: "1h-60€" },
+  // ];
   const tarifsFeminins = [
-    { nom: "Massage Femme Enceinte", prixDomicile: "1h-80€/ 2h-120€", prixCocon: "1h-70€/ 2h-100€"},
-    { nom: "Massage Postnatal", prixDomicile: "1h-80€/ 2h-120€", prixCocon: "1h-70€/ 2h-100€"},
-    { nom: "Massage Energétique crânien et dos", prixDomicile: "1h-60€", prixCocon: "1h-50€"},
-    { nom: "Massage Déesse", prixDomicile: "1h45-110€", prixCocon: "1h45-90€"},
-    { nom: "Massage Ayurvédique", prixDomicile: "1h15-80€", prixCocon: "1h15-70€"},
+    { nom: "Massage Femme Enceinte", prixCocon: "2h-100€"},
+    { nom: "Massage Postnatal", prixCocon: "2h-100€"},
+    { nom: "Massage Energétique crânien et dos", prixCocon: "1h-50€"},
+    { nom: "Massage Déesse", prixCocon: "1h45-90€"},
+    { nom: "Massage Ayurvédique", prixCocon: "1h15-70€"},
   ];
   const tarifsRebozo = [
-    { nom: "Douceur du Rebozo", prixDomicile: "1h-1h30 60€", prixCocon: "1h-1h30 50€", prixYT:"1h-1h30 60€" },
+    { nom: "Douceur du Rebozo", prixDomicile: "1h-1h30 60€", prixCocon: "1h-1h30 60€" },
     { nom: "Rituel autour du Rebozo", prixCocon: "3h-250€", prixYT: "3h-250€" },
   ];
   const tarifsBebe = [
     { nom: "Rituel du Bain Sensoriel®", prixDomicile: "2h-120€", prixCocon: "2h-100€", prixYT: "2h-120€" },
     { nom: "Rituel du Bain Sensoriel® Photographié", prixDomicile: "2h-240€", prixCocon: "2h-220€", prixYT: "2h-270€" },
-    { nom: "Massage bébé", prixDomicile: "1h-55€", prixCocon: "1h-45€", prixYT: "1h-55€" },
-    { nom: "Soulager les maux de bébé", prixDomicile: "1h-55€", prixCocon: "1h-45€", prixYT: "1h-55€" },
-    { nom: "Massage/Yoga bambin", prixDomicile: "1h-60€", prixCocon: "1h-50€", prixYT: "1h-60€" },
+    { nom: "Massage bébé", prixDomicile: "1h-55€", prixCocon: "1h-45€" },
+    { nom: "Soulager les maux de bébé", prixDomicile: "1h-55€", prixCocon: "1h-45€" },
+    // { nom: "Massage/Yoga bambin", prixDomicile: "1h-60€", prixCocon: "1h-50€", prixYT: "1h-60€" },
   ];
 
   const [affichage, setAffichage] = useState(null);
@@ -119,7 +137,7 @@ const Tarifs = () => {
                 <hr className="rounded-lg shadow" />
               </li>
             ))}
-            <h4 className={`${sendFlowers.className} text-2xl font-semibold mt-8 pb-4`}>À domicile ou au Yellow Temple</h4>
+            {/* <h4 className={`${sendFlowers.className} text-2xl font-semibold mt-8 pb-4`}>À domicile ou au Yellow Temple</h4>
             {tarifsFeminins.map((tarif, index) => (
               <li key={index} className="mb-10">
                 <div className={`${alice.className} flex justify-between`}>
@@ -130,7 +148,7 @@ const Tarifs = () => {
                 </div>
                 <hr className="rounded-lg shadow" />
               </li>
-            ))}
+            ))} */}
           </ul>
 
         ) : null}
