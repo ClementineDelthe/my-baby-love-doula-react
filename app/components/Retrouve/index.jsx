@@ -108,7 +108,7 @@ const Retrouve = () => {
 
                   <p className={`${alice.className} pt-2`}>Déplacement &agrave; domicile Bordeaux CUB</p>
                   <Link href="https://www.google.com/maps/place/My+baby+love+-+Doula/@44.7782579,-0.5424504,17z/data=!3m1!4b1!4m6!3m5!1s0xd5527e745720d09:0x2be563342a7d92c3!8m2!3d44.7782541!4d-0.5398755!16s%2Fg%2F11vj05ws4m?entry=ttu">
-                    <p className={`${alice.className} pt-2`}>Mon cocon sur Villenave-d'Ornon : <u>1 rue Pythagore</u></p>
+                    <p className={`${alice.className} pt-2`}>Mon cocon sur Villenave-d&apos;Ornon : <u>1 rue Pythagore</u></p>
                   </Link>
                   <div className="w-full max-w-5xl py-5">
                     <iframe
