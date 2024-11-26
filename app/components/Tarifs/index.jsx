@@ -50,15 +50,15 @@ const Tarifs = () => {
   //   // { nom: "Massage/Yoga bambin", prixDomicile: "1h-60€", prixCocon: "1h-50€", prixYT: "1h-60€" },
   // ];
   const tarifsFeminins = [
-    { nom: "Massage Femme Enceinte", prixCocon: "2h-100€"},
-    { nom: "Massage Postnatal", prixCocon: "2h-100€"},
+    { nom: "Massage Femme Enceinte", prixCocon: "2h-100€", prixYT: "2h-120€"},
+    { nom: "Massage Postnatal", prixCocon: "2h-100€", prixYT: "2h-120€"},
     { nom: "Massage Energétique crânien et dos", prixCocon: "1h-50€"},
     { nom: "Massage Déesse", prixCocon: "1h45-90€"},
     { nom: "Massage Ayurvédique", prixCocon: "1h15-70€"},
   ];
   const tarifsRebozo = [
     { nom: "Douceur du Rebozo", prixDomicile: "1h-1h30 60€", prixCocon: "1h-1h30 60€" },
-    { nom: "Rituel autour du Rebozo", prixCocon: "3h-250€", prixYT: "3h-250€" },
+    { nom: "Rituel autour du Rebozo", prixCocon: "3h-250€", prixYT: "3h-270€" },
   ];
   const tarifsBebe = [
     { nom: "Rituel du Bain Sensoriel®", prixDomicile: "2h-120€", prixCocon: "2h-100€", prixYT: "2h-120€" },
@@ -137,18 +137,23 @@ const Tarifs = () => {
                 <hr className="rounded-lg shadow" />
               </li>
             ))}
-            {/* <h4 className={`${sendFlowers.className} text-2xl font-semibold mt-8 pb-4`}>À domicile ou au Yellow Temple</h4>
+            <h4 className={`${sendFlowers.className} text-2xl font-semibold mt-8 pb-4`}>Au Yellow Temple</h4>
             {tarifsFeminins.map((tarif, index) => (
               <li key={index} className="mb-10">
-                <div className={`${alice.className} flex justify-between`}>
-                  <p>{tarif.nom}</p>
-                  <p className="text-slate-300 opacity-55 text-end">
-                    {tarif.prixDomicile}
-                  </p>
-                </div>
-                <hr className="rounded-lg shadow" />
+                {
+                  (tarif.prixYT) &&
+                  <div>
+                    <div className={`${alice.className} flex justify-between`}>
+                      <p>{tarif.nom}</p>
+                      <p className="text-slate-300 opacity-55 text-end">
+                        {tarif.prixYT}
+                      </p>
+                    </div>
+                    <hr className="rounded-lg shadow" />
+                  </div>
+                }
               </li>
-            ))} */}
+            ))}
           </ul>
 
         ) : null}
