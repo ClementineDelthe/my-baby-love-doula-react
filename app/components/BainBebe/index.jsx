@@ -231,7 +231,7 @@ const BainBebe = () => {
       <div className="py-6">
         <p className={`${alice.className} italic text-sm mt-4`}>2h - 120€*<br/>*Une majoration peut s&apos;exercer en fonction du lieu d&apos;habitation et du jour de la prestation</p>
         <br />
-        <Link href="/formule" className={`${alice.className} button bg-rose-poudre border-none`}>Voir les formules</Link>
+        <Link href="/formule" className={`${alice.className} button bg-[#FFF] border-xl border-[#DD2D4A] text-[#DD2D4A]`}>Voir les formules</Link>
       </div>
     </div>
   </div>

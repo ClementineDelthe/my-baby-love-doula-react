@@ -130,7 +130,7 @@ const Formules = () => {
                     A partir de 130€*
                   </p>
                 }
-                <button onClick={toggleFormuleParentheseEnchantee} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showFormuleParentheseEnchantee === true ? "Voir moins" : "Voir plus"}</button>
+                <button onClick={toggleFormuleParentheseEnchantee} className={`${alice.className} button bg-[#FFF] border-xl border-[#DD2D4A] my-2 text-[#DD2D4A]`}>{showFormuleParentheseEnchantee === true ? "Voir moins" : "Voir plus"}</button>
               </div>
             </div>
             <div className="md:relative flex flex-col md:flex-row-reverse items-center justify-between md:min-h-60 py-5">
@@ -154,7 +154,7 @@ const Formules = () => {
                     A partir de 180€*
                   </p>
                 }
-                <button onClick={toggleFormuleAmourToujours} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showFormuleAmourToujours === true ? "Voir moins" : "Voir plus"}</button>
+                <button onClick={toggleFormuleAmourToujours} className={`${alice.className} button bg-[#FFF] border-xl border-[#DD2D4A] my-2 text-[#DD2D4A]`}>{showFormuleAmourToujours === true ? "Voir moins" : "Voir plus"}</button>
               </div>
             </div>
             <div className="md:relative flex flex-col md:flex-row items-center justify-between md:min-h-60 py-5">
@@ -178,7 +178,7 @@ const Formules = () => {
                     A partir de 140€*
                   </p>
                 }
-                <button onClick={toggleFormuleTendreDecouverte} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showFormuleTendreDecouverte === true ? "Voir moins" : "Voir plus"}</button>
+                <button onClick={toggleFormuleTendreDecouverte} className={`${alice.className} button bg-[#FFF] border-xl border-[#DD2D4A] my-2 text-[#DD2D4A]`}>{showFormuleTendreDecouverte === true ? "Voir moins" : "Voir plus"}</button>
               </div>
             </div>
             <div className="md:relative flex flex-col md:flex-row-reverse items-center justify-between md:min-h-60 py-5">
@@ -204,7 +204,7 @@ const Formules = () => {
                     A partir de 240€*
                   </p>
                 }
-                <button onClick={toggleFormuleInstantInfini} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showFormuleInstantInfini === true ? "Voir moins" : "Voir plus"}</button>
+                <button onClick={toggleFormuleInstantInfini} className={`${alice.className} button bg-[#FFF] border-xl border-[#DD2D4A] my-2 text-[#DD2D4A]`}>{showFormuleInstantInfini === true ? "Voir moins" : "Voir plus"}</button>
               </div>
             </div>
           </div>

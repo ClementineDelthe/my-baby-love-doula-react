@@ -7,8 +7,6 @@ import MassageEnergetique from "../../assets/massage_energetique.jpeg"
 import MassageAyurvedique from "../../assets/massage_ayurvedique.jpeg"
 import MassagePostPartum from "../../assets/massage-dos4.jpg"
 
-
-
 import { useState } from "react";
 import Link from "next/link";
 
@@ -187,13 +185,13 @@ const SoinsFeminins = () => {
                   Après la séance, vous vous sentirez revitalisée, votre esprit apaisé et votre corps léger. Le massage prénatal est une véritable parenthèse enchantée dans le tourbillon de la grossesse, un moment privilégié où vous prenez soin de vous, en toute sérénité.
                 <br></br>
                 </p>
-                <p onClick={toggleBienfaitsSoinEnceinte} className={`${alice.className} text-xl text-[#DD2D4A] cursor-pointer`}>Les bienfaits</p>
+                <p onClick={toggleBienfaitsSoinEnceinte} className={`${alice.className} my-4`}><span className="button text-xl bg-rose-poudre my-3 border-none">Les bienfaits</span></p>
                 {showBienfaitsSoinEnceinte && (
                   <p className={`text-lg ${comfortaa.className}`}>
                     Il vous procurera de multiples bienfaits comme une détente profonde, un assouplissement du corps, une meilleure qualité de sommeil... Il apaisera également votre bébé ! L&apos;ocytocine que vous produisez et la détente que vous aurez se répercuteront bénéfiquement sur votre bébé. N&apos;est-ce pas merveilleux de pouvoir partager ce bien-être avec votre petit trésor qui grandit en vous ?
                   </p>
                 )}
-                <p onClick={toggleConditionsSoinEnceinte} className={`${alice.className} text-xl text-[#DD2D4A] cursor-pointer`}>Les conditions de réalisation</p>
+                <p onClick={toggleConditionsSoinEnceinte} className={`${alice.className} text-xl cursor-pointer my-4`}><span className="button bg-rose-poudre my-3 border-none">Les conditions de réalisation</span></p>
                 {showConditionsSoinEnceinte && (
                   <p className="py-1">
                     <p className={`text-lg ${comfortaa.className}`}>
@@ -201,7 +199,7 @@ const SoinsFeminins = () => {
                     </p>
                   </p>
                 )}
-                <p onClick={toggleContreIndicationsSoinEnceinte} className={`${alice.className} text-xl text-[#DD2D4A] cursor-pointer`}>Les contre-indications</p>
+                <p onClick={toggleContreIndicationsSoinEnceinte} className={`${alice.className} text-xl cursor-pointer my-4`}><span className="button bg-rose-poudre my-3 border-none">Les contre-indications</span></p>
                 {showContreIndicationsSoinEnceinte && (
                   <p className={`text-lg ${comfortaa.className}`}>
                     Les contre-indications sont : pathologie cardiaque et anomalie de tension ou de fréquence cardiaque, malaise, problème connu... diabète, contractions, grossesse à risque élevé, toutes contre-indication mentionnées par le corps médical. Si vous avez un doute, n&apos;hésitez pas à demander l&apos;aval de votre sage-femme ou gynécologue. Nous pouvons échanger pour plus de précisions également.
@@ -224,7 +222,7 @@ const SoinsFeminins = () => {
                 </p>
               </div>
             }
-            <button onClick={toggleSoinEnceinte} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showSoinEnceinte === true ? "Voir moins" : "Voir plus"}</button>
+            <button onClick={toggleSoinEnceinte} className={`${alice.className} button bg-[#FFF] border-xl border-[#DD2D4A] my-2 text-[#DD2D4A]`}>{showSoinEnceinte === true ? "Voir moins" : "Voir plus"}</button>
           </div>
 
         </div>
@@ -248,14 +246,14 @@ const SoinsFeminins = () => {
                   L&apos;enfantement vous a apporté votre merveille et c&apos;est le plus beau cadeau qui soit. Cependant, physiquement le corps a subi beaucoup de tension et il met du temps à se remettre de cet évènement... Votre être tout entier à conçu un enfant et s&apos;approprie doucement ces changements. Par le rituel du massage, je vous offre un cadre sécurisant et doux pour aborder tous les sujets que vous aurez besoin de me confier. J&apos;écouterais avec empathie et justesse votre histoire, vos maux, vos victoires. Par le massage ayurvédique, je cherche à rééquilibrer vos énergies, apaiser votre corps qui a tant donné et vous procurer une parenthèse bienvenue à votre esprit. L&apos;huile chaude, choisie avec soin, nourrit votre peau tout en éveillant vos sens. Les gestes précis et bienveillants, hérités de traditions millénaires, vous enveloppent d&apos;une douceur réconfortante, vous permettant de laisser derrière vous les fatigues et les préoccupations. Je clôture le soin par un resserrage du bassin. Cela permet d&apos;apaiser les tensions du bassin.
                   <br/>
                 </p>
-                <p onClick={toggleBienfaitsSoinPostPartum} className={`${alice.className} text-xl text-[#DD2D4A] cursor-pointer`}>Les bienfaits</p>
+                <p onClick={toggleBienfaitsSoinPostPartum} className={`${alice.className} my-4`}><span className="button text-xl bg-rose-poudre my-3 border-none">Les bienfaits</span></p>
                 {showBienfaitsSoinPostPartum && (
                   <p className={`text-lg ${comfortaa.className}`}>
                     Symboliquement et physiquement, cela ferme le bassin, honore la fin de votre grossesse et célèbre votre nouvelle vie de maman. Vous pourrez ainsi vous reconnecter à vous-même, retrouver une harmonie intérieure et entamer cette nouvelle étape de votre vie avec plénitude et confiance.
                     Ce moment de détente profonde est aussi une invitation à l&apos;introspection, à écouter les murmures de votre âme et à accueillir les nouvelles émotions qui accompagnent la maternité. Vous ressortirez de cette expérience revitalisée, avec une énergie renouvelée, prête à embrasser pleinement les joies et les défis de votre rôle de maman.
                   </p>
                 )}
-                <p onClick={toggleConditionsSoinPostPartum} className={`${alice.className} text-xl text-[#DD2D4A] cursor-pointer`}>Les conditions de réalisation</p>
+                <p onClick={toggleConditionsSoinPostPartum} className={`${alice.className} text-xl cursor-pointer my-4`}><span className="button bg-rose-poudre my-3 border-none">Les conditions de réalisation</span></p>
                 {showConditionsSoinPostPartum && (
                   <p className="py-1">
                     <p className={`text-lg ${comfortaa.className}`}>
@@ -263,7 +261,7 @@ const SoinsFeminins = () => {
                     </p>
                   </p>
                 )}
-                <p onClick={toggleContreIndicationsSoinPostPartum} className={`${alice.className} text-xl text-[#DD2D4A] cursor-pointer`}>Les contre-indications</p>
+                <p onClick={toggleContreIndicationsSoinPostPartum} className={`${alice.className} text-xl cursor-pointer my-4`}><span className="button bg-rose-poudre my-3 border-none">Les contre-indications</span></p>
                 {showContreIndicationsSoinPostPartum && (
                   <p className={`text-lg ${comfortaa.className}`}>
                     En cas de césarienne, il est recommandé d&apos;attendre la cicatrisation ou de demander l&apos;avis de votre sage-femme ou gynécologue.
@@ -286,7 +284,7 @@ const SoinsFeminins = () => {
                 </p>
               </div>
             }
-            <button onClick={toggleSoinPostPartum} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showSoinPostPartum === true ? "Voir moins" : "Voir plus"}</button>
+            <button onClick={toggleSoinPostPartum} className={`${alice.className} button bg-[#FFF] border-xl border-[#DD2D4A] my-2 text-[#DD2D4A]`}>{showSoinPostPartum === true ? "Voir moins" : "Voir plus"}</button>
           </div>
         </div>
         <div id="massage-energetique" className="md:relative flex flex-col md:flex-row-reverse items-center justify-between md:min-h-80 py-5">
@@ -310,7 +308,7 @@ const SoinsFeminins = () => {
                 Combiné avec des pierres de lithothérapie, ce massage prend une dimension d&apos;autant plus holistique et apaisante. Les pierres, choisies pour leurs propriétés énergétiques spécifiques et vos besoins, sont placées stratégiquement sur le corps pour amplifier les effets du massage.
                 Venez vous offrir une expérience riche et complète, permettant de retrouver un état de paix intérieure. Les bienfaits se font sentir bien au-delà de la séance. Une véritable invitation à prendre soin de soi.
                 <br></br>
-                <p onClick={toggleContreIndicationsSoinEnergetique} className={`${alice.className} text-xl text-[#DD2D4A] cursor-pointer`}>Les contre-indications</p>
+                <p onClick={toggleContreIndicationsSoinEnergetique} className={`${alice.className} text-xl cursor-pointer my-4`}><span className="button bg-rose-poudre my-3 border-none">Les contre-indications</span></p>
                 {showContreIndicationsSoinEnergetique && (
                   <p className={`text-lg ${comfortaa.className}`}>
                     Pas de contre-indication particulière, sauf torticolis ou pathologie du dos et de la nuque.
@@ -326,7 +324,7 @@ const SoinsFeminins = () => {
                 </span>
               </p>
             }
-            <button onClick={toggleSoinEnergetique} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showSoinEnergetique === true ? "Voir moins" : "Voir plus"}</button>
+            <button onClick={toggleSoinEnergetique} className={`${alice.className} button bg-[#FFF] border-xl border-[#DD2D4A] my-2 text-[#DD2D4A]`}>{showSoinEnergetique === true ? "Voir moins" : "Voir plus"}</button>
             </div>
 
         </div>
@@ -351,7 +349,7 @@ const SoinsFeminins = () => {
                 Vous êtes invitée à vous abandonner à ce moment de pure détente, où chaque pression et chaque mouvement sont destinés à harmoniser votre énergie et à revitaliser votre être tout entier. Parce que vous méritez de vous sentir bien dans votre peau, de vous sentir forte et aimée.
                 Prenez soin de vous, car votre bien-être est précieux.
                 <br></br>
-                <p onClick={toggleContreIndicationsSoinDeesse} className={`${alice.className} text-xl text-[#DD2D4A] cursor-pointer`}>Les contre-indications</p>
+                <p onClick={toggleContreIndicationsSoinDeesse} className={`${alice.className} text-xl cursor-pointer my-4`}><span className="button bg-rose-poudre my-3 border-none">Les contre-indications</span></p>
                 {showContreIndicationsSoinDeesse && (
                   <p className={`text-lg ${comfortaa.className}`}>
                     Merci de me contacter en amont si vous avez des pathologies cardiaques ou des problématiques de tension.
@@ -365,7 +363,7 @@ const SoinsFeminins = () => {
                 </span>
               </p>
             }
-            <button onClick={toggleSoinDeesse} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showSoinDeesse === true ? "Voir moins" : "Voir plus"}</button>
+            <button onClick={toggleSoinDeesse} className={`${alice.className} button bg-[#FFF] border-xl border-[#DD2D4A] my-2 text-[#DD2D4A]`}>{showSoinDeesse === true ? "Voir moins" : "Voir plus"}</button>
             </div>
         </div>
         <div id="massage-ayurvedique" className="md:relative flex flex-col md:flex-row-reverse items-center justify-between md:min-h-80 py-5">
@@ -387,7 +385,7 @@ const SoinsFeminins = () => {
                 Inspiré de la médecine traditionnelle indienne, l&apos;ayurvéda, le massage est bien plus qu&apos;un simple soin corporel. Il s&apos;agit d&apos;une véritable thérapie holistique visant à harmoniser le corps et l&apos;esprit. Utilisant de l&apos;huile chaude et des gestes spécifiques à chaque dosha (constitution corporelle), le massage ayurvédique aide à détoxifier le corps, améliorer la circulation sanguine et renforcer le système immunitaire. Les mouvements lents et rythmiques, combinés à une pression légère, favorisent la relaxation profonde et la libération des tensions accumulées. C&apos;est une invitation à un voyage intérieur, où chaque toucher devient une caresse apaisante pour l&apos;âme, permettant de retrouver l&apos;équilibre et la sérénité.
                 Un bain de pied aux plantes avec un gommage démarre le rituel, invitant à la détente. Ensuite, une serviette chaude et moelleuse enveloppe les pieds. Enfin, vous êtes convié à vous installer sur la table de massage chauffée afin que de profiter d&apos;un pure moment de détente où chaque zone de votre corps recevra une attention particulière. Chaque mouvement est pensé pour maximiser votre confort, afin de vous emmener dans un état de relaxation profonde. Les tensions accumulées se dissoudront lentement, vous laissant une sensation de légèreté mentale et physique. C&apos;est un véritable voyage sensoriel qui vous attend, une parenthèse de bien-être où le temps semble s&apos;arrêter pour vous offrir une pause bien méritée.
                 <br></br>
-                <p onClick={toggleContreIndicationsSoinAyurvedique} className={`${alice.className} text-xl text-[#DD2D4A] cursor-pointer`}>Les contre-indications</p>
+                <p onClick={toggleContreIndicationsSoinAyurvedique} className={`${alice.className} text-xl cursor-pointer my-4`}><span className="button bg-rose-poudre my-3 border-none">Les contre-indications</span></p>
                 {showContreIndicationsSoinAyurvedique && (
                   <p className={`text-lg ${comfortaa.className}`}>
                     Merci de me contacter en amont si vous avez des pathologies cardiaques ou des problématiques de tension.
@@ -401,7 +399,7 @@ const SoinsFeminins = () => {
                 </span>
               </p>
             }
-            <button onClick={toggleSoinAyurvedique} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showSoinAyurvedique === true ? "Voir moins" : "Voir plus"}</button>
+            <button onClick={toggleSoinAyurvedique} className={`${alice.className} button bg-[#FFF] border-xl border-[#DD2D4A] my-2 text-[#DD2D4A]`}>{showSoinAyurvedique === true ? "Voir moins" : "Voir plus"}</button>
             </div>
 
         </div>
@@ -428,7 +426,7 @@ const SoinsFeminins = () => {
         <p></p>
         <p className={`${alice.className} italic text-sm pt-2 md:pt-10`}>*Une majoration peut s&apos;exercer en fonction du lieu d&apos;habitation et du jour de la prestation</p>
         <br />
-        <Link href="/formule" className={`${alice.className} button bg-rose-poudre border-none`}>Voir les formules</Link>
+        <Link href="/formule" className={`${alice.className} button bg-[#FFF] border-xl border-[#DD2D4A] text-[#DD2D4A]`}>Voir les formules</Link>
       </div>
     </div>
   </div>

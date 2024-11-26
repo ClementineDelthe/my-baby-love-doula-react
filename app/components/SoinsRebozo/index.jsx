@@ -120,7 +120,7 @@ const SoinsRebozo = () => {
                   <span className="font-extrabold">1h/1h30 - 60€*</span>
 
                 </p>
-                <p onClick={toggleContreIndicationsDouceurRebozo} className={`${alice.className} text-xl text-[#DD2D4A] cursor-pointer`}>Les contre-indications</p>
+                <p onClick={toggleContreIndicationsDouceurRebozo} className={`${alice.className} text-xl cursor-pointer my-4`}><span className="button bg-rose-poudre my-3 border-none">Les contre-indications</span></p>
                 {showContreIndicationsDouceurRebozo && (
                   <p className={`text-lg ${comfortaa.className}`}>
                     En cas de césarienne, il est recommandé d&apos;attendre la cicatrisation ou de demander l&apos;avis de votre sage-femme ou gynécologue.
@@ -128,7 +128,7 @@ const SoinsRebozo = () => {
                 )}
               </div>
             }
-            <button onClick={toggleSoinDouceurRebozo} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showSoinDouceurRebozo === true ? "Voir moins" : "Voir plus"}</button>
+            <button onClick={toggleSoinDouceurRebozo} className={`${alice.className} button bg-[#FFF] border-xl border-[#DD2D4A] my-2 text-[#DD2D4A]`}>{showSoinDouceurRebozo === true ? "Voir moins" : "Voir plus"}</button>
           </div>
         </div>
         <div className="md:relative flex flex-col md:flex-row-reverse items-center justify-between md:min-h-60 py-5">
@@ -153,7 +153,7 @@ const SoinsRebozo = () => {
                 <span className="font-extrabold">3h - 250€*</span>
               </p>
             }
-            <button onClick={toggleSoinRituelRebozo} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showSoinRituelRebozo === true ? "Voir moins" : "Voir plus"}</button>
+            <button onClick={toggleSoinRituelRebozo} className={`${alice.className} button bg-[#FFF] border-xl border-[#DD2D4A] my-2 text-[#DD2D4A]`}>{showSoinRituelRebozo === true ? "Voir moins" : "Voir plus"}</button>
           </div>
         </div>
         <div className="mt-2 md:pt-10">
@@ -177,7 +177,7 @@ const SoinsRebozo = () => {
         </div>
         <p className={`${alice.className} italic text-sm pt-2 md:pt-10`}>*Une majoration peut s&apos;exercer en fonction du lieu d&apos;habitation et du jour de la prestation</p>
         <br />
-        <Link href="/formule" className={`${alice.className} button bg-rose-poudre border-none`}>Voir les formules</Link>
+        <Link href="/formule" className={`${alice.className} button bg-[#FFF] border-xl border-[#DD2D4A] text-[#DD2D4A]`}>Voir les formules</Link>
       </div>
     </div>
   </div>

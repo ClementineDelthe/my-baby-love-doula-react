@@ -125,7 +125,7 @@ const SoinsBebe = () => {
                 <span className="font-extrabold">1h - à partir de 45€*</span>
               </p>
             }
-            <button onClick={toggleSoinMassageBebe} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showSoinMassageBebe === true ? "Voir moins" : "Voir plus"}</button>
+            <button onClick={toggleSoinMassageBebe} className={`${alice.className} button bg-[#FFF] border-xl border-[#DD2D4A] my-2 text-[#DD2D4A]`}>{showSoinMassageBebe === true ? "Voir moins" : "Voir plus"}</button>
           </div>
         </div>
         <div className="md:relative flex flex-col md:flex-row-reverse items-center justify-between md:min-h-60 py-5">
@@ -149,7 +149,7 @@ const SoinsBebe = () => {
                 <span className="font-extrabold">1h - à partir de 45€*</span>
               </p>
             }
-            <button onClick={toggleSoinSoulageMaux} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showSoinSoulageMaux === true ? "Voir moins" : "Voir plus"}</button>
+            <button onClick={toggleSoinSoulageMaux} className={`${alice.className} button bg-[#FFF] border-xl border-[#DD2D4A] my-2 text-[#DD2D4A]`}>{showSoinSoulageMaux === true ? "Voir moins" : "Voir plus"}</button>
           </div>
         </div>
         <div className="md:relative flex flex-col md:flex-row items-center justify-between md:min-h-60 py-5">
@@ -173,7 +173,7 @@ const SoinsBebe = () => {
                 <span className="font-extrabold">1h - à partir de 55*</span>
               </p>
             }
-            <button onClick={toggleSoinYogaBambin} className={`${alice.className} button bg-rose-poudre border-none my-2`}>{showSoinYogaBambin === true ? "Voir moins" : "Voir plus"}</button>
+            <button onClick={toggleSoinYogaBambin} className={`${alice.className} button bg-[#FFF] border-xl border-[#DD2D4A] my-2 text-[#DD2D4A]`}>{showSoinYogaBambin === true ? "Voir moins" : "Voir plus"}</button>
           </div>
         </div>
         <div className="mt-2 md:pt-10">
@@ -197,7 +197,7 @@ const SoinsBebe = () => {
         </div>
         <p className={`${alice.className} italic text-sm pt-2 md:pt-10`}>*Une majoration peut s&apos;exercer en fonction du lieu d&apos;habitation et du jour de la prestation</p>
         <br />
-        <Link href="/formule" className={`${alice.className} button bg-rose-poudre border-none`}>Voir les formules</Link>
+        <Link href="/formule" className={`${alice.className} button bg-[#FFF] border-xl border-[#DD2D4A] text-[#DD2D4A]`}>Voir les formules</Link>
       </div>
     </div>
   </div>
