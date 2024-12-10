@@ -124,7 +124,7 @@ www.camille-patteeuw.fr */}
         <br /><br />
         - Les massages femme enceinte concerne seulement les femmes enceintes.
         <br /><br />
-        - La prestation "douceur du rebozo" concerne les femmes en post partum imm&eacute;diat. Elle est applicable de la naissance de l&apos;enfant jusqu&apos;&agrave; deux mois apr&egrave;s l&apos;accouchement si les conditions sont r&eacute;unies.
+        - La prestation &quot;douceur du rebozo&quot; concerne les femmes en post partum imm&eacute;diat. Elle est applicable de la naissance de l&apos;enfant jusqu&apos;&agrave; deux mois apr&egrave;s l&apos;accouchement si les conditions sont r&eacute;unies.
         <br /><br />
         En dehors de ces &eacute;l&eacute;ments, la prestation ne peut &ecirc;tre exig&eacute;e d&apos;&ecirc;tre appliqu&eacute;e. Aucun remboursement ou &eacute;change ne sera ex&eacute;cut&eacute; si l&apos;acheteur ne remplit pas les conditions et que le d&eacute;lais est d&eacute;pass&eacute;.
         </p>
