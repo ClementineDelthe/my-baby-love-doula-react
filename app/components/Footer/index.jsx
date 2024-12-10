@@ -19,12 +19,13 @@ const Footer = () => {
           <span className="text-xs md:text-sm text-gray-500 sm:text-center dark:text-gray-400">
             ©
             {/* <a href="" className="hover:underline"> */}
-            E.I. My baby love - Siret 97962048100015. Tous droits réservés.&nbsp;
+            E.I. My baby love - Siret 97962048100015.
+            <span className="block md:inline">Tous droits réservés.&nbsp;</span>
             <Link href="/mentionslegales">
               Mentions Légales.&nbsp;
             </Link>
             <Link href="https://www.mayaphotographie.fr/" target="_blank">
-              Photos: Mayä Photographie.&nbsp;
+            <span className="block md:inline">Photos: Mayä Photographie.&nbsp;</span>
             </Link>
             {/* </a> */}
           </span>

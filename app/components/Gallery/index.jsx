@@ -188,7 +188,7 @@ const Gallery = () => {
             </div>
           </div>
         </div>
-        <div className="mt-4 italic">
+        <div className="mt-7 italic ml-2 md:ml-0">
           <Link href="https://www.mayaphotographie.fr/" target="_blank">
             Photographies réalisées par Amélie, Mayä Photographie. Tous droits reservés.
           </Link>
